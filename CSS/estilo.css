@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+
 html{
   scroll-behavior: smooth;
 }
-
 button{
   font-size: 1.25em;
   font-weight: bold;
@@ -14,7 +14,6 @@ button{
   color: white;
   background-color: #dc1212;
 }
-
 button:hover{
   background-color: #3bc9db;
 }
@@ -26,6 +25,7 @@ body{
   background-color: #1c2a33;
   margin-top: 75px;
 }
+
 
 
 /* LA BARRA DE NAVEGACIÓN */
@@ -46,7 +46,7 @@ header a{
   color: #fff;
   font-family: 'Nunito', sans-serif;
 }
-nav a{
+header nav a{
   text-decoration: none;
   color: #fff;
 }
@@ -56,20 +56,20 @@ header h2{
   font-weight: 600;
   margin-left: 15px;
 }
-h2.nombre_logo {
+header h2.nombre_logo {
   line-height: 1; /* Ajusta el valor según tus necesidades */
 }
-.logo{
+header .logo{
   display: flex;
 }
-.logo img{
+header .logo img{
   height: 90px;
   margin-left: 40px;
 }
-nav{
+header nav{
   margin-right: 40px;
 }
-nav a{
+header nav a{
   font-weight: 600;
   padding-right: 10px;
   margin-right: 10px;
@@ -79,7 +79,7 @@ nav a{
   position: relative;
   font-size: 18px;
 }
-nav a::after {
+header nav a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -90,18 +90,20 @@ nav a::after {
   background-color: #3bc9db; /* Color celeste */
   transition: transform 0.3s ease, width 0.3s ease; /* Agrega una transición suave */
 }
-nav a:hover::after {
+header nav a:hover::after {
   transform: translateX(-50%) scaleX(1); /* La línea se muestra y crece hacia los lados */
   width: 100%;
 }
 
 
 /* SOMOS */
-#body_somos .contenedor1{
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  padding: 80px 40px;
+.grit_1{
+  display: grid;
+  grid-template-columns: 45% 50%;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../Images/pexels-andrew-neel-2312369.jpg);
+  justify-content: center;
   background-image: url('../Images/pexels-andrew-neel-2312369.jpg');
   background-blend-mode: overlay; /* Mezcla el color de fondo y la imagen */
   background-size: cover;
@@ -109,57 +111,52 @@ nav a:hover::after {
   background-repeat: no-repeat;
   background-color: #1c2a33;
 }
-.color_nombre{
-  color: #3bc9db;
+.grit_1 .caja{
+  margin-top: 50px;
+  text-align: center;
+  color: white;
 }
-.color_ofrecemos{
-  color: #3bc9db;
+.grit_1 .somos_2 h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 46px;
+  margin: 10px;
 }
-.contenedor1parte1 h3{
+.grit_1 .somos_2 h3{
+  font-family: 'Poppins', sans-serif;
   margin: 1px;
 }
-.contenedor1parte1 h4{
-  margin: 10px;
-}
-.contenedor1{
-  color: #fff;
-}
-#body_somos .contenedor1parte1,
-#body_somos .somos_video {
-  flex: 1; /* Distribuye el espacio disponible de manera equitativa */
-}
-.contenedor1parte1 h2{
-  font-family: 'Poppins', sans-serif;
-  font-size: 48px;
-  margin: 10px;
-  }
-.contenedor1parte1 p{
+.grit_1 .somos_2 p{
   margin: 10px;
   font-family:'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
-.somos_video {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.grit_1 .color_ofrecemos, .color_nombre{
+  color: #3bc9db;
 }
-.Ofrecemos {
+.grit_1 .Ofrecemos {
   display: flex;
   justify-content: space-between;
 }
-.Ofrecemos div {
+.grit_1 .Ofrecemos div {
   flex: 1;
   text-align: center;
   margin-top: 1px;
 }
+.caja.video_2 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Proporción para videos 16:9 */
+}
 
-/* VIDEO SIN RELACIONADOS */
-
-
-
-
-
+.caja.video_2 iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 93%;
+  height: 93%;
+}
 
 
 /* PIE DE PÁGINA */
@@ -172,7 +169,7 @@ footer{
 footer .svg-clase path {
   fill: #ff0000; /* Cambia el color de relleno del SVG a rojo */
 }
-.conteiner_footer{
+footer .conteiner_footer{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -180,7 +177,7 @@ footer .svg-clase path {
   margin: auto;
   margin-top: 40px;
 }
-.box_footer{
+footer .box_footer{
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -189,15 +186,15 @@ footer div a{
   text-decoration: none;
   text-align: center;
 }
-.box_footer .logo_footer{
+footer .box_footer .logo_footer{
   display: flex;
   justify-content: center;
 }
-.box_footer .logo_footer img{
+footer .box_footer .logo_footer img{
   width: 300px;
   height: auto;
 }
-.box_footer .texto_logo{
+footer .box_footer .texto_logo{
   font-family: 'Poppins', sans-serif;
   max-width: 350px;
   margin-top: 2px;
@@ -205,17 +202,17 @@ footer div a{
   font-size: 15px;
   text-align: center
 }
-.box_footer h2{
+footer .box_footer h2{
   margin-bottom: 20px;
   margin-left: 0px;
   color: #343434;
   font-weight: 700;
 }
-.box_footer a {
+footer .box_footer a {
   display: flex;
   align-items: center;
 }
-.box_footer .icon {
+footer .box_footer .icon {
   border-radius: 8px; /* Ajusta el valor del radio de las esquinas según tus preferencias */
   background-color: #3bc9db;
   padding: 8px;
@@ -223,10 +220,10 @@ footer div a{
   height: 20px;
   width: 20px;
 }
-.box_footer .icon i {
+footer .box_footer .icon i {
   color: #dc1212;
 }
-.box_footer a{
+footer .box_footer a{
   font-family: 'Nunito', sans-serif;
   margin-top: 10px;
   color: #7a7a7a;
@@ -236,15 +233,15 @@ footer div a{
   align-items: center;
   justify-content: left;
 }
-.box_footer a i {
+footer .box_footer a i {
   margin-right: 5px; /* Espacio opcional entre el icono y el texto */
 }
-.box_footer a:hover{
+footer .box_footer a:hover{
   color: #1c2a33;
 }
-.box_footer a .fa-brands{
+footer .box_footer a .fa-brands{
   font-size: 20px;
 }
-.box_footer a .fa-solid{
+footer .box_footer a .fa-solid{
   font-size: 20px;
 }
