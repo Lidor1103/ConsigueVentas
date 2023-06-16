@@ -4,7 +4,11 @@
 html {
   scroll-behavior: smooth;
 }
-
+.titulos_definidos {
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+  margin: 0px 40px 0px 40px;
+}
 /* FONDO DE LA PÁGINA */
 body {
   width: 100%;
@@ -226,7 +230,7 @@ button:active:before {
 }
 
 /* PAQUETES ---------------------------------------------- */
-.grit_2 {
+.grit_3 {
   width: 96%;
   padding-left: 2%;
   padding-right: 2%;
@@ -237,15 +241,10 @@ button:active:before {
   justify-content: center;
   background-color: #1c2a33;
 }
-.grit_2_titulo{
+.grit_3_titulo{
   grid-column: 1/4;
   text-align: center;
   color: white;
-}
-.grit_2 h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 35px;
-  margin: 0px 40px 0px 40px;
 }
 .paquete {
   padding: 20px;
@@ -272,11 +271,11 @@ button:active:before {
   background-color: #2AC8BE; /* Color de fondo del cuadro */
   padding: 4px
 }
-.grit_2 p{
+.grit_3 p{
   text-align: center;
   margin: 0px 0px 0px 0px;
 }
-.grit_2 button {  
+.grit_3 button {  
   --color: #17232b;
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
@@ -296,7 +295,7 @@ button:active:before {
   cursor: pointer;
 }
 
-.grit_2  button:before {
+.grit_3  button:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -306,29 +305,46 @@ button:active:before {
   border-radius: 50%;
 }
 
-.grit_2 button:hover {
+.grit_3 button:hover {
   color:#ffffff;
 }
 
-.grit_2  button:before {
+.grit_3  button:before {
   top: 100%;
   left: 100%;
   transition: all .7s;
 }
 
-.grit_2 button:hover:before {
+.grit_3 button:hover:before {
   top: -50px;
   left: -50px;
 }
 
-.grit_2 button:active:before {
+.grit_3 button:active:before {
   background: #2AC8BE;
   transition: background 0s;
 }
-.grit_2 ul{
+.grit_3 ul{
   margin-top: 10px;
 }
 
+/*portafolio*/
+.grit_2 {
+  width: 96%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de tamaño igual */
+  grid-gap: 10px; /* Espacio entre las cajas */
+  justify-content: center;
+  background-color: #1c2a33;
+}
+.grit_2_titulo{
+  grid-column: 1/4;
+  text-align: center;
+  color: white;
+}
 
 /* PIE DE PÁGINA ---------------------------------------------- */
 /* footer {
