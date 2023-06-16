@@ -106,7 +106,7 @@ header nav a:hover::after {
   height: 570px;
   align-items: center;
   margin: 0 auto;
-  background-image: url(../Images/spiderman.jpeg);
+  background-image: url(../Images/pexels-andrew-neel-2312369.jpg);
   justify-content: center;
   background-blend-mode: overlay;
   /* Mezcla el color de fondo y la imagen */
