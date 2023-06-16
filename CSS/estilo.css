@@ -7,10 +7,11 @@ html {
 
 /* FONDO DE LA PÁGINA */
 body {
+  width: 100%;
   font-family: sans-serif;
   margin: 0;
-  background-color: #1c2a33;
   margin-top: 95px;
+  background-color: #17232b;
 }
 
 
@@ -107,12 +108,12 @@ header nav a:hover::after {
   margin: 0 auto;
   background-image: url(../Images/pexels-andrew-neel-2312369.jpg);
   justify-content: center;
-  background-image: url('../Images/pexels-andrew-neel-2312369.jpg');
   background-blend-mode: overlay;
   /* Mezcla el color de fondo y la imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #1c2a33;
 }
 
@@ -195,6 +196,7 @@ header nav a:hover::after {
   font-size: 17px;
   border-radius: 6px;
   color: var(--color);
+  cursor: pointer;
 }
 
 .caja button:before {
