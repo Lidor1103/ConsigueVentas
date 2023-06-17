@@ -369,51 +369,38 @@ button:active:before {
   padding: 115px;
 }
 
-.portafolio:hover{
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 .portafolio1 {
   position: relative;
   background-image: url('../Images/mahal1.jpg');
   background-size: cover;
-  background-position: center;
-  transition: opacity 0.3s ease;
 }
 .portafolio2 {
   position: relative;
   background-image: url('../Images/jf1.jpg');
   background-size: cover;
-  background-position: center;
-  transition: opacity 0.3s ease;
 }
 .portafolio3 {
   position: relative;
   background-image: url('../Images/psicocenters1.jpg');
   background-size: cover;
-  background-position: center;
-  transition: opacity 0.3s ease;
 }
 .portafolio4 {
   position: relative;
   background-image: url('../Images/sergenind1.jpg');
   background-size: cover;
-  background-position: center;
-  transition: opacity 0.3s ease;
 }
 .portafolio5 {
   position: relative;
   background-image: url('../Images/impactoverde1.jpg');
   background-size: cover;
-  background-position: center;
-  transition: opacity 0.3s ease;
 }
 .portafolio6 {
   position: relative;
   background-image: url('../Images/allanemmanuel1.jpg');
   background-size: cover;
-  background-position: center;
-  transition: opacity 0.3s ease;
+}
+.portafolio:hover{
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .portafolio::before {
@@ -423,7 +410,7 @@ button:active:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.728);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
