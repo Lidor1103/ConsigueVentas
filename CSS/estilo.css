@@ -380,8 +380,43 @@ button:active:before {
   background-position: center;
   transition: opacity 0.3s ease;
 }
+.portafolio2 {
+  position: relative;
+  background-image: url('../Images/jf1.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+.portafolio3 {
+  position: relative;
+  background-image: url('../Images/psicocenters1.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+.portafolio4 {
+  position: relative;
+  background-image: url('../Images/sergenind1.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+.portafolio5 {
+  position: relative;
+  background-image: url('../Images/impactoverde1.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
+.portafolio6 {
+  position: relative;
+  background-image: url('../Images/allanemmanuel1.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.3s ease;
+}
 
-.portafolio1::before {
+.portafolio::before {
   content: "";
   position: absolute;
   top: 0;
@@ -393,7 +428,7 @@ button:active:before {
   transition: opacity 0.3s ease;
 }
 
-.portafolio1:hover::before {
+.portafolio:hover::before {
   opacity: 1;
 }
 
