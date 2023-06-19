@@ -218,6 +218,105 @@ button:active:before {
   transition: background 0s;
 }
 
+
+
+
+
+
+
+
+
+/*portafolio*/
+.grit_2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* Tres columnas de tamaño igual */
+  grid-gap: 10px;
+  /* Espacio entre las cajas */
+} 
+
+.grit_2_titulo {
+  grid-column: 1/4;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: white;
+}
+.portafolio{
+  height: 230px;
+}
+
+.portafolio1 {
+  position: relative;
+  background-image: url('../Images/mahal1.jpg');
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portafolio2 {
+  position: relative;
+  background-image: url('../Images/jf1.jpg');
+  background-size: cover;
+    align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portafolio3 {
+  position: relative;
+  background-image: url('../Images/psicocenters1.jpg');
+  background-size: cover;
+    align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portafolio4 {
+  position: relative;
+  background-image: url('../Images/sergenind1.jpg');
+  background-size: cover;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portafolio5 {
+  position: relative;
+  background-image: url('../Images/impactoverde1.jpg');
+  background-size: cover;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portafolio6 {
+  position: relative;
+  background-image: url('../Images/allanemmanuel1.jpg');
+  background-size: cover;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portafolio:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portafolio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.728);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portafolio:hover::before {
+  opacity: 1;
+}
+
+
+
 /* PAQUETES ---------------------------------------------- */
 .grit_3 {
   width: 96%;
@@ -337,77 +436,9 @@ button:active:before {
   justify-content: center;
 }
 
-/*portafolio*/
-.grit_2 {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* Tres columnas de tamaño igual */
-  grid-gap: 10px;
-  /* Espacio entre las cajas */
-} 
 
-.grit_2_titulo {
-  grid-column: 1/4;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  color: white;
-}
-.portafolio{
-  padding: 115px;
-  background-color: red;
-}
 
-.portafolio1 {
-  position: relative;
-  background-image: url('../Images/mahal1.jpg');
-  background-size: cover;
-}
-.portafolio2 {
-  position: relative;
-  background-image: url('../Images/jf1.jpg');
-  background-size: cover;
-}
-.portafolio3 {
-  position: relative;
-  background-image: url('../Images/psicocenters1.jpg');
-  background-size: cover;
-}
-.portafolio4 {
-  position: relative;
-  background-image: url('../Images/sergenind1.jpg');
-  background-size: cover;
-}
-.portafolio5 {
-  position: relative;
-  background-image: url('../Images/impactoverde1.jpg');
-  background-size: cover;
-}
-.portafolio6 {
-  position: relative;
-  background-image: url('../Images/allanemmanuel1.jpg');
-  background-size: cover;
-}
-.portafolio:hover{
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
-.portafolio::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.728);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.portafolio:hover::before {
-  opacity: 1;
-}
 
 
 
