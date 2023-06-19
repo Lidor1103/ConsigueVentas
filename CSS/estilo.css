@@ -2,7 +2,6 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Nunito', sans-serif;
 }
 
 .titulos_definidos {
@@ -13,6 +12,7 @@ html {
 
 /* FONDO DE LA PÁGINA */
 body {
+  background-color: #1c2a33;
   width: 100%;
   font-family: sans-serif;
   margin: 0;
@@ -103,45 +103,33 @@ header nav a:hover::after {
 /* SOMOS */
 .grit_1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-columns: 49% 51%;
+  grid-template-columns: 49% 48%;
   width: 100%;
   height: 570px;
   align-items: center;
-  margin: 0 auto;
   background-image: url(../Images/pexels-andrew-neel-2312369.jpg);
-  justify-content: center;
-  background-blend-mode: overlay;
-  /* Mezcla el color de fondo y la imagen */
+  background-blend-mode: overlay; /* Mezcla el color de fondo y la imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #1c2a33;
+  grid-gap: 3%;
 }
-
 .grit_1 .caja {
   color: white;
 }
-
 .grit_1 .somos_2 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 45px;
-  margin: 0px 40px 10px 40px;
+  margin: 0% 7% 3% 0%;
 }
-
-.grit_1 .somos_2 h3 {
-  font-family: 'Poppins', sans-serif;
-  margin: 1px;
-}
-
 .grit_1 .somos_2 p {
-  margin: 20px 40px 25px 40px;
+  margin: 0% 7% 3% 0%;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
-
 .p_celeste {
   color: #3bc9db;
 }
@@ -175,11 +163,9 @@ header nav a:hover::after {
 }
 
 .boton_2 {
-  margin: 0px 40px 0px 40px;
+  margin: 0px 40px 0px 0px;
   display: flex;
-  padding: 0%;
   justify-content: center;
-  align-items: center;
 }
 
 button {
@@ -254,15 +240,14 @@ button:active:before {
 }
 
 .paquete {
-  padding: 20px;
+  padding: 10px;
   color: #1c2a33;
   /* Color del texto */
   border-radius: 30px;
   /* Cambia el valor según el radio de borde deseado */
   background-color: #ffffff;
   /* Color de fondo del cuadro */
-  padding: 10px;
-  margin: 15px;
+  margin: 10px 15px 10px 15px;
   font-family: 'Nunito', sans-serif;
 }
 
@@ -346,27 +331,32 @@ button:active:before {
 .grit_3 ul {
   margin-top: 10px;
 }
+.boton_3 {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
 
 /*portafolio*/
 .grit_2 {
-  width: 100%;
-  padding-top: 20px;
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   /* Tres columnas de tamaño igual */
   grid-gap: 10px;
   /* Espacio entre las cajas */
-  justify-content: center;
-  background-color: #1c2a33;
-}
+} 
 
 .grit_2_titulo {
   grid-column: 1/4;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
   color: white;
 }
 .portafolio{
   padding: 115px;
+  background-color: red;
 }
 
 .portafolio1 {
@@ -422,7 +412,7 @@ button:active:before {
 
 
 /* PIE DE PÁGINA ---------------------------------------------- */
-/* footer {
+footer {
   width: 100%;
   padding: 5px 0px;
   background-image: url(../Images/background-footer2.svg);
@@ -522,4 +512,3 @@ footer .box_footer a .fa-brands {
 footer .box_footer a .fa-solid {
   font-size: 20px;
 }
-*/
