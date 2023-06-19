@@ -107,8 +107,9 @@ header nav a:hover::after {
   width: 100%;
   height: 570px;
   align-items: center;
-  background-image: url(../Images/pexels-andrew-neel-2312369.jpg);
-  background-blend-mode: overlay; /* Mezcla el color de fondo y la imagen */
+  background-image: url(../Images/spiderman.jpeg);
+  background-blend-mode: overlay;
+  /* Mezcla el color de fondo y la imagen */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,20 +117,24 @@ header nav a:hover::after {
   background-color: #1c2a33;
   grid-gap: 3%;
 }
+
 .grit_1 .caja {
   color: white;
 }
+
 .grit_1 .somos_2 h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 45px;
   margin: 0% 7% 3% 0%;
 }
+
 .grit_1 .somos_2 p {
   margin: 0% 7% 3% 0%;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
+
 .p_celeste {
   color: #3bc9db;
 }
@@ -234,7 +239,7 @@ button:active:before {
   /* Tres columnas de tamaño igual */
   grid-gap: 10px;
   /* Espacio entre las cajas */
-} 
+}
 
 .grit_2_titulo {
   grid-column: 1/4;
@@ -243,7 +248,8 @@ button:active:before {
   padding-bottom: 10px;
   color: white;
 }
-.portafolio{
+
+.portafolio {
   height: 230px;
 }
 
@@ -255,22 +261,25 @@ button:active:before {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .portafolio2 {
   position: relative;
   background-image: url('../Images/jf1.jpg');
   background-size: cover;
-    align-items: center;
+  align-items: center;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .portafolio3 {
   position: relative;
   background-image: url('../Images/psicocenters1.jpg');
   background-size: cover;
-    align-items: center;
+  align-items: center;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .portafolio4 {
   position: relative;
   background-image: url('../Images/sergenind1.jpg');
@@ -279,6 +288,7 @@ button:active:before {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .portafolio5 {
   position: relative;
   background-image: url('../Images/impactoverde1.jpg');
@@ -287,6 +297,7 @@ button:active:before {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .portafolio6 {
   position: relative;
   background-image: url('../Images/allanemmanuel1.jpg');
@@ -295,7 +306,8 @@ button:active:before {
   background-position: center;
   background-repeat: no-repeat;
 }
-.portafolio:hover{
+
+.portafolio:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -430,6 +442,7 @@ button:active:before {
 .grit_3 ul {
   margin-top: 10px;
 }
+
 .boton_3 {
   margin: 0px 0px 0px 0px;
   display: flex;
