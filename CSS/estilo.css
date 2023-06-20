@@ -233,7 +233,6 @@ button:active:before {
 /*portafolio*/
 .grit_2 {
   display: grid;
-  width: 100%;
   grid-template-columns: 1fr 1fr 1fr;
   /* Tres columnas de tamaño igual */
   grid-gap: 10px;
@@ -249,7 +248,10 @@ button:active:before {
 }
 
 .portafolio {
-  height: 230px;
+  height: 180px;
+  padding: 5%;
+  text-align: left;
+  font-family: 'Poppins';
 }
 
 .portafolio1 {
@@ -304,7 +306,7 @@ button:active:before {
   align-items: center;
   background-position: center;
   background-repeat: no-repeat;
-}
+}*/
 
 .portafolio:hover {
   background-color: rgba(0, 0, 0, 0.5);
@@ -326,7 +328,32 @@ button:active:before {
   opacity: 1;
 }
 
+.definicion {
+  position:relative;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
+.portafolio:hover .definicion {
+  opacity: 1;
+}
+
+.p_celeste_portafolio {
+  color: #3bc9db;
+  font-size: 35px;
+  margin: 0;
+}
+
+.portafolio p{
+  margin: 0;
+  font-size: 20px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
 
 /* PAQUETES ---------------------------------------------- */
 .grit_3 {
