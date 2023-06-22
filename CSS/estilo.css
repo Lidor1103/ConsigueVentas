@@ -223,20 +223,17 @@ header nav a:hover::after {
 
 
 @media (max-width: 1080px) {
+  h2{
+    font-size: 40px;
+  }
+  p{
+    font-size: 30px;
+    text-align: left;
+  }
   .grid_1 {
     grid-template-columns: 1fr;
     height: 1000px;
-    align-items: center;
-    background-image: url(../Images/img1.jpg);
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-color: #18242c;
-    grid-gap: 3%;
-    color: white;
-    padding: 0% 3.1% 0% 3.1%;
+    grid-gap: 1%;
   }
 
   .grid_1 {
