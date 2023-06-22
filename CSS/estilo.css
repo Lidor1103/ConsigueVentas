@@ -363,6 +363,9 @@ header nav a:hover::after {
 }
 
 @media (max-width: 1080px) {
+  h2{
+    font-size: 55px;
+  }
   .grid_2 {
     grid-template-columns: 1fr 1fr;
   }
