@@ -243,6 +243,13 @@ header nav a:hover::after {
   .grid_1 .somos_1 p {
     margin: 0%;
   }
+  .grid_1 .somos_1 h2 {
+    margin: 0% 0% 3% 0%;
+  }
+  
+  .grid_1 .somos_1 p {
+    margin: 0% 0% 4% 0%;
+  }
 }
 
 
