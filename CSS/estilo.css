@@ -350,7 +350,14 @@ header nav a:hover::after {
   margin: 0;
 }
 
-
+@media (max-width: 1080px) {
+  .grid_2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid_2_titulo {
+    grid-column: 1/3;
+  }
+}
 
 
 
