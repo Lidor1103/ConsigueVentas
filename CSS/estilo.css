@@ -173,9 +173,6 @@ header nav a:hover::after {
 
 
 /* SOMOS --------------------------*/
-#section {
-  width: 100%;
-}
 
 .grid_1 {
   display: grid;
@@ -225,9 +222,21 @@ header nav a:hover::after {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .grid_1 {
-    grid-template-columns: 100%
+    grid-template-columns: 1fr;
+    height: 1000px;
+    align-items: center;
+    background-image: url(../Images/img1.jpg);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #18242c;
+    grid-gap: 3%;
+    color: white;
+    padding: 0% 3.1% 0% 3.1%;
   }
 
   .grid_1 {
