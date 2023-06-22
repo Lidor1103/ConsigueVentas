@@ -176,12 +176,15 @@ header nav a:hover::after {
 
 
 /* SOMOS --------------------------*/
+#sectio{
+  width: 100%;
+}
 .grid_1 {
   display: grid;
   grid-template-columns: 49% 48%;
   height: 570px;
   align-items: center;
-  background-image: url(../Images/pexels-andrew-neel-2312369.jpg);
+  background-image: url(../Images/img1.jpg);
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
@@ -251,6 +254,7 @@ header nav a:hover::after {
 .grid_2 {
   display: grid;
   padding-top: 20px;
+  padding-bottom: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 }
@@ -358,6 +362,32 @@ header nav a:hover::after {
   margin: 0;
 }
 
+/* TESTIMONIOS33 ---------------------------------------------- */
+.grid_3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 570px;
+  align-items: center;
+  background-image: url(../Images/img2.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #18242c;
+  grid-gap: 3%;
+  color: white;
+  padding: 0% 3.1% 0% 3.1%;
+}
+.titulos_definidos{
+  grid-column: 1/5;
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+}
+.grid_3_titulo{
+  height: 10px;
+}
 
 
 /* PAQUETES ---------------------------------------------- */
@@ -365,6 +395,7 @@ header nav a:hover::after {
   padding-left: 2%;
   padding-right: 2%;
   padding-top: 20px;
+  padding-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1%;
