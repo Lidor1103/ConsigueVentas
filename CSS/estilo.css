@@ -224,7 +224,7 @@ header nav a:hover::after {
 
 @media (max-width: 1080px) {
   h2{
-    font-size: 40px;
+    font-size: 50px;
   }
   p{
     font-size: 40px;
