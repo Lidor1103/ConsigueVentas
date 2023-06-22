@@ -12,18 +12,22 @@ h2 {
   font-size: 40px;
   margin: 0;
 }
+
 h3 {
   text-align: center;
   font-size: 20px;
 }
+
 p {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   line-height: 1.5;
 }
+
 .p_celeste {
   color: #3bc9db;
 }
+
 button {
   --color: #17232b;
   font-family: 'Nunito', sans-serif;
@@ -43,6 +47,7 @@ button {
   color: var(--color);
   cursor: pointer;
 }
+
 button:before {
   content: "";
   position: absolute;
@@ -52,18 +57,22 @@ button:before {
   width: 350px;
   border-radius: 50%;
 }
+
 button:hover {
   color: #ffffff;
 }
+
 button:before {
   top: 100%;
   left: 100%;
   transition: all .7s;
 }
+
 button:hover:before {
   top: -50px;
   left: -50px;
 }
+
 button:active:before {
   background: #2AC8BE;
   transition: background 0s;
@@ -164,9 +173,10 @@ header nav a:hover::after {
 
 
 /* SOMOS --------------------------*/
-#section{
+#section {
   width: 100%;
 }
+
 .grid_1 {
   display: grid;
   grid-template-columns: 49% 48%;
@@ -251,7 +261,7 @@ header nav a:hover::after {
 .grid_2_titulo {
   grid-column: 1/4;
   text-align: center;
-  margin: 0; 
+  margin: 0;
   padding-bottom: 10px;
   color: white;
 }
@@ -293,6 +303,7 @@ header nav a:hover::after {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .portafolio5 {
   position: relative;
   background-image: url('../Images/impactoverde1.jpg');
@@ -340,6 +351,7 @@ header nav a:hover::after {
   opacity: 0;
   transition: opacity 0.7s ease;
 }
+
 .portafolio:hover .definicion {
   opacity: 1;
 }
@@ -354,67 +366,75 @@ header nav a:hover::after {
   .grid_2 {
     grid-template-columns: 1fr 1fr;
   }
+
   .grid_2_titulo {
     grid-column: 1/3;
+  }
+
+  .portafolio p,
+  .portafolio h2,
+  .portafolio button {
+    opacity: 0;
+  }
+  .portafolio button{
+    pointer-events: none;
   }
 }
 
 
 
 
-/* TESTIMONIOS33 ---------------------------------------------- */
-.grid_3{
-  display: grid;
-  padding: 20px 5% 30px 5%;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-row-gap: 10px; /* Espacio entre las filas */
-  grid-column-gap: 90px;
-  background-image: url(../Images/img2.jpg);
-  background-repeat: no-repeat;
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #18242c;
-  color: white;
+  /* TESTIMONIOS33 ---------------------------------------------- */
+  .grid_3 {
+    display: grid;
+    padding: 20px 5% 30px 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 10px;
+    /* Espacio entre las filas */
+    grid-column-gap: 90px;
+    background-image: url(../Images/img2.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #18242c;
+    color: white;
 
-}
+  }
 
-.grid_3_titulo {
-  grid-column: 1/5;
-  text-align: center;
-  color: white;
-}
-.cliente{
-  text-align: center;
-  margin: 0;
-}
-.cliente p{
-  margin: 0;
-}
-.cliente_video {
-  position: relative;
-  width: 100%;
-  max-width: 309px;
-  margin: 0 auto;
-  padding-top: 177.78%; /* Establece la relación de aspecto 9:16 */
-}
+  .grid_3_titulo {
+    grid-column: 1/5;
+    text-align: center;
+    color: white;
+  }
 
-.cliente_video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+  .cliente {
+    text-align: center;
+    margin: 0;
+  }
 
+  .cliente p {
+    margin: 0;
+  }
 
+  .cliente_video {
+    position: relative;
+    width: 100%;
+    max-width: 309px;
+    margin: 0 auto;
+    padding-top: 177.78%;
+    /* Establece la relación de aspecto 9:16 */
+  }
 
-
-
-
-
+  .cliente_video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 
 
@@ -423,127 +443,134 @@ header nav a:hover::after {
 
 
 
-/* PAQUETES ---------------------------------------------- */
-.grid_4 {
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1%;
-  background-color: #1c2a33;
-}
-
-.grid_4_titulo {
-  grid-column: 1/4;
-  text-align: center;
-  color: white;
-}
-
-.paquete {
-  padding: 3%;
-  color: #1c2a33;
-  border-radius: 30px;
-  background-color: #ffffff;
-  margin: 10px 15px 10px 15px;
-  font-family: 'Nunito', sans-serif;
-}
-
-.paquete h4 {
-  font-family: 'Poppins', sans-serif;
-  margin: 0px 10px 0px 10px;
-  font-weight: 400;
-  font-size: 13px;
-  display: inline-block;
-  border-radius: 10px;
-  background-color: #2AC8BE;
-  padding: 4px 10px 4px 10px;
-}
-
-.paquete_titulo {
-  margin: 10px 0px 5px 0px;
-}
-
-.grid_4 p {
-  text-align: center;
-  margin: 0;
-}
-
-.grid_4 ul {
-  margin-top: 10px;
-}
-
-.boton_4 {
-  display: flex;
-  justify-content: center;
-}
 
 
 
 
-/* PIE DE PÁGINA ---------------------------------------------- */
-footer {
-  width: 100%;
-  padding: 5px 0px;
-  background-image: url(../Images/background-footer2.svg);
-  background-size: cover;
-}
 
-footer .conteiner_footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 40px;
-}
 
-footer .box_footer {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-}
 
-footer div a {
-  text-decoration: none;
-  text-align: center;
-}
+  /* PAQUETES ---------------------------------------------- */
+  .grid_4 {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1%;
+    background-color: #1c2a33;
+  }
 
-footer .box_footer .logo_footer {
-  display: flex;
-  justify-content: center;
-}
+  .grid_4_titulo {
+    grid-column: 1/4;
+    text-align: center;
+    color: white;
+  }
 
-footer .box_footer .logo_footer img {
-  width: 300px;
-  height: auto;
-}
+  .paquete {
+    padding: 3%;
+    color: #1c2a33;
+    border-radius: 30px;
+    background-color: #ffffff;
+    margin: 10px 15px 10px 15px;
+    font-family: 'Nunito', sans-serif;
+  }
 
-footer .box_footer .texto_logo {
-  font-family: 'Poppins', sans-serif;
-  max-width: 350px;
-  margin-top: 2px;
-  font-weight: 400;
-  font-size: 15px;
-  text-align: center
-}
+  .paquete h4 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 10px 0px 10px;
+    font-weight: 400;
+    font-size: 13px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #2AC8BE;
+    padding: 4px 10px 4px 10px;
+  }
 
-footer .box_footer h2 {
-  margin-bottom: 20px;
-  margin-left: 0px;
-  color: #343434;
-  font-weight: 700;
-}
+  .paquete_titulo {
+    margin: 10px 0px 5px 0px;
+  }
 
-footer .box_footer a {
-  display: flex;
-  align-items: center;
-}
+  .grid_4 p {
+    text-align: center;
+    margin: 0;
+  }
 
-footer .box_footer .icon {
-  border-radius: 8px;
-  /* Ajusta el valor del radio de las esquinas según tus preferencias
+  .grid_4 ul {
+    margin-top: 10px;
+  }
+
+  .boton_4 {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+  /* PIE DE PÁGINA ---------------------------------------------- */
+  footer {
+    width: 100%;
+    padding: 5px 0px;
+    background-image: url(../Images/background-footer2.svg);
+    background-size: cover;
+  }
+
+  footer .conteiner_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  footer .box_footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  footer div a {
+    text-decoration: none;
+    text-align: center;
+  }
+
+  footer .box_footer .logo_footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .box_footer .logo_footer img {
+    width: 300px;
+    height: auto;
+  }
+
+  footer .box_footer .texto_logo {
+    font-family: 'Poppins', sans-serif;
+    max-width: 350px;
+    margin-top: 2px;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center
+  }
+
+  footer .box_footer h2 {
+    margin-bottom: 20px;
+    margin-left: 0px;
+    color: #343434;
+    font-weight: 700;
+  }
+
+  footer .box_footer a {
+    display: flex;
+    align-items: center;
+  }
+
+  footer .box_footer .icon {
+    border-radius: 8px;
+    /* Ajusta el valor del radio de las esquinas según tus preferencias
   background-color: #3bc9db;
   padding: 8px;
   margin-right: 5px;
