@@ -206,22 +206,6 @@ nav li:hover::after {
 }
 
 
-
-/*header {
-  
-  top: 0;
-  width: 100%;
-  height: 85px;
-  display: flex;
-  justify-content: space-between;
-  background-color: #17232b;
-  align-items: center;
-  z-index: 9999;
-}*/
-
-
-
-
 /*SOMOS----------------------------------------------------------------------------*/
 /*General--------------------------*/
 .contenedor_1 {
@@ -280,6 +264,26 @@ nav li:hover::after {
 
 /*Responsive---------------------------*/
 @media (max-width:765px) {
+  .contenedor_1 {
+    grid-template-columns: 100%;
+    grid-gap: 0%;
+  }
+
+  .so_texto {
+    text-align: center;
+  }
+
+  .contenedor_1 {
+    height: 750px;
+  }
+
+  .contenedor_1 .so_texto h2,
+  .contenedor_1 .so_texto p {
+    margin: 0% 0% 10px 0%;
+  }
+}
+
+@media (max-width:1080px) {
   .contenedor_1 {
     grid-template-columns: 100%;
     grid-gap: 0%;
