@@ -267,6 +267,10 @@ nav li:hover::after {
   body{
     margin-top: 200px;
   }
+  .checkbtn {
+    font-size: 50px;
+    line-height: 200px;
+  }
 }
 /*SOMOS----------------------------------------------------------------------------*/
 /*General--------------------------*/
