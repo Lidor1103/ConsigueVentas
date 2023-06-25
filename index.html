@@ -13,126 +13,140 @@
 </head>
 
 <body>
-
     <!-- El menú de navegación -->
-    <header>
-        <a href="index.html" class="logo">
-            <img src="Images/icono.png" alt="Logo de tu empresa" class="logo_img">
-            <h2 class="nombre_logo">CONSIGUE<br>VENTAS</h2>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+            <img src="img/logo.png" alt="" class="logo">
         </a>
-        <nav>
-            <a href="#">Sobre Nosotros</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Testimonios</a>
-            <a href="#paquetes_cv">Paquetes</a>
-            <a href="#">Contáctanos</a>
-            <a href="#">Trabaja con nosotros</a>
-        </nav>
-    </header>
+        <ul>
+            <li><a class="active" href="#">Inicio</a></li>
+            <li><a class="active" href="#">Nosotros</a></li>
+            <li><a class="active" href="#">Paquetes</a></li>
+            <li><a class="active" href="#">Contáctanos</a></li>
+            <li><a class="active" href="#">Trabaja con nosotros</a></li>
+        </ul>
+    </nav>
 
-
-    <section>
-        <!-- SOMOS -->
-        <div class="grid_1">
-            <div class="video_1">
-                <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/HKp05QW6OAY" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="somos_1">
-                <h2>Somos <span class="p_celeste">ConsigueVentas</span></h2>
-                <p>ConsigueVentas es una agencia de marketing digital que
-                    se dedica a la realización de embudos de ventas online
-                    y creación de páginas web para ayudar a empresas a
-                    alcanzar su máximo potencial en ventas y fidelización
-                    de clientes.</p>
-                <div class="caja boton_1">
-                    <button> Conoce más!
-                    </button>
-                </div>
+    <!-- SOMOS------------------>
+    <div class="contenedor_1">
+        <div class="so_video">
+            <iframe src="https://www.youtube.com/embed/HKp05QW6OAY" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="so_texto">
+            <h2>Somos <span class="p_celeste">ConsigueVentas</span></h2>
+            <p>ConsigueVentas es una agencia de marketing digital que
+                se dedica a la realización de embudos de ventas online
+                y creación de páginas web para ayudar a empresas a
+                alcanzar su máximo potencial en ventas y fidelización
+                de clientes.</p>
+            <div class="so_boton">
+                <button> Conoce más!
+                </button>
             </div>
         </div>
+    </div>
 
 
+    <!-- PORTAFOLIO------------------>
+    <div class="contenedor_2">
+        <div class="c2_titulo">
+            <h2>Ellos trabajan con<span class="p_celeste"> NOSOTROS</span></h2>
+        </div>
+        <div class="po_1 po_hover">
+            <span class="definicion">
+                <h2 class="po_nombres">A&R MAHAL</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque nisi earum eaque</p>
+                <button> Ver más
+                </button>
+            </span>
+        </div>
+        <div class="po_2 po_hover">
+            <span class="definicion">
+                <h2 class="po_nombres">AGENCIA JF</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque nisi earum eaque
+                </p>
+                <button> Ver más
+                </button>
+            </span>
+        </div>
+        <div class="po_3 po_hover">
+            <span class="definicion">
+                <h2 class="po_nombres">PSICOCENTERS</h2>
+                <p>Clínica de salud mental dirigida para niños, adultos y adulto mayor. Nos preocupamos por tu
+                    bienestar.
+                </p>
+                <button> Ver más
+                </button>
+            </span>
+        </div>
+        <div class="po_4 po_hover">
+            <span class="definicion">
+                <h2 class="po_nombres">SERGENIND</h2>
+                <p>Líderes en mantenimiento y servicios generales de vasta experiencia, eficacia y calidad.
+                </p>
+                <button> Ver más
+                </button>
+            </span>
+        </div>
+        <div class="po_5 po_hover">
+            <span class="definicion">
+                <h2 class="po_nombres">IMPACTO VERDE</h2>
+                <p>Impacto Verde SAC cuenta con más de 12 años gestionando trabajos en áreas verdes, víveros y
+                    paisajismos.
+                </p>
+                <button> Ver más
+                </button>
+            </span>
+        </div>
+        <div class="po_6 po_hover">
+            <span class="definicion">
+                <h2 class="po_nombres">ALLAN EMMANUEL</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque nisi earum eaque
+                </p>
+                <button> Ver más
+                </button>
+            </span>
+        </div>
+    </div>
 
 
-        <!-- PORTAFOLIO -->
-        <div class="grid_2">
-            <div class="grid_2_titulo">
-                <h2>Ellos trabajan con<span class="p_celeste"> NOSOTROS</span></h2>
-            </div>
-            <div class="portafolio portafolio1">
-                <span class="definicion">
-                    <h2 class="p_celeste_portafolio">A&R MAHAL</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque nisi earum eaque
-                    </p>
-                    <button> Ver más
-                    </button>
-                </span>
-            </div>
-            <div class="portafolio portafolio2">
-                <span class="definicion">
-                    <h2 class="p_celeste_portafolio">AGENCIA JF</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque nisi earum eaque
-                    </p>
-                    <button> Ver más
-                    </button>
-                </span>
-            </div>
-            <div class="portafolio portafolio3">
-                <span class="definicion">
-                    <h2 class="p_celeste_portafolio">PSICOCENTERS</h2>
-                    <p>Clínica de salud mental dirigida para niños, adultos y adulto mayor. Nos preocupamos por tu
-                        bienestar.
-                    </p>
-                    <button> Ver más
-                    </button>
-                </span>
-            </div>
-            <div class="portafolio portafolio4">
-                <span class="definicion">
-                    <h2 class="p_celeste_portafolio">SERGENIND</h2>
-                    <p>Líderes en mantenimiento y servicios generales de vasta experiencia, eficacia y calidad.</p>
-                    <button> Ver más
-                    </button>
-                </span>
-            </div>
-            <div class="portafolio portafolio5">
-                <span class="definicion">
-                    <h2 class="p_celeste_portafolio">IMPACTO VERDE</h2>
-                    <p>Impacto Verde SAC cuenta con más de 12 años gestionando trabajos en áreas verdes, víveros y
-                        paisajismos.
-                    </p>
-                    <button> Ver más
-                    </button>
-                </span>
-            </div>
-            <div class="portafolio portafolio6">
-                <span class="definicion">
-                    <h2 class="p_celeste_portafolio">ALLAN EMMANUEL</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque nisi earum eaque
-                    </p>
-                    <button> Ver más
-                    </button>
-                </span>
+    <!-- PAQUETES-------------------->
+    <div class="contenedor_4">
+        <div class="pa_titulo">
+            <h2>¡Elige el<span class="p_celeste"> PAQUETE</span> que desees!</h2>
+        </div>
+        <div class="pa_1">
+            <h4>Asesoría Gratuita</h4>
+            <h3 class="pa_nombre">Paquete <span class="p_celeste">WEB EFICAZ</span></h3>
+            <p>Precio: <span class="p_celeste">S/.500 / $132</span></p>
+            <ul>
+                <li>Dominio .com por 1 año</li>
+                <li>Hosting por 1 año</li>
+                <li>7 Secciones (Inicio, nosotros, servicios, portafolio, clientes, testimonios y
+                    contacto)</li>
+                <li>Certificado SSL</li>
+                <li>Optimización</li>
+                <li>Alta en Buscadores</li>
+                <li>Diseño responsive</li>
+                <li>Cuenta de correo 3</li>
+                <li>Botón de Redes sociales</li>
+                <li>Formulario o boton de WhatsApp para contacto</li>
+                <li>Mapa ubicación en Google maps</li>
+            </ul>
+            <div class="boton_4">
+                <button>Más información!</button>
             </div>
         </div>
-
-        
-
-
-
-        <!-- PAQUETES -->
-        <div class="grid_4">
-            <div class="grid_4_titulo">
-                <h2>¡Elige el<span class="p_celeste"> PAQUETE</span> que desees!</h2>
-            </div>
-            <div class="paquete">
-                <h4>Asesoría Gratuita</h4>
-                <h3 class="paquete_titulo">Paquete <span class="p_celeste">WEB EFICAZ</span></h3>
-                <p>Precio: <span class="p_celeste">S/.500 / $132</span></p>
+        <div class="pa_2">
+            <h4>Asesoría Gratuita</h2>
+                <h3 class="pa_nombre">Paquete <span class="p_celeste">WEB ELITE EMPRESARIAL</span></h3>
+                <p>Precio: <span class="p_celeste">S/.1025 / $329</span></p>
                 <ul>
                     <li>Dominio .com por 1 año</li>
                     <li>Hosting por 1 año</li>
@@ -146,100 +160,134 @@
                     <li>Botón de Redes sociales</li>
                     <li>Formulario o boton de WhatsApp para contacto</li>
                     <li>Mapa ubicación en Google maps</li>
+                    <li>Sitio Web Autoadministrable</li>
+                    <li>Chat Online</li>
+                    <li>Capacitación Inicial por uso</li>
                 </ul>
-                <div class="caja boton_4">
+                <div class="boton_4">
                     <button>Más información!</button>
                 </div>
-            </div>
-            <div class="paquete">
-                <h4>Asesoría Gratuita</h2>
-                    <h3 class="paquete_titulo">Paquete <span class="p_celeste">WEB ELITE EMPRESARIAL</span></h3>
-                    <p>Precio: <span class="p_celeste">S/.1025 / $329</span></p>
-                    <ul>
-                        <li>Dominio .com por 1 año</li>
-                        <li>Hosting por 1 año</li>
-                        <li>7 Secciones (Inicio, nosotros, servicios, portafolio, clientes, testimonios y
-                            contacto)</li>
-                        <li>Certificado SSL</li>
-                        <li>Optimización</li>
-                        <li>Alta en Buscadores</li>
-                        <li>Diseño responsive</li>
-                        <li>Cuenta de correo 3</li>
-                        <li>Botón de Redes sociales</li>
-                        <li>Formulario o boton de WhatsApp para contacto</li>
-                        <li>Mapa ubicación en Google maps</li>
-                        <li>Sitio Web Autoadministrable</li>
-                        <li>Chat Online</li>
-                        <li>Capacitación Inicial por uso</li>
-                    </ul>
-                    <div class="caja boton_4">
-                        <button>Más información!</button>
-                    </div>
-            </div>
-            <div class="paquete">
-                <h4>Asesoría Gratuita</h2>
-                    <h3 class="paquete_titulo">Paquete <span class="p_celeste">WEB ÉXITO ECOMMERCE</span></h3>
-                    <p>Precio: <span class="p_celeste">S/.2000 / $527</span></p>
-                    <ul>
-                        <li>Dominio .com por 1 año</li>
-                        <li>Hosting por 1 año</li>
-                        <li>7 Secciones (Inicio, nosotros, servicios, portafolio, clientes, testimonios y
-                            contacto)</li>
-                        <li>Certificado SSL</li>
-                        <li>Optimización</li>
-                        <li>Alta en Buscadores</li>
-                        <li>Diseño responsive</li>
-                        <li>Cuenta de correo 3</li>
-                        <li>Botón de Redes sociales</li>
-                        <li>Formulario o boton de WhatsApp para contacto</li>
-                        <li>Mapa ubicación en Google maps</li>
-                        <li>Sitio Web Autoadministrable</li>
-                        <li>Chat Online</li>
-                        <li>Capacitación Inicial por uso</li>
-                        <li>Pasarela de pagos</li>
-                        <li>Registro de 10 productos</li>
-                    </ul>
-                    <div class="caja boton_4">
-                        <button>Más información!</button>
-                    </div>
-            </div>
         </div>
-    </section>
-
-
-    <footer>
-        <div class="conteiner_footer">
-            <div class="box_footer">
-                <div class="logo_footer">
-                    <img src="Images/logo.png" alt="">
+        <div class="pa_3">
+            <h4>Asesoría Gratuita</h2>
+                <h3 class="pa_nombre">Paquete <span class="p_celeste">WEB ÉXITO ECOMMERCE</span></h3>
+                <p>Precio: <span class="p_celeste">S/.2000 / $527</span></p>
+                <ul>
+                    <li>Dominio .com por 1 año</li>
+                    <li>Hosting por 1 año</li>
+                    <li>7 Secciones (Inicio, nosotros, servicios, portafolio, clientes, testimonios y
+                        contacto)</li>
+                    <li>Certificado SSL</li>
+                    <li>Optimización</li>
+                    <li>Alta en Buscadores</li>
+                    <li>Diseño responsive</li>
+                    <li>Cuenta de correo 3</li>
+                    <li>Botón de Redes sociales</li>
+                    <li>Formulario o boton de WhatsApp para contacto</li>
+                    <li>Mapa ubicación en Google maps</li>
+                    <li>Sitio Web Autoadministrable</li>
+                    <li>Chat Online</li>
+                    <li>Capacitación Inicial por uso</li>
+                    <li>Pasarela de pagos</li>
+                    <li>Registro de 10 productos</li>
+                </ul>
+                <div class="boton_4">
+                    <button>Más información!</button>
                 </div>
-                <div class="texto_logo">
-                    <p>Somos profesionales altamente capacitados, lo cual nos permite ofrecer un servicio excepcional a
-                        emprendedores.</p>
-                </div>
-            </div>
-            <div class="box_footer">
-                <h2>Nuestros Servicios</h2>
-                <a><i class="fa-solid fa-filter-circle-dollar icon"></i> Embudo de ventas</a>
-                <a><i class="fa-solid fa-pager icon"></i> Páginas web</a>
-                <a><i class="fa-solid fa-newspaper icon"></i> Catálogos virtuales</a>
-            </div>
-            <div class="box_footer">
-                <h2>Nuestras Redes Sociales</h2>
-                <a href="https://www.facebook.com/Agenciaconsigueventasonline/" target="_blank"><i
-                        class="fa-brands fa-facebook-f icon"></i> Facebook</a>
-                <a href="https://www.instagram.com/consigueventasonline/?hl=es" target="_blank"><i
-                        class="fa-brands fa-instagram icon"></i> Instagram</a>
-                <a href="https://www.tiktok.com/@consigueventasonline" target="_blank"><i
-                        class="fa-brands fa-tiktok icon"></i> TikTok</a>
-                <a href="https://www.linkedin.com/company/consigueventasonline/?originalSubdomain=pe" target="_blank"><i
-                        class="fa-brands fa-linkedin-in icon"></i> LinkedIn</a>
-                <a href="https://bit.ly/LurenVetConsultas" target="_blank"><i class="fa-brands fa-whatsapp icon"></i>
-                    WhatsApp</a>
-            </div>
         </div>
-    </footer>
+    </div>
 
+    <!-- TESTIMONIOS -->
+    <div class="contenedor_5">
+        <div class="te_titulo">
+            <h2>Testimonios de nuestros<span class="p_celeste"> CLIENTES</span></h2>
+        </div>
+        <div class="te_cliente_1">
+            <p>Chocolatástico</p>
+        </div>
+        <div class="te_cliente_2">
+            <p>Queen Dancers</p>
+        </div>
+        <div class="te_cliente_3">
+            <p>TioTec</p>
+        </div>
+        <div class="te_cliente_4">
+            <p>Motor Center</p>
+        </div>
+        <div class="te_video_1">
+            <iframe src="https://www.youtube.com/embed/U29sV9d_hmI" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="te_video_2">
+            <iframe src="https://www.youtube.com/embed/0lnQqV8mD-U" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="te_video_3">
+            <iframe src="https://www.youtube.com/embed/hBxuMekA4-4" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <div class="te_video_4">
+            <iframe src="https://www.youtube.com/embed/4ldEwnr7AfQ" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+
+    </div>
 </body>
+<footer>
+    <div class="contenedor_footer">
+        <div class="fo_1">
+            <img class="imagen_s" src="img/logo.png">
+            <p>Somos profesionales altamente capacitados, lo cual nos permite ofrecer un servicio excepcional a
+                emprendedores.</p>
+        </div>
+        <div class="fo_2">
+            <h3>Nuestros Servicios:</h3>
+        </div>
+        <div class="fo_3">
+            <h3>Enlaces:</h3>
+        </div>
+        <div class="fo_4">
+            <h3>Redes Sociales:</h3>
+        </div>
+        <div class="fo_5">
+            <p>Embudo de ventas</p>
+            <p>Páginas Web</p>
+            <p>Catálogos virtuales</p>
+        </div>
+        <div class="fo_6">
+            <p>Inicio</p>
+            <p>Nosotros</p>
+            <p>Paquetes</p>
+            <p>Contáctanos</p>
+            <p>Trabaja con nosotros</p>
+            
+        </div>
+        <div class="fo_7">
+            <a href="https://www.facebook.com/Agenciaconsigueventasonline/" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/consigueventasonline/?hl=es" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@consigueventasonline" target="_blank">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/consigueventasonline/?originalSubdomain=pe" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/consigueventasonline/?originalSubdomain=pe" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <div class="fo_8">
+            <p>©2023 <b>ConsigueVentas</b> - Todos los Derechos Reservados.</p>
+        </div>
+    </div>
+</footer>
 
 </html>
