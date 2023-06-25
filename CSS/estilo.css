@@ -241,7 +241,7 @@ nav li:hover::after {
   }
 
   nav ul li a {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   nav li a:hover,
@@ -277,7 +277,10 @@ nav li:hover::after {
   }
   button:before {
     width: 405px;
-}
+  }
+  .so_boton{
+    padding-top: 20px;
+  }
 }
 /*SOMOS----------------------------------------------------------------------------*/
 /*General--------------------------*/
