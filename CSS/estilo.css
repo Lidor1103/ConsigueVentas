@@ -868,7 +868,7 @@ nav li:hover::after {
   float: left;
   /* Añade esta línea */
   width: 40px;
-  background-color: #2AC8BE;
+  background-color: #00f3ff;
   margin: 0 10px 10px 0;
   line-height: 40px;
   border-radius: 50%;
@@ -879,7 +879,7 @@ nav li:hover::after {
 
 .fo_7 a:hover {
   background-color: #1c2a33;
-  color: #2AC8BE;
+  color: #00f3ff;
   transition: all 0.5s ease;
 }
 
@@ -897,7 +897,7 @@ nav li:hover::after {
 .contenedor_footer h3 {
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
-  border-bottom: 2px solid #2AC8BE;
+  border-bottom: 2px solid #00f3ff;
   display: inline-block;
 }
 
