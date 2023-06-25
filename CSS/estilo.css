@@ -981,12 +981,18 @@ nav li:hover::after {
     font-size: 14px;
   }
   .fo_8 p {
-    font-size: 10git px;
+    font-size: 10 px;
   }
   .contenedor_footer h3{
     font-size: 40px;
   }
   .fo_1 img {
     width: 400px;
+  }
+  .fo_7 a {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
   }
 }
