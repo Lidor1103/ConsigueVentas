@@ -218,7 +218,7 @@ nav li:hover::after {
   }
 }
 
-@media (max-width: 1081px) {
+@media (min-resolution: 192dpi) and (min-device-pixel-ratio: 2) and (max-width: 1080px) {
   .checkbtn {
     display: block;
   }
