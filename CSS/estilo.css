@@ -148,6 +148,9 @@ nav li a::after {
   background-color: #00f3ff;
   transition: transform 0.3s ease, width 0.3s ease;
 }
+nav li a:active {
+  background-color: transparent;
+}
 
 nav li a:hover::after {
   transform: translateX(-50%) scaleX(1);
