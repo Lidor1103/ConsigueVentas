@@ -852,13 +852,6 @@ nav li:hover::after {
   min-height: 10px;
 }
 
-/*
-.fo_5 {
-  grid-area: fo_5;
-  padding: 19px;
-  text-align: left;
-}
-*/
 .fo_7 {
   grid-area: fo_7;
   padding: 19px;
@@ -988,9 +981,12 @@ nav li:hover::after {
     font-size: 14px;
   }
   .fo_8 p {
-    font-size: 10px;
+    font-size: 10git px;
   }
   .contenedor_footer h3{
     font-size: 40px;
+  }
+  .fo_1 img {
+    width: 400px;
   }
 }
