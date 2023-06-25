@@ -384,7 +384,10 @@ nav li a:hover::after {
   .so_texto h2 {
     font-size: 40px;
   }
-  
+  .so_video iframe {
+    border-radius: 50px;
+    
+  }
 }
 
 
