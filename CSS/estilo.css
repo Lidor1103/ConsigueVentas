@@ -357,6 +357,9 @@ nav li:hover::after {
   .so_texto h2 {
     font-size: 50px;
   }
+  nav {
+    height: 150px;
+  }
 }
 
 
