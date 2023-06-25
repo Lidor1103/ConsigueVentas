@@ -533,7 +533,7 @@ nav li:hover::after {
 
 }
 
-@media (max-width:1081px) {
+@media (max-width:1080px) {
 
   .contenedor_2 h2 {
     font-size: 50px;
@@ -564,6 +564,9 @@ nav li:hover::after {
   .po_6 {
     min-height: 500px;
     padding: 5% 8%;
+  }
+  .c2_titulo h2{
+    font-size: 40px;
   }
 }
 
@@ -792,7 +795,7 @@ nav li:hover::after {
 }
 
 
-@media (max-width:765px) {
+@media (max-width:1080px) {
   .contenedor_5 {
     grid-template-areas: "te_titulo te_titulo te_titulo te_titulo"
       "te_cliente_1 te_cliente_1 te_cliente_2 te_cliente_2"
@@ -801,7 +804,9 @@ nav li:hover::after {
       "te_video_3 te_video_3 te_video_4 te_video_4"
     ;
   }
-
+  .te_titulo h2{
+    font-size: 40px;
+  }
 }
 
 
