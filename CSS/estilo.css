@@ -272,6 +272,9 @@ nav li:hover::after {
     line-height: 200px;
     margin-right: 60px;
   }
+  button {
+    font-size: 30px;
+  }
 }
 /*SOMOS----------------------------------------------------------------------------*/
 /*General--------------------------*/
