@@ -359,7 +359,7 @@ nav li:hover::after {
 @media (max-width:1080px) {
   .contenedor_1 {
     grid-template-columns: 100%;
-    padding: 50px 30px 30px 50px;
+    padding: 100px 30px 100px 30px;
     grid-row-gap: 20px;
     height: auto;
   }
