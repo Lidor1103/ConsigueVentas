@@ -529,8 +529,9 @@ nav li:hover::after {
   .contenedor_2 {
     grid-gap: 0px;
   }
-
-  .contenedor_2 {}
+  .te_titulo h2 {
+    font-size: 50px;
+  }
 
   .contenedor_2 {
     grid-template-areas: "c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo"
@@ -867,18 +868,18 @@ nav li:hover::after {
   float: left;
   /* Añade esta línea */
   width: 40px;
-  background-color: #00f3ff;
+  background-color: #1c2a33;
   margin: 0 10px 10px 0;
   line-height: 40px;
   border-radius: 50%;
-  color: #1c2a33;
+  color: #00f3ff;
   font-size: 20px;
   transition: all 0.5s ease;
 }
 
 .fo_7 a:hover {
-  background-color: #1c2a33;
-  color: #00f3ff;
+  background-color: #00f3ff;
+  color: #1c2a33;
   transition: all 0.5s ease;
 }
 
