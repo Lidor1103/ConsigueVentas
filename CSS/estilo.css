@@ -15,7 +15,7 @@ body {
   background-color: #1c2a33;
   width: 100%;
   margin-top: 85px;
-  
+
 }
 
 
@@ -90,7 +90,7 @@ button:active:before {
 
 
 /*BARRA DE NAVEGACION----------------------------------------------------------------------------*/
-nav{
+nav {
   position: fixed;
   background-color: #17232b;
   height: 85px;
@@ -100,29 +100,32 @@ nav{
 }
 
 /*LOGO*/
-.enlace{
+.enlace {
   position: absolute;
   padding: 0;
   height: 85px;
   margin-left: 40px;
 }
-.logo{
+
+.logo {
   height: 85px;
   padding: 5px;
 }
 
 
 /*ENLACES*/
-nav ul{
+nav ul {
   float: right;
   margin-right: 40px;
 }
-nav ul li{
+
+nav ul li {
   display: inline-block;
   line-height: 85px;
   margin: 0 5px;
 }
-nav ul li a{
+
+nav ul li a {
   color: rgb(255, 255, 255);
   font-size: 18px;
   padding: 7px 10px;
@@ -153,7 +156,7 @@ nav li:hover::after {
   width: 100%;
 }
 
-.checkbtn{
+.checkbtn {
   font-size: 30px;
   color: white;
   float: right;
@@ -162,25 +165,30 @@ nav li:hover::after {
   cursor: pointer;
   display: none;
 }
+
 /* Desparecer el checkbox */
-#check{
+#check {
   display: none;
 }
+
 @media (max-width: 952px) {
-  .enlace{
+  .enlace {
     padding-left: 20px;
-    }
-    nav ul li{
-      font-size: 16px;
-    }
   }
+
+  nav ul li {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 858px) {
-  .checkbtn{
+  .checkbtn {
     display: block;
   }
-  ul{
+
+  ul {
     position: fixed;
-    width:100%;
+    width: 100%;
     height: 100vh;
     background-color: rgba(16, 96, 143, 0.466);
     top: 80px;
@@ -188,24 +196,64 @@ nav li:hover::after {
     text-align: center;
     transition: all .5s;
   }
-  nav ul li{
+
+  nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav ul li a{
+
+  nav ul li a {
     font-size: 20px;
   }
-  li a:hover, li a.active{
-    background:none;
+
+  li a:hover,
+  li a.active {
+    background: none;
     color: rgb(255, 255, 255);
   }
-  #check:checked ~ ul{
+
+  #check:checked~ul {
     left: 0;
   }
 }
 
+@media (max-width: 1081px) {
+  .checkbtn {
+    display: block;
+  }
 
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(16, 96, 143, 0.466);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  li a:hover,
+  li a.active {
+    background: none;
+    color: rgb(255, 255, 255);
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
 /*SOMOS----------------------------------------------------------------------------*/
 /*General--------------------------*/
 .contenedor_1 {
@@ -283,7 +331,7 @@ nav li:hover::after {
   }
 }
 
-@media (max-width:1080px) {
+@media (max-width:1081px) {
   .contenedor_1 {
     grid-template-columns: 100%;
     grid-gap: 0%;
@@ -294,15 +342,22 @@ nav li:hover::after {
   }
 
   .contenedor_1 {
-    height: 750px;
+    height: 1000px;
   }
 
   .contenedor_1 .so_texto h2,
   .contenedor_1 .so_texto p {
     margin: 0% 0% 10px 0%;
   }
-}
 
+  .so_texto p {
+    font-size: 25px;
+  }
+
+  .so_texto h2 {
+    font-size: 50px;
+  }
+}
 
 
 
@@ -430,10 +485,8 @@ nav li:hover::after {
 }
 
 @media (max-width:453px) {
-  h2 {
-    font-family: 'Poppins', sans-serif;
+  .contenedor_2 {
     font-size: 22px;
-    margin: 0;
   }
 
   .contenedor_2 {
@@ -450,6 +503,39 @@ nav li:hover::after {
       "po_6 po_6 po_6 po_6 po_6 po_6";
   }
 
+}
+
+@media (max-width:1081px) {
+
+  .contenedor_2 h2 {
+    font-size: 50px;
+  }
+
+  .contenedor_2 {
+    grid-gap: 0px;
+  }
+
+  .contenedor_2 {}
+
+  .contenedor_2 {
+    grid-template-areas: "c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo"
+      "po_1 po_1 po_1 po_1 po_1 po_1"
+      "po_2 po_2 po_2 po_2 po_2 po_2"
+      "po_3 po_3 po_3 po_3 po_3 po_3"
+      "po_4 po_4 po_4 po_4 po_4 po_4"
+      "po_5 po_5 po_5 po_5 po_5 po_5"
+      "po_6 po_6 po_6 po_6 po_6 po_6";
+  }
+
+  .po_1,
+  .po_2,
+  .po_3,
+  .po_4,
+  .po_5,
+  .po_6 {
+    min-height: 500px;
+    padding: 5% 8%;
+  }
 }
 
 
