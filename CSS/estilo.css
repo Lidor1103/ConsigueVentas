@@ -353,7 +353,7 @@ nav li:hover::after {
 @media (max-width:1080px) {
   .contenedor_1 {
     grid-template-columns: 100%;
-    padding: 30px 0;
+    padding: 0 0 30px 0;
     grid-row-gap: 20px;
     height: auto;
   }
@@ -370,7 +370,7 @@ nav li:hover::after {
   }
 
   .so_texto p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .so_texto h2 {
