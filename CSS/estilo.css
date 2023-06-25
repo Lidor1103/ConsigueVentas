@@ -253,6 +253,20 @@ nav li:hover::after {
   #check:checked~ul {
     left: 0;
   }
+  nav {
+    height: 200px;
+  }
+  .enlace {
+    height: 200px;
+  }
+  
+  .logo {
+    height: 190px;
+    padding: 5px;
+  }
+  body{
+    margin-top: 200px;
+  }
 }
 /*SOMOS----------------------------------------------------------------------------*/
 /*General--------------------------*/
@@ -357,9 +371,7 @@ nav li:hover::after {
   .so_texto h2 {
     font-size: 50px;
   }
-  nav {
-    height: 200px;
-  }
+  
 }
 
 
