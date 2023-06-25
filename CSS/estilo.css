@@ -968,6 +968,7 @@ nav li:hover::after {
   .fo_3,
   .fo_4 {
     text-align: center;
+    font-size: 50px;
     padding: 5px;
     min-height: 12px;
   }
@@ -977,6 +978,7 @@ nav li:hover::after {
   .fo_7 {
     padding: 9px 0px 10px 0px;
     text-align: center;
+    font-size: 200px;
   }
 
   .fo_7 a {
