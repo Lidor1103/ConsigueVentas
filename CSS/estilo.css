@@ -595,10 +595,10 @@ nav li:hover::after {
   height: 400px;
   border-radius: 30px;
 }
-
+/*
 /*PAQUETE----------------------------------------------------------------------------*/
 /*General--------------------------*/
-.contenedor_4 {
+/*.contenedor_4 {
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 20px;
@@ -674,9 +674,9 @@ nav li:hover::after {
   display: flex;
   justify-content: center;
 }
-
+*/
 /*Responsive areas de grid----------*/
-@media (max-width:765px) {
+/*@media (max-width:765px) {
   .contenedor_4 {
     grid-template-areas: "pa_titulo pa_titulo pa_titulo"
       "pa_1 pa_1 pa_1"
@@ -684,8 +684,7 @@ nav li:hover::after {
       "pa_3 pa_3 pa_3";
     grid-row-gap: 1%;
   }
-}
-
+}*/
 
 
 
