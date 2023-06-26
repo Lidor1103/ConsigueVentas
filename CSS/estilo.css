@@ -299,20 +299,17 @@ nav li a:hover::after {
 /*SOMOS General-------------------*/
 .contenedor_1 {
   display: grid;
-  grid-template-columns: 49% 48%;
-  grid-gap: 3%;
-  padding: 0% 3.1% 0% 3.1%;
+  grid-template-columns: 1fr 1fr;
+  gap: 3%;
+  padding: 0 3.1%;
   height: 580px;
   align-items: center;
-  background-image: url(../img/img1.jpg);
+  background: url(../img/img1.jpg) no-repeat center/cover fixed;
   background-blend-mode: overlay;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-color: #18242c;
   color: white;
 }
+
 /*SOMOS Video---------------------*/
 .so_video {
   position: relative;
@@ -462,14 +459,14 @@ nav li a:hover::after {
 .po_hover:hover .definicion {
   opacity: 1;
 }
-/*PORTAFOLIO Texto---------------------------*/
+/*PORTAFOLIO Texto-----------------------*/
 .definicion p {
   font-size: 19px;
   margin-bottom: 15px;
   line-height: 1.2;
 }
 
-/*PORTAFOLIO Responsive areas de grid--------*/
+/*PORTAFOLIO Responsive areas de grid----*/
 @media (max-width:1080px) {
   .contenedor_2 {
     grid-template-areas: "c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo"
@@ -499,50 +496,6 @@ nav li a:hover::after {
   }
 }
 
-
-
-
-
-
-/*PAQUETE----------------------------------------------------------------------------*/
-/*General--------------------------*/
-.contenedor_3 {
-  display: grid;
-  grid-gap: 4%;
-  padding: 0% 3.1% 0% 3.1%;
-  align-items: center;
-  background-color: #18242c;
-  color: white;
-  grid-template-areas: "c3_titulo c3_titulo c3_titulo"
-    "c3_paquete c4_paquete c5_paquete";
-}
-
-.c3_titulo {
-  grid-area: c3_titulo;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 10px;
-}
-
-.c3_paquete {
-  grid-area: c3_paquete;
-}
-
-.c4_paquete {
-  grid-area: c4_paquete;
-}
-
-.c5_paquete {
-  grid-area: c5_paquete;
-}
-
-.c3_paquete,
-.c4_paquete,
-.c5_paquete {
-  background-color: rebeccapurple;
-  height: 400px;
-  border-radius: 30px;
-}
 
 /*
 /*PAQUETE----------------------------------------------------------------------------*/
@@ -641,22 +594,19 @@ nav li a:hover::after {
 /*TESTIMONIOS---------------------------------------------------- */
 .contenedor_5 {
   display: grid;
-  padding: 20px 3% 30px 3%;
+  padding: 20px 3%;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "te_titulo te_titulo te_titulo te_titulo"
+  grid-template-areas: 
+    "te_titulo te_titulo te_titulo te_titulo"
     "te_cliente_1 te_cliente_2 te_cliente_3 te_cliente_4"
     "te_video_1 te_video_2 te_video_3 te_video_4";
-  grid-row-gap: 10px;
-  grid-column-gap: 4%;
-  background-image: url(../img/img2.jpg);
-  background-repeat: no-repeat;
+  gap: 10px 4%;
+  background: url(../img/img2.jpg) no-repeat center/cover fixed;
   background-blend-mode: overlay;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   background-color: #18242c;
   color: white;
 }
+
 
 .te_titulo,
 .te_cliente_1,
@@ -743,6 +693,13 @@ nav li a:hover::after {
     font-size: 40px;
   }
 }
+
+
+
+
+
+
+
 
 /*Contáctanos----------------------------------------------------------------------------*/
 .contenedor_6 {
