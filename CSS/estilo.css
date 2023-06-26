@@ -988,7 +988,8 @@ nav li a:hover::after {
                         "f_button f_button";
   }
   .co_mapa p {
-    font-size: 35px;
+    font-size: 30px;
+    text-align: center;
   }
 }
 
