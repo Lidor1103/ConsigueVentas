@@ -991,7 +991,7 @@ nav li a:hover::after {
     font-size: 30px;
     text-align: center;
   }
-  .co_texto{
+  .co_texto p{
     font-size: 30px;
   }
 }
