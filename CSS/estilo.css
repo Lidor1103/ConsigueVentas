@@ -13,9 +13,7 @@ html {
 /* FONDO DE LA PÁGINA------------*/
 body {
   background-color: #1c2a33;
-  width: 100%;
   margin-top: 85px;
-
 }
 
 
@@ -33,7 +31,6 @@ p {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   line-height: 1.5;
-  padding: 0;
 }
 
 button {
@@ -299,7 +296,7 @@ nav li a:hover::after {
 }
 
 /*SOMOS----------------------------------------------------------------------------*/
-/*General--------------------------*/
+/*General-------------------*/
 .contenedor_1 {
   display: grid;
   grid-template-columns: 49% 48%;
@@ -316,8 +313,7 @@ nav li a:hover::after {
   background-color: #18242c;
   color: white;
 }
-
-/*Video--------------------------*/
+/*Video---------------------*/
 .so_video {
   position: relative;
   padding-bottom: 56.25%;
@@ -338,79 +334,52 @@ nav li a:hover::after {
   margin: 0% 0% 3% 0%;
 }
 
-/*Texto-----------------------------*/
-.definicion p {
-  margin: 0;
-  font-size: 19px;
-  color: white;
-  font-weight: 1;
-  margin-bottom: 15px;
-  line-height: 1.1;
-}
-
 .so_boton {
-  margin: 0% 0% 0% 0%;
   display: flex;
   justify-content: center;
 }
-
-
-/*Responsive---------------------------*/
-@media (max-width:765px) {
+/*Responsive----------------*/
+@media (max-width:1080px) {
   .contenedor_1 {
     grid-template-columns: 100%;
-    grid-gap: 0%;
+    padding: 100px 5% 100px 5%;
+    grid-row-gap: 40px;
+    height: auto;
   }
-
-  .so_texto {
-    text-align: center;
-  }
-
-  .contenedor_1 {
-    height: 750px;
-  }
-
   .contenedor_1 .so_texto h2,
   .contenedor_1 .so_texto p {
     margin: 0% 0% 10px 0%;
   }
-}
-
-@media (max-width:1080px) {
-  .contenedor_1 {
-    grid-template-columns: 100%;
-    padding: 100px 40px 100px 40px;
-    grid-row-gap: 40px;
-    height: auto;
-  }
-
   .so_texto {
     text-align: center;
     padding: 0 3%;
   }
-
-
-  .contenedor_1 .so_texto h2,
-  .contenedor_1 .so_texto p {
-    margin: 0% 0% 10px 0%;
-  }
-
   .so_texto p {
     font-size: 13px;
   }
-
   .so_texto h2 {
     font-size: 40px;
   }
 
   .so_video iframe {
     border-radius: 30px;
-
   }
 }
 
 
 
+
+
+
+/*PORTAFOLIO----------------------------------------------------------------------------*/
+/*Texto-----------------------------*/
+.definicion p {
+  font-size: 19px;
+  color: white;
+  font-weight: 1;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
 
 
 /*PORTAFOLIO------------------------------------------------------------------------*/
@@ -878,53 +847,64 @@ nav li a:hover::after {
 .co_celeste {
   color: #3BC9DB;
 }
-.co_formulario{
+
+.co_formulario {
   background-color: #18242c;
   border-radius: 40px;
   padding: 30px 50px;
 }
+
 .co_formulario form {
   grid-area: co_formulario;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "f_titulo f_titulo"
-                      "f_nombres f_celular"
-                      "f_correo f_ciudad"
-                      "f_asunto f_asunto"
-                      "f_consulta f_consulta"
-                      "f_button f_button";
+    "f_nombres f_celular"
+    "f_correo f_ciudad"
+    "f_asunto f_asunto"
+    "f_consulta f_consulta"
+    "f_button f_button";
   grid-column-gap: 5%;
 }
-.f_titulo{
+
+.f_titulo {
   grid-area: f_titulo;
   padding: 0;
 }
-.f_titulo h4{
+
+.f_titulo h4 {
   font-family: 'Nunito';
   font-weight: bold;
   font-size: 30px;
   text-align: center;
   padding-bottom: 20px;
 }
-.f_nombres{
+
+.f_nombres {
   grid-area: f_nombres;
 }
-.f_celular{
+
+.f_celular {
   grid-area: f_celular;
 }
-.f_correo{
+
+.f_correo {
   grid-area: f_correo;
 }
-.f_ciudad{
+
+.f_ciudad {
   grid-area: f_ciudad;
 }
-.f_asunto{
+
+.f_asunto {
   grid-area: f_asunto;
 }
-.f_consulta{
+
+.f_consulta {
   grid-area: f_consulta;
 }
-.f_button{
+
+.f_button {
   grid-area: f_button;
 }
 
@@ -934,6 +914,7 @@ nav li a:hover::after {
   font-family: 'Roboto';
   font-size: 15px;
 }
+
 .co_formulario .cuadro {
   width: 100%;
   padding: 10px;
@@ -949,12 +930,14 @@ nav li a:hover::after {
   justify-content: center;
   align-items: center;
 }
-.co_mapa p{
+
+.co_mapa p {
   font-family: 'Roboto';
   font-size: 18px;
   padding-top: 20px;
   text-align: right;
 }
+
 .co_formulario .button {
   display: block;
   width: 50%;
@@ -966,6 +949,7 @@ nav li a:hover::after {
   border-radius: 3px;
   cursor: pointer;
 }
+
 .co_formulario .button:hover {
   background-color: #3bc8dbc2;
 }
@@ -974,24 +958,27 @@ nav li a:hover::after {
   .contenedor_6 {
     grid-template-areas: "co_titulo co_titulo"
       "co_texto co_texto"
-      "co_formulario co_formulario"      
+      "co_formulario co_formulario"
       "co_mapa co_mapa";
   }
+
   .co_formulario form {
     grid-template-areas: "f_titulo f_titulo"
-                        "f_nombres f_nombres"
-                        "f_celular f_celular"
-                        "f_correo f_correo"
-                        "f_ciudad f_ciudad"
-                        "f_asunto f_asunto"
-                        "f_consulta f_consulta"
-                        "f_button f_button";
+      "f_nombres f_nombres"
+      "f_celular f_celular"
+      "f_correo f_correo"
+      "f_ciudad f_ciudad"
+      "f_asunto f_asunto"
+      "f_consulta f_consulta"
+      "f_button f_button";
   }
+
   .co_mapa p {
     font-size: 30px;
     text-align: center;
   }
-  .co_texto p{
+
+  .co_texto p {
     font-size: 15px;
   }
 }
@@ -1060,8 +1047,9 @@ box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);*/
   padding: 12px 19px;
   min-height: 10px;
 }
-.fo_6 a{
-  text-decoration: none; 
+
+.fo_6 a {
+  text-decoration: none;
   color: #343434;
 }
 
@@ -1195,9 +1183,11 @@ box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);*/
   .contenedor_footer p {
     font-size: 14px;
   }
-  .fo_6 p{
-      font-size: 35px;
+
+  .fo_6 p {
+    font-size: 35px;
   }
+
   .fo_8 p {
     font-size: 10 px;
   }
