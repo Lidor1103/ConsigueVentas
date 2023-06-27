@@ -1063,7 +1063,11 @@ nav li a:hover::after {
     padding: 5px;
   }
 
-
+  .fo_5,
+  .fo_6,
+  .fo_7 {
+    text-align: center;
+  }
 
   .fo_7 a {
     float: none;
