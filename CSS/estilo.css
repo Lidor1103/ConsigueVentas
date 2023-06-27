@@ -1080,7 +1080,7 @@ nav li a:hover::after {
     font-size: 40px;
   }
   
-  .fo_1 p, .fo_5 p, .fo_6 p, .fo_8 p  {
+  .fo_1 p, .fo_5 p, .fo_6 p, .fo_7 p  {
     font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
   }
@@ -1106,6 +1106,5 @@ nav li a:hover::after {
     height: 70px;
     line-height: 70px;
     border-radius: 50%;
-    font-size: 30px;
   }
 }
