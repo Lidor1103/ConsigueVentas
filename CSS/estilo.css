@@ -1089,16 +1089,17 @@ nav li a:hover::after {
 
   .fo_1 p,
   .fo_5 p,
-  .fo_6 a,
-  .fo_7 p {
+  .fo_6 p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
   }
+
   /*Logo de la empresa*/
   .fo_1 img {
     width: 400px;
   }
 
+  /*Iconos de redes sociales*/
   .fo_7 a {
     width: 70px;
     height: 70px;
