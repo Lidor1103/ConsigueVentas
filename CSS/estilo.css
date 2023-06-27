@@ -344,7 +344,7 @@ nav li a:hover::after {
 }
 
 /*SOMOS Responsive----------------*/
-@media only screen and (max-device-width: 1080px) {
+@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
   .contenedor_1 {
     grid-template-columns: 100%;
     padding: 100px 5% 100px 5%;
@@ -871,7 +871,7 @@ nav li a:hover::after {
   background-color: #3bc8dbc2;
 }
 
-@media only screen and (max-device-width: 1080px) {
+@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
   .contenedor_6 {
     grid-template-areas: "co_titulo co_titulo"
       "co_texto co_texto"
