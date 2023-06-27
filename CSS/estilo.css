@@ -1010,7 +1010,6 @@ nav li a:hover::after {
 
 .fo_7 a {
   display: inline-block;
-  float: left;
   /* Añade esta línea */
   width: 40px;
   background-color: #1c2a33;
@@ -1077,12 +1076,7 @@ nav li a:hover::after {
   .fo_4 {
     padding: 5px;
   }
-
-
-  .fo_7 a {
-    float: none;
-  }
-
+  
   .contenedor_footer h3 {
     font-size: 40px;
   }
@@ -1105,5 +1099,6 @@ nav li a:hover::after {
     line-height: 70px;
     border-radius: 50%;
     font-size: 30px;
+    float: none;
   }
 }
