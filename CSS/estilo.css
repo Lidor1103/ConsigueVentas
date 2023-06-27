@@ -1081,6 +1081,9 @@ nav li a:hover::after {
     font-size: 14px;
   }
 
+  .fo_5 p, .fo_6 p {
+    font-size: 35px;
+  }
 
   .fo_8 p {
     font-size: 10 px;
