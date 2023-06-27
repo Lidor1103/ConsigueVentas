@@ -622,8 +622,7 @@ nav li a:hover::after {
 
 
 
-/*TESTIMONIOS---------------------------------------------------- */
-/* TESTIMONIOS */
+/*TESTIMONIOS general--------------*/
 .contenedor_5 {
   display: grid;
   padding: 20px 3%;
@@ -639,28 +638,55 @@ nav li a:hover::after {
   color: white;
 }
 
-.contenedor_5 > * {
-  text-align: center;
-}
-
 .te_titulo {
   grid-area: te_titulo;
 }
 
-.te_cliente_1,
-.te_cliente_2,
-.te_cliente_3,
-.te_cliente_4 {
-  grid-area: auto;
+.te_cliente_1 {
+  grid-area: te_cliente_1;
 }
 
+.te_cliente_2 {
+  grid-area: te_cliente_2;
+}
+
+.te_cliente_3 {
+  grid-area: te_cliente_3;
+}
+
+.te_cliente_4 {
+  grid-area: te_cliente_4;
+}
+
+.te_video_1 {
+  grid-area: te_video_1;
+}
+
+.te_video_2 {
+  grid-area: te_video_2;
+}
+
+.te_video_3 {
+  grid-area: te_video_3;
+}
+
+.te_video_4 {
+  grid-area: te_video_4;
+}
+
+.te_titulo,
+.contenedor_5 p {
+  text-align: center;
+}
+
+/*TESTIMONIOS videos--------------*/
 .te_video_1,
 .te_video_2,
 .te_video_3,
 .te_video_4 {
-  grid-area: auto;
   position: relative;
   padding-top: 177.78%;
+  /* Establece la relación de aspecto 9:16 */
 }
 
 .te_video_1 iframe,
@@ -674,21 +700,20 @@ nav li a:hover::after {
   height: 100%;
 }
 
-@media (max-width: 1080px) {
+/*TESTIMONIOS responsive--------------*/
+@media (max-width:1080px) {
   .contenedor_5 {
-    grid-template-areas:
-      "te_titulo te_titulo te_titulo te_titulo"
+    grid-template-areas: "te_titulo te_titulo te_titulo te_titulo"
       "te_cliente_1 te_cliente_1 te_cliente_2 te_cliente_2"
       "te_video_1 te_video_1 te_video_2 te_video_2"
       "te_cliente_3 te_cliente_3 te_cliente_4 te_cliente_4"
-      "te_video_3 te_video_3 te_video_4 te_video_4";
+      "te_video_3 te_video_3 te_video_4 te_video_4"
+    ;
   }
-
   .te_titulo h2 {
     font-size: 40px;
   }
 }
-
 
 
 
