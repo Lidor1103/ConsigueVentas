@@ -841,8 +841,12 @@ nav li a:hover::after {
 }
 
 .co_mapa {
-  width: 100%;
   grid-area: co_mapa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: auto; /* Ajusta la altura según tus necesidades */
 }
 
 .co_mapa .mapa-contenedor {
@@ -858,6 +862,11 @@ nav li a:hover::after {
   width: 100%;
   height: 100%;
 }
+
+.co_mapa p {
+  text-align: center;
+}
+
 
 .co_mapa p {
   font-family: 'Roboto';
