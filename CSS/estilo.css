@@ -1080,10 +1080,11 @@ nav li a:hover::after {
     font-size: 40px;
   }
   
-  .fo_1 p {
+  .fo_1 p, .fo_5 p, .fo_6 p, .fo_8 p  {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
   }
-  .fo_5 p{
+  /*.fo_5 p{
     font-size: 14px;
   }
 
@@ -1094,7 +1095,7 @@ nav li a:hover::after {
   .fo_8 p {
     font-size: 10 px;
   }
-
+*/
  
   .fo_1 img {
     width: 400px;
