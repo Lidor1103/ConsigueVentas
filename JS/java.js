@@ -1,6 +1,4 @@
-$(document).ready(function() {
-    $('.toggle-header_menu').click(function() {
-      $('.header_menu').toggleClass('show');
-    });
-  });
-  
+document.addEventListener('DOMContentLoaded', function() {
+  // Inicializar lazysizes
+  lazySizes.init();
+});
