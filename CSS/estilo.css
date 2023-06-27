@@ -269,7 +269,7 @@ nav li a:hover::after {
 
   .logo {
     height: 200px;
-    padding: 30px;
+    padding: 30px 20px;
   }
 
   body {
@@ -279,7 +279,8 @@ nav li a:hover::after {
   .checkbtn {
     font-size: 50px;
     line-height: 200px;
-    margin-right: 70px;
+    margin-right: 60px;
+    font-size: 70px;
   }
 
   button {
