@@ -843,6 +843,7 @@ nav li a:hover::after {
 .co_mapa {
   grid-area: co_mapa;
   display: flex;
+  padding: 10px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
