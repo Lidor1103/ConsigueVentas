@@ -1073,12 +1073,16 @@ nav li a:hover::after {
   }
 
 
+  .fo_7 a {
+    float: none;
+  }
+
   .contenedor_footer p {
     font-size: 14px;
   }
 
   .fo_6 p {
-    font-size: 35px;
+    font-size: 100px;
   }
 
   .fo_8 p {
