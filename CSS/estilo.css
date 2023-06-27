@@ -213,7 +213,7 @@ nav li a:hover::after {
   }
 
   nav li a:hover,
-  nav li a.active {
+  nav li a.active, .active_jf {
     background: none;
     color: rgb(255, 255, 255);
   }
@@ -250,7 +250,7 @@ nav li a:hover::after {
   }
 
   nav li a:hover,
-  nav li a.active {
+  nav li a.active, .active_jf {
     background: none;
     color: #17232b;
   }
