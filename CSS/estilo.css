@@ -1088,10 +1088,9 @@ nav li a:hover::after {
   }
 
   .fo_1 p,
-  .fo_5 p,
-  .fo_6 p {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 35px;
+  .fo_5 p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
   }
 
   /*Logo de la empresa*/
