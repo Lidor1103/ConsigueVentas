@@ -386,6 +386,8 @@ nav li a:hover::after {
   grid-template-areas: "c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo"
     "po_1 po_1 po_2 po_2 po_3 po_3"
     "po_4 po_4 po_5 po_5 po_6 po_6";
+    box-shadow: 0 0 50px 0 rgb(28, 42, 51);
+
 }
 
 .contenedor_2 button {
@@ -711,7 +713,7 @@ nav li a:hover::after {
 
 
 
-
+  
 
 /*Contáctanos----------------------------------------------------------------------------*/
 .contenedor_6 {
@@ -775,7 +777,6 @@ nav li a:hover::after {
     "f_button f_button";
   grid-column-gap: 5%;
 }
-
 .f_titulo {
   grid-area: f_titulo;
   padding: 0;
@@ -815,12 +816,14 @@ nav li a:hover::after {
 
 .f_button {
   grid-area: f_button;
+  display: flex;
+  justify-content: center;
 }
 
 .co_formulario label {
   display: block;
   margin-bottom: 10px;
-  font-family: 'Roboto';
+  font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
 }
 
@@ -830,6 +833,7 @@ nav li a:hover::after {
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .co_mapa {
@@ -893,9 +897,6 @@ nav li a:hover::after {
 }
 
 
-
-/*
-box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);*/
 
 
 /*PIE DE PÁGINA----------------------------------------------------------------------------*/
