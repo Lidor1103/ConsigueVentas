@@ -1076,9 +1076,8 @@ nav li a:hover::after {
   .fo_7 a {
     float: none;
   }
-
-  .contenedor_footer p {
-    font-size: 14px;
+  .contenedor_footer h3 {
+    font-size: 40px;
   }
 
   .fo_6 p {
@@ -1089,10 +1088,7 @@ nav li a:hover::after {
     font-size: 10 px;
   }
 
-  .contenedor_footer h3 {
-    font-size: 40px;
-  }
-
+ 
   .fo_1 img {
     width: 400px;
   }
