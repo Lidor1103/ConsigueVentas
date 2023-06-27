@@ -1058,19 +1058,20 @@ nav li a:hover::after {
   .fo_1,
   .fo_2,
   .fo_3,
-  .fo_4 {
-    text-align: center;
-  }
-
+  .fo_4,
   .fo_5,
   .fo_6,
   .fo_7 {
     text-align: center;
   }
 
-  .fo_7 a {
-    float: none;
+  .fo_1,
+  .fo_2,
+  .fo_3,
+  .fo_4 {
+    padding: 5px;
   }
+
 
   .contenedor_footer p {
     font-size: 14px;
