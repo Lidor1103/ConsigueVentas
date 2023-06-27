@@ -1106,5 +1106,6 @@ nav li a:hover::after {
     height: 70px;
     line-height: 70px;
     border-radius: 50%;
+    font-size: 30px;
   }
 }
