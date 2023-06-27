@@ -873,7 +873,7 @@ nav li a:hover::after {
       "co_texto co_texto"
       "co_formulario co_formulario"
       "co_mapa co_mapa";
-      padding: 20px 6%;
+      padding: 20px 4%;
       grid-row-gap: 20px;
   }
 
