@@ -1080,12 +1080,8 @@ nav li a:hover::after {
     font-size: 40px;
   }
   
-  .contenedor_footer p {
+  .contenedor_footer p,.fo_6 p {
     font-size: 14px;
-  }
-
-  .fo_6 p {
-    font-size: 35px;
   }
 
   .fo_8 p {
