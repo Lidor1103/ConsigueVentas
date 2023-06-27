@@ -1079,6 +1079,10 @@ nav li a:hover::after {
   .contenedor_footer h3 {
     font-size: 40px;
   }
+  
+  .contenedor_footer p {
+    font-size: 14px;
+  }
 
   .fo_6 p {
     font-size: 35px;
