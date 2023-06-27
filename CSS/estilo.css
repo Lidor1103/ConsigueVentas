@@ -213,7 +213,8 @@ nav li a:hover::after {
   }
 
   nav li a:hover,
-  nav li a.active, .active_jf {
+  nav li a.active,
+  .active_jf {
     background: none;
     color: rgb(255, 255, 255);
   }
@@ -250,7 +251,8 @@ nav li a:hover::after {
   }
 
   nav li a:hover,
-  nav li a.active, .active_jf {
+  nav li a.active,
+  .active_jf {
     background: none;
     color: #17232b;
   }
@@ -394,7 +396,7 @@ nav li a:hover::after {
   grid-template-areas: "c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo"
     "po_1 po_1 po_2 po_2 po_3 po_3"
     "po_4 po_4 po_5 po_5 po_6 po_6";
-    box-shadow: 0 0 50px 0 rgb(28, 42, 51);
+  box-shadow: 0 0 50px 0 rgb(28, 42, 51);
 
 }
 
@@ -711,6 +713,7 @@ nav li a:hover::after {
       "te_video_3 te_video_3 te_video_4 te_video_4"
     ;
   }
+
   .te_titulo h2 {
     font-size: 40px;
   }
@@ -720,7 +723,7 @@ nav li a:hover::after {
 
 
 
-  
+
 
 /*Contáctanos----------------------------------------------------------------------------*/
 .contenedor_6 {
@@ -782,6 +785,7 @@ nav li a:hover::after {
     "f_button f_button";
   grid-column-gap: 5%;
 }
+
 .f_titulo {
   grid-area: f_titulo;
   padding: 0;
@@ -848,13 +852,15 @@ nav li a:hover::after {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: auto; /* Ajusta la altura según tus necesidades */
+  height: auto;
+  /* Ajusta la altura según tus necesidades */
 }
 
 .co_mapa .mapa-contenedor {
   position: relative;
   width: 100%;
-  padding-bottom: 75%; /* Proporción de aspecto del mapa (ajústala según tus necesidades) */
+  padding-bottom: 75%;
+  /* Proporción de aspecto del mapa (ajústala según tus necesidades) */
 }
 
 .co_mapa iframe {
@@ -899,8 +905,8 @@ nav li a:hover::after {
       "co_texto co_texto"
       "co_formulario co_formulario"
       "co_mapa co_mapa";
-      padding: 20px 4%;
-      grid-row-gap: 20px;
+    padding: 20px 4%;
+    grid-row-gap: 20px;
   }
 
   .co_formulario form {
@@ -1076,27 +1082,19 @@ nav li a:hover::after {
   .fo_7 a {
     float: none;
   }
+
   .contenedor_footer h3 {
     font-size: 40px;
   }
-  
-  .fo_1 p, .fo_5 p, .fo_6 p, .fo_7 p  {
+
+  .fo_1 p,
+  .fo_5 p,
+  .fo_6 a,
+  .fo_7 p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
   }
-  /*.fo_5 p{
-    font-size: 14px;
-  }
-
-  .fo_6 p {
-    font-size: 35px;
-  }
-
-  .fo_8 p {
-    font-size: 10 px;
-  }
-*/
- 
+  /*Logo de la empresa*/
   .fo_1 img {
     width: 400px;
   }
