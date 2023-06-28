@@ -363,6 +363,8 @@ nav li a:hover::after {
     padding: 100px 5% 100px 5%;
     grid-row-gap: 40px;
     height: auto;
+    grid-template-areas: "so_video so_video"
+    "so_texto so_texto";
   }
 
   .contenedor_1 .so_texto h2,
