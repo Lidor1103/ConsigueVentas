@@ -224,7 +224,7 @@ nav li a:hover::after {
   }
 }
 
-@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
   .checkbtn {
     display: block;
   }
@@ -347,7 +347,7 @@ nav li a:hover::after {
 }
 
 /*SOMOS Responsive----------------*/
-@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_1 {
     grid-template-columns: 100%;
     padding: 100px 5% 100px 5%;
@@ -704,7 +704,7 @@ nav li a:hover::after {
 }
 
 /*TESTIMONIOS responsive--------------*/
-@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_5 {
     grid-template-areas: "te_titulo te_titulo te_titulo te_titulo"
       "te_cliente_1 te_cliente_1 te_cliente_2 te_cliente_2"
@@ -899,7 +899,7 @@ nav li a:hover::after {
   background-color: #3bc8dbc2;
 }
 
-@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_6 {
     grid-template-areas: "co_titulo co_titulo"
       "co_texto co_texto"
@@ -1047,7 +1047,7 @@ nav li a:hover::after {
   font-size: 18px;
 }
 
-@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_footer {
     grid-template-areas: "fo_1 fo_1 fo_1 fo_1"
       "fo_1 fo_1 fo_1 fo_1"
@@ -1076,7 +1076,7 @@ nav li a:hover::after {
   .fo_4 {
     padding: 5px;
   }
-  
+
   .contenedor_footer h3 {
     font-size: 40px;
   }
