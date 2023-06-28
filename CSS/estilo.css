@@ -911,7 +911,7 @@ nav li a:hover::after {
 
 .fo_7 {
   grid-area: fo_7;
-  padding: 12px 19px;
+  padding: 12px 0px;
 }
 
 .fo_8 {
@@ -939,9 +939,6 @@ nav li a:hover::after {
   transition: all 0.5s ease;
 }
 
-.fo_7 p {
-  font-size: 15px;
-}
 
 .fo_1 img {
   width: 200px;
