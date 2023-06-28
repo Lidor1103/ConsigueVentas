@@ -12,7 +12,7 @@ html {
 
 /* FONDO DE LA PÁGINA------------*/
 body {
-  background-color: #1c2a33;
+  background-color: #283C4C;
   margin-top: 85px;
 }
 
@@ -28,6 +28,11 @@ h2 {
   color: #57F3FF;
 }
 
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
 
 button {
   color: #17232b;
@@ -360,6 +365,7 @@ nav li a:hover::after {
     height: auto;
     grid-template-areas: "so_video so_video"
     "so_texto so_texto";
+    background-attachment: scroll;
   }
 
   .contenedor_1 .so_texto h2,
@@ -388,7 +394,14 @@ nav li a:hover::after {
 
 
 
-
+/*SERVICIOS*/
+.blanco{
+  background-color: white;
+  height: 500px;
+}
+.blanco h2{
+  color: #16232b;
+}
 
 /*PORTAFOLIO------------------------------------------------------------------------*/
 /*PORTAFOLIO general--------------*/
