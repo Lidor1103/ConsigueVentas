@@ -19,7 +19,8 @@ body {
 
 /* RECURSOS ----------------------*/
 h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1;
   font-size: 40px;
 }
 
@@ -309,6 +310,7 @@ nav li a:hover::after {
 .contenedor_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "so_texto so_video";
   gap: 3%;
   padding: 0 3.1%;
   height: 580px;
@@ -318,13 +320,10 @@ nav li a:hover::after {
   background-color: #020b11d8;
   color: white;
 }
-.so_texto h2{
-  font-family: 'DM Sans', sans-serif;
-  line-height: 1;
-}
 
 /*SOMOS Video---------------------*/
 .so_video {
+  grid-area: so_video;
   position: relative;
   padding-bottom: 56.25%;
   width: 100%;
@@ -336,6 +335,7 @@ nav li a:hover::after {
   left: 0;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 .so_video .video_frame {
   border: none;
@@ -351,6 +351,7 @@ nav li a:hover::after {
   justify-content: center;
 }
 .so_texto p{
+  grid-area: so_texto;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
   line-height: 1.2;
