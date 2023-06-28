@@ -334,6 +334,9 @@ nav li a:hover::after {
   height: 100%;
 
 }
+.so_video .video_frame {
+  border: none;
+}
 
 .contenedor_1 .so_texto h2,
 .contenedor_1 .so_texto p {
