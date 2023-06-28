@@ -481,7 +481,6 @@ nav li a:hover::after {
 
 .definicion {
   position: relative;
-  transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity 0.7s ease;
 }
