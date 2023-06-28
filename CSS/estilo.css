@@ -643,6 +643,7 @@ nav li a:hover::after {
       "te_cliente_3 te_cliente_3 te_cliente_4 te_cliente_4"
       "te_video_3 te_video_3 te_video_4 te_video_4"
     ;
+    background-attachment: scroll;
   }
 
   .te_titulo h2 {
@@ -838,6 +839,7 @@ nav li a:hover::after {
       "co_mapa co_mapa";
     padding: 20px 4%;
     grid-row-gap: 20px;
+    background-attachment: scroll;
   }
 
   .co_formulario form {
