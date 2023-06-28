@@ -497,7 +497,7 @@ nav li a:hover::after {
 }
 
 /*PORTAFOLIO Responsive areas de grid----*/
-@media only screen and (max-device-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_2 {
     grid-template-areas: "c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo"
       "po_1 po_1 po_1 po_1 po_1 po_1"
