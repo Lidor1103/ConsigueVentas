@@ -958,6 +958,10 @@ nav li a:hover::after {
   line-height: 1.2;
   font-size: 18px;
 }
+.co_mapa .mapa-contenedor iframe {
+  border: none;
+}
+
 
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_footer {
