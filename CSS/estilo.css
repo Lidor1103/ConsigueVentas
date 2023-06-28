@@ -24,7 +24,7 @@ h2 {
 }
 
 .p_celeste {
-  color: #3bc9db;
+  color: #57F3FF;
 }
 
 p {
@@ -88,7 +88,7 @@ button:active:before {
 /*BARRA DE NAVEGACION----------------------------------------------------------------------------*/
 nav {
   position: fixed;
-  background-color: #17232b;
+  background-color: #16232B;
   height: 85px;
   width: 100%;
   top: 0;
@@ -315,8 +315,12 @@ nav li a:hover::after {
   align-items: center;
   background: url(../img/img1.jpg) no-repeat center/cover fixed;
   background-blend-mode: overlay;
-  background-color: #18242c;
+  background-color: #020b11d8;
   color: white;
+}
+.so_texto h2{
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1;
 }
 
 /*SOMOS Video---------------------*/
@@ -346,7 +350,11 @@ nav li a:hover::after {
   display: flex;
   justify-content: center;
 }
-
+.so_texto p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+}
 /*SOMOS Responsive----------------*/
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_1 {
