@@ -682,7 +682,9 @@ nav li a:hover::after {
       "po_5 po_5 po_5 po_5 po_5 po_5"
       "po_6 po_6 po_6 po_6 po_6 po_6";
   }
-
+  .c2_titulo h2 {
+    font-size: 40px;
+  }
   .contenedor_2 {
     grid-gap: 0px;
   }
