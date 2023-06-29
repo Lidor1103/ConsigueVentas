@@ -477,7 +477,7 @@ nav li a:hover::after {
     grid-row-gap: 80px;
   }
   .servicio_presentacion{
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     text-align: center;
   }
   
