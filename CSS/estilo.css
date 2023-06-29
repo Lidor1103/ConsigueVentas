@@ -581,7 +581,10 @@ nav li a:hover::after {
   text-align: center;
   padding-bottom: 20px;
 }
-
+.po_hover{
+  display: flex;
+  align-items: center;
+}
 /*PORTAFOLIO imagenes-------------*/
 .po_1 {
   background-image: url(../img/mahal1.jpg);
