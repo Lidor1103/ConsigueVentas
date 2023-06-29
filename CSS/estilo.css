@@ -460,6 +460,14 @@ nav li a:hover::after {
   color: #10182F;
   margin-bottom: 15px;
 }
+.contenedor_boton {
+  display: flex;
+  justify-content: center;
+}
+.contenedor_servicio button{
+  width: 8em;
+}
+
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_servicio{
     grid-template-columns: repeat(1, 1fr);
@@ -659,7 +667,7 @@ nav li a:hover::after {
   gap: 10px 4%;
   background: url(../img/img2.jpg) no-repeat center/cover fixed;
   background-blend-mode: overlay;
-  background-color: #18242c;
+  background-color: #020b11d8;
   color: white;
 }
 
@@ -765,7 +773,7 @@ nav li a:hover::after {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #18242c;
+  background-color: #020b11d8;
   color: white;
 
 }
