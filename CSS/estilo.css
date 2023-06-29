@@ -438,7 +438,7 @@ nav li a:hover::after {
 .servicio_definicion{
   padding: 20px 6%;
 }
-.servicio_definicion p{
+.tag{
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
   background-color: #EF4B39;
