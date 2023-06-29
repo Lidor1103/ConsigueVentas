@@ -359,12 +359,12 @@ nav li a:hover::after {
 /*SOMOS Responsive----------------*/
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_1 {
-    grid-template-columns: repeat(1,fr);
+    grid-template-columns: 100%;
     padding: 100px 5% 100px 5%;
     grid-row-gap: 40px;
     height: auto;
-    grid-template-areas: "so_video"
-    "so_texto";
+    grid-template-areas: "so_video so_video"
+    "so_texto so_texto";
     background-attachment: scroll;
   }
 
