@@ -45,11 +45,11 @@ button {
   margin: 0px;
   position: relative;
   overflow: hidden;
-  border: 2px solid #17232b;
+  border: 2px solid #fdfdfd;
   transition: color .5s;
   z-index: 1;
   font-size: 17px;
-  border-radius: 6px;
+  border-radius: 40px;
   cursor: pointer;
 }
 
@@ -410,7 +410,7 @@ nav li a:hover::after {
 }
 .servicio_presentacion{
   grid-area: servicio_presentacion;
-  text-align: left;
+  text-align: center;
   padding-bottom: 20px;
 }
 .servicio_presentacion h2{
@@ -442,7 +442,7 @@ nav li a:hover::after {
 .tag{
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
-  background-color: #EF4B39;
+  background-color: #283c4c;
   border-radius: 50px;
   padding: 2px 20px;
   color: white;
@@ -484,7 +484,7 @@ nav li a:hover::after {
   transition: color .5s;
   z-index: 1;
   font-size: 17px;
-  border-radius: 6px;
+  border-radius: 40px;
   cursor: pointer;
 }
 
@@ -529,7 +529,6 @@ nav li a:hover::after {
   }
   .servicio_presentacion{
     padding-bottom: 0px;
-    text-align: center;
   }
   
 }
@@ -563,7 +562,7 @@ nav li a:hover::after {
 .contenedor_2 {
   color: white;
   display: grid;
-  padding: 70px 0;
+  padding: 70px 8% 70px 8%;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
   background-color: #1C2A33;
@@ -642,7 +641,7 @@ nav li a:hover::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.728);
+  background-color: #020b11d8;
   opacity: 0;
   transition: opacity 0.7s ease;
 }
@@ -655,6 +654,7 @@ nav li a:hover::after {
   position: relative;
   opacity: 0;
   transition: opacity 0.7s ease;
+  text-align: center;
 }
 
 .po_hover:hover .definicion {
@@ -685,7 +685,7 @@ nav li a:hover::after {
   }
 
   .c2_titulo h2 {
-    font-size: 35px;
+    font-size: 500px;
   }
 
   .po_hover h2 {
@@ -711,7 +711,7 @@ nav li a:hover::after {
 /*TESTIMONIOS general--------------*/
 .contenedor_5 {
   display: grid;
-  padding: 20px 3%;
+  padding: 70px 8% 70px 8%;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
     "te_titulo te_titulo te_titulo te_titulo"
@@ -819,7 +819,7 @@ nav li a:hover::after {
     "co_formulario co_mapa";
   grid-row-gap: 15px;
   grid-column-gap: 40px;
-  padding: 20px 4%;
+  padding: 70px 8% 70px 8%;
   background-image: url(../img/img3.jpg);
   background-blend-mode: overlay;
   background-size: cover;
@@ -845,7 +845,7 @@ nav li a:hover::after {
 .co_texto p {
   font-family: 'Roboto';
   font-weight: bold;
-  font-size: 23px;
+  font-size: 21px;
 }
 
 .co_celeste {
