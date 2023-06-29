@@ -451,10 +451,10 @@ nav li a:hover::after {
   margin: 10px 0px;
   color: #10182F;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
 }
 .servicio_definicion ul{
-  font-size: 13px;
+  font-size: 14px;
   list-style: none;
   font-family: 'Poppins', sans-serif;
   color: #10182F;
@@ -502,8 +502,7 @@ nav li a:hover::after {
 .contenedor_2 {
   color: white;
   display: grid;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 70px 0;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
   background-color: #1C2A33;
@@ -520,7 +519,7 @@ nav li a:hover::after {
 .c2_titulo {
   grid-area: c2_titulo;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 /*PORTAFOLIO imagenes-------------*/
