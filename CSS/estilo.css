@@ -359,7 +359,7 @@ nav li a:hover::after {
 /*SOMOS Responsive----------------*/
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_1 {
-    grid-template-columns: 100%;
+    grid-template-columns: repeat(1,fr);
     padding: 100px 5% 100px 5%;
     grid-row-gap: 40px;
     height: auto;
@@ -466,7 +466,7 @@ nav li a:hover::after {
     grid-template-areas: "servicio_presentacion"
     "servicio_1"" servicio_2" "servicio_3";
     padding: 70px 15% 70px 15%;
-    grid-row-gap: 30px;
+    grid-row-gap: 50px;
   }
   .servicio_presentacion{
     text-align: center;
