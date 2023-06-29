@@ -21,7 +21,7 @@ body {
 h2 {
   font-family: 'DM Sans', sans-serif;
   line-height: 1;
-  font-size: 40px;
+  font-size: 37px;
 }
 
 .p_celeste {
@@ -312,7 +312,7 @@ nav li a:hover::after {
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "so_texto so_video";
   gap: 3%;
-  padding: 0 3.1%;
+  padding: 0 6%;
   height: 580px;
   align-items: center;
   background: url(../img/img1.jpg) no-repeat center/cover fixed;
@@ -353,7 +353,7 @@ nav li a:hover::after {
 .so_texto p{
   grid-area: so_texto;
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
 }
 /*SOMOS Responsive----------------*/
@@ -395,28 +395,119 @@ nav li a:hover::after {
 
 
 /*SERVICIOS*/
-.blanco{
+.contenedor_servicio{
   background-color: white;
-  height: 500px;
+  height: auto;
+  display: grid;
+  padding: 70px 8% 70px 8%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 15px;
+  grid-template-areas: "servicio_presentacion servicio_presentacion servicio_presentacion"
+  "servicio_1 servicio_2 servicio_3";
+  box-shadow: 0 0 50px 0 rgb(28, 42, 51);
 }
-.blanco h2{
-  color: #16232b;
+.servicio_presentacion{
+  grid-area: servicio_presentacion;
+  text-align: left;
+  padding-bottom: 20px;
 }
+.servicio_presentacion h2{
+  color: #16232B;
+}
+.servicio_1{
+  grid-area: servicio_1;
+}
+
+.servicio_2{
+  grid-area: servicio_2;
+}
+.servicio_3{
+  grid-area: servicio_3;
+  
+}
+.servicio_1,.servicio_2,.servicio_3{
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+.contenedor_servicio img{
+  width: 100%;
+}
+
+.servicio_definicion{
+  padding: 20px 6%;
+}
+.servicio_definicion p{
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #EF4B39;
+  border-radius: 50px;
+  padding: 2px 10px;
+  display: inline-block;
+  color: white;
+}
+.servicio_definicion h3 {
+  margin: 10px 0px;
+  color: #10182F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+.servicio_definicion ul{
+  font-size: 13px;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  color: #10182F;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
+  .contenedor_servicio{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "servicio_presentacion"
+    "servicio_1"" servicio_2" "servicio_3";
+  }
+  .servicio_presentacion{
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*PORTAFOLIO------------------------------------------------------------------------*/
 /*PORTAFOLIO general--------------*/
 .contenedor_2 {
   color: white;
   display: grid;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
   background-color: #1C2A33;
   grid-template-areas: "c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo"
     "po_1 po_1 po_2 po_2 po_3 po_3"
     "po_4 po_4 po_5 po_5 po_6 po_6";
-  box-shadow: 0 0 50px 0 rgb(28, 42, 51);
 
 }
 
