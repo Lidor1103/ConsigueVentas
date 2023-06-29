@@ -1001,14 +1001,12 @@ nav li a:hover::after {
   grid-area: fo_4;
   text-align: left;
   padding: 19px;
-  min-height: 10px;
 }
 
 .fo_5 {
   grid-area: fo_5;
   text-align: left;
   padding: 12px 19px;
-  min-height: 10px;
 }
 
 .fo_6 {
@@ -1061,6 +1059,7 @@ nav li a:hover::after {
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
   border-bottom: 2px solid #00f3ff;
+  display: inline-block;
 }
 
 .contenedor_footer p {
