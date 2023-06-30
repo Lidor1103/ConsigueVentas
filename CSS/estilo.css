@@ -87,7 +87,7 @@ button:active:before {
 /*BARRA DE NAVEGACION----------------------------------------------------------------------------*/
 nav {
   position: fixed;
-  background-color: #16232B;
+  background-color: #029cfc;
   height: 85px;
   width: 100%;
   top: 0;
@@ -97,9 +97,9 @@ nav {
 /*LOGO*/
 .enlace {
   position: absolute;
-  padding: 0;
-  height: 85px;
   margin-left: 40px;
+  height: 85px;
+  background-color: red;
 }
 
 .logo {
@@ -112,10 +112,12 @@ nav {
 nav ul {
   float: right;
   margin-right: 40px;
+  background-color: pink;
 }
 
 nav ul li {
   display: inline-block;
+  background-color: green;
   line-height: 85px;
   margin: 0 5px;
 }
@@ -124,14 +126,13 @@ nav ul li a {
   color: rgb(255, 255, 255);
   font-size: 18px;
   padding: 7px 10px;
-  border-radius: 3px;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   text-decoration: none;
   position: relative;
 }
 
-
+/*HOVER*/
 nav li .active::after,
 .active_jf::after {
   content: "";
@@ -141,7 +142,6 @@ nav li .active::after,
   transform: translateX(-50%) scaleX(0);
   width: 0;
   height: 3px;
-
   transition: transform 0.3s ease, width 0.3s ease;
 }
 
@@ -174,17 +174,17 @@ nav li a:hover::after {
   display: none;
 }
 
-@media (max-width: 952px) {
+/*@media (max-width: 952px) {
   .enlace {
     padding-left: 20px;
   }
 
   nav ul li {
-    font-size: 16px;
+    font-size: 100px;
   }
-}
+}*/
 
-@media (max-width: 858px) {
+/*@media (max-width: 858px) {
   .checkbtn {
     display: block;
   }
@@ -220,12 +220,15 @@ nav li a:hover::after {
   #check:checked~ul {
     left: 0;
   }
-}
+}*/
 
-@media (max-width: 1080px) {  .checkbtn {
+@media (max-width: 1080px) {  
+  .checkbtn {
     display: block;
   }
-
+  nav{
+    height: 10px;
+  }
   nav ul {
     position: fixed;
     width: 100%;
@@ -244,7 +247,7 @@ nav li a:hover::after {
   }
 
   nav ul li a {
-    font-size: 50px;
+    font-size: 30px;
   }
 
   nav li a:hover,
