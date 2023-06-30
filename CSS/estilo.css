@@ -315,7 +315,7 @@ nav li a:hover::after {
   padding: 0 6%;
   height: 580px;
   align-items: center;
-  background: url(../img/img1.jpg) no-repeat center/cover fixed;
+  background: url(../img/img1.webp) no-repeat center/cover fixed;
   background-blend-mode: overlay;
   background-color: #020b11d8;
   color: white;
@@ -772,7 +772,7 @@ nav li a:hover::after {
     "te_cliente_1 te_cliente_2 te_cliente_3 te_cliente_4"
     "te_video_1 te_video_2 te_video_3 te_video_4";
   gap: 10px 4%;
-  background: url(../img/img2.jpg) no-repeat center/cover fixed;
+  background: url(../img/img2.webp) no-repeat center/cover fixed;
   background-blend-mode: overlay;
   background-color: #020b11d8;
   color: white;
@@ -874,7 +874,7 @@ nav li a:hover::after {
   grid-row-gap: 15px;
   grid-column-gap: 40px;
   padding: 70px 8% 70px 8%;
-  background-image: url(../img/img3.jpg);
+  background-image: url(../img/img3.webp);
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
