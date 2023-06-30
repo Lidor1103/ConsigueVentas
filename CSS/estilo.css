@@ -306,6 +306,7 @@ nav li a:hover::after {
 /*SOMOS----------------------------------------------------------------------------*/
 /*SOMOS General-------------------*/
 .contenedor_1 {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "so_texto so_video";
