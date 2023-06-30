@@ -222,7 +222,7 @@ nav li a:hover::after {
   }
 }
 
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media screen and (width: 1080px) {
   .checkbtn {
     display: block;
   }
