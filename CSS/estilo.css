@@ -432,6 +432,7 @@ nav li a:hover::after {
 }
 .contenedor_servicio img{
   width: 100%;
+  height: auto;
 }
 
 .servicio_definicion{
