@@ -483,7 +483,7 @@ nav li a:hover::after {
   background-color: #57f3ff;
   transition: color .5s;
   z-index: 1;
-  font-size: 17px;
+  font-size: 50px;
   border-radius: 40px;
   cursor: pointer;
 }
