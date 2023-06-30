@@ -293,6 +293,10 @@ nav li a:hover::after {
   .so_boton {
     padding-top: 20px;
   }
+  nav img{
+    width: 200px;
+    height: auto;
+  }
 }
 
 
