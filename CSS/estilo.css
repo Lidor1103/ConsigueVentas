@@ -222,7 +222,7 @@ nav li a:hover::after {
   }
 }
 
-@media screen and (width: 1080px) {
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
   .checkbtn {
     display: block;
   }
@@ -355,7 +355,7 @@ nav li a:hover::after {
   line-height: 1.2;
 }
 /*SOMOS Responsive----------------*/
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 1080px){
   .contenedor_1 {
     grid-template-columns: 100%;
     padding: 100px 5% 100px 5%;
