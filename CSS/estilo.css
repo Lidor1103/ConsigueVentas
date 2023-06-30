@@ -395,7 +395,7 @@ nav li a:hover::after {
 
 /*SERVICIOS*/
 .contenedor_servicio{
-  background-color: white;
+  background-color: #ecf0f1;
   height: auto;
   display: grid;
   padding: 70px 8% 70px 8%;
@@ -437,6 +437,7 @@ nav li a:hover::after {
 
 .servicio_definicion{
   padding: 20px 6%;
+  background-color: white;
 }
 .tag{
   font-size: 12px;
