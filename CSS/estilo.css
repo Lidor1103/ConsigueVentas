@@ -636,32 +636,32 @@ nav li a:hover::after {
 }
 /*PORTAFOLIO imagenes-------------*/
 .po_1 {
-  background-image: url(../img/mahal1.jpg);
+  background-image: url(../img/mahal.webp);
   grid-area: po_1;
 }
 
 .po_2 {
-  background-image: url(../img/jf1.jpg);
+  background-image: url(../img/jf.webp);
   grid-area: po_2;
 }
 
 .po_3 {
-  background-image: url(../img/psicocenters1.jpg);
+  background-image: url(../img/psicocenters.webp);
   grid-area: po_3;
 }
 
 .po_4 {
-  background-image: url(../img/sergenind1.jpg);
+  background-image: url(../img/sergenind.webp);
   grid-area: po_4;
 }
 
 .po_5 {
-  background-image: url(../img/impactoverde1.jpg);
+  background-image: url(../img/impactoverde.webp);
   grid-area: po_5;
 }
 
 .po_6 {
-  background-image: url(../img/allanemmanuel1.jpg);
+  background-image: url(../img/allanemmanuel.webp);
   grid-area: po_6;
 }
 
