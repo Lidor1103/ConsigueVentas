@@ -838,6 +838,8 @@ nav li a:hover::after {
       "te_video_3 te_video_3 te_video_4 te_video_4"
     ;
     background-attachment: scroll;
+    padding: 50px 8% 50px 8%;
+
   }
 
   .te_titulo h2 {
@@ -1031,7 +1033,7 @@ nav li a:hover::after {
       "co_texto co_texto"
       "co_formulario co_formulario"
       "co_mapa co_mapa";
-    padding: 20px 4%;
+    padding: 50px 4%;
     grid-row-gap: 20px;
     background-attachment: scroll;
   }
@@ -1183,6 +1185,8 @@ nav li a:hover::after {
       "fo_4 fo_4 fo_4 fo_4"
       "fo_7 fo_7 fo_7 fo_7"
       "fo_8 fo_8 fo_8 fo_8";
+      padding: 60px 8%;
+
   }
 
   .fo_1,
