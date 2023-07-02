@@ -222,7 +222,11 @@ nav li a:hover::after {
 @media (max-width: 1080px) {  
   .checkbtn {
     display: block;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 25px;
   }
+
   nav {
     height: 80px;
   }
@@ -268,12 +272,7 @@ nav li a:hover::after {
     height: 65px;
   }
   
-  .checkbtn {
-    font-size: 30px;
-    line-height: 80px;
-    margin-right: 40px;
-  }
-
+  
   /*button:before {
     width: 900px;
   }*/
