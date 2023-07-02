@@ -86,6 +86,7 @@ button:active:before {
 
 /*BARRA DE NAVEGACION----------------------------------------------------------------------------*/
 nav {
+  background: #17232b;
   position: fixed;
   height: 85px;
   width: 100%;
