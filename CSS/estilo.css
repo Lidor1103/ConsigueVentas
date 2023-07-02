@@ -219,7 +219,7 @@ nav li a:hover::after {
   }
 }*/
 
-@media (max-width: 1080px) {
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
   .checkbtn {
     display: block;
     font-size: 30px;
@@ -343,7 +343,7 @@ nav li a:hover::after {
 }
 
 /*SOMOS Responsive----------------*/
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
   .contenedor_1 {
     grid-template-columns: 100%;
     padding: 40px 5% 40px 5%;
@@ -1095,7 +1095,7 @@ nav li a:hover::after {
 }
 
 
-
+}
 
 /*PIE DE PÁGINA----------------------------------------------------------------------------*/
 /*General--------------------------*/
