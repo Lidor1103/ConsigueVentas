@@ -348,7 +348,7 @@ nav li a:hover::after {
     grid-template-columns: 100%;
     padding: 40px 5% 40px 5%;
     grid-column-gap: 0px;
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
     height: auto;
     grid-template-areas: "so_video so_video"
       "so_texto so_texto";
@@ -374,6 +374,9 @@ nav li a:hover::after {
 
   .so_video iframe {
     border-radius: 20px;
+  }
+  .so_boton{
+    margin-top: 15px;
   }
 }
 
