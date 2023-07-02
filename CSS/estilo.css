@@ -236,12 +236,12 @@ nav li a:hover::after {
 
   nav ul li {
     display: block;
-    margin: 80px 0;
+    margin: 20px 0;
     line-height: 30px;
   }
 
   nav ul li a {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   nav li a:hover,
@@ -265,7 +265,7 @@ nav li a:hover::after {
 
   .logo {
     height: 140px;
-    padding: 30px 20px;
+    padding: 35px 0px;
   }
 
   body {
@@ -275,8 +275,8 @@ nav li a:hover::after {
   .checkbtn {
     font-size: 50px;
     line-height: 140px;
-    margin-right: 60px;
-    font-size: 70px;
+    margin-right: 40px;
+    font-size: 40px;
   }
 
   button {
@@ -290,16 +290,6 @@ nav li a:hover::after {
   .so_boton {
     padding-top: 20px;
   }
-  nav img{
-    width: auto;
-    height: auto;
-  }
-}
-
-
-
-
-
 
 
 
