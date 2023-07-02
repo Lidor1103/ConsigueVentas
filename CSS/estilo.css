@@ -1153,10 +1153,14 @@ nav li a:hover::after {
   padding: 12px 19px;
   display: flex;
   flex-direction: column;
+  font-family: 'Nunito', sans-serif;
 }
 
 .fo_6 a {
   text-decoration: none;
+  font-size: 18px;
+  line-height: 1.2;
+  font-size: ;
   color: #343434;
 }
 
