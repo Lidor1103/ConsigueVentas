@@ -260,14 +260,14 @@ nav li a:hover::after {
   .enlace {
     height: 100%;
     display: flex;
-    justify-content: center;
+    margin-left: 20px;
     align-items: center;
   }
 
   .logo {
-    height: 75px;
+    height: 65px;
   }
-
+  
   .checkbtn {
     font-size: 30px;
     line-height: 85px;
