@@ -724,7 +724,7 @@ nav li a:hover::after {
   }
 
   .c2_titulo h2 {
-    font-size: 40px;
+    font-size: 22px;
   }
 
   .po_hover h2 {
@@ -843,7 +843,7 @@ nav li a:hover::after {
   }
 
   .te_titulo h2 {
-    font-size: 40px;
+    font-size: 22px;
   }
 }
 
@@ -1056,6 +1056,9 @@ nav li a:hover::after {
 
   .co_texto p {
     font-size: 15px;
+  }
+  .co_titulo h2{
+    font-size: 22px;
   }
 }
 
