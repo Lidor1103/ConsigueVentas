@@ -21,7 +21,9 @@ h2 {
   line-height: 1;
   font-size: 37px;
 }
-
+h3{
+  font-family: 'DM Sans', sans-serif;
+}
 .p_celeste {
   color: #57F3FF;
 }
@@ -630,10 +632,6 @@ nav li a:hover::after {
 
 }
 
-.contenedor_2 button {
-  width: 8em;
-}
-
 .c2_titulo {
   grid-area: c2_titulo;
   text-align: center;
@@ -687,9 +685,8 @@ nav li a:hover::after {
 .po_4,
 .po_5,
 .po_6 {
-  min-height: 230px;
+  height: 230px;
   padding: 5% 8%;
-  text-align: left;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -741,6 +738,7 @@ nav li a:hover::after {
       "po_4 po_4 po_4 po_4 po_4 po_4"
       "po_5 po_5 po_5 po_5 po_5 po_5"
       "po_6 po_6 po_6 po_6 po_6 po_6";
+      padding: 50px 10%;
   }
 
   .contenedor_2 {
@@ -761,7 +759,7 @@ nav li a:hover::after {
   .po_4,
   .po_5,
   .po_6 {
-    min-height: 500px;
+    min-height: 200px;
   }
 
 
