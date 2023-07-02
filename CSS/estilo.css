@@ -342,7 +342,7 @@ nav li a:hover::after {
 @media only screen and (max-width: 1080px){
   .contenedor_1 {
     grid-template-columns: 100%;
-    padding: 100px 5% 100px 5%;
+    padding: 60px 5% 60px 5%;
     grid-column-gap: 0px;
     grid-row-gap: 40px;
     height: auto;
@@ -366,11 +366,11 @@ nav li a:hover::after {
   }
 
   .so_texto h2 {
-    font-size: 40px;
+    font-size: 22px;
   }
 
   .so_video iframe {
-    border-radius: 30px;
+    border-radius: 20px;
   }
 }
 
