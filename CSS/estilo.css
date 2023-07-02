@@ -1082,11 +1082,13 @@ nav li a:hover::after {
     font-size: 22px;
   }
   .co_texto p {
-    font-size: 10px;
+    font-size: 15px;
   }
   .co_titulo h2 {
     font-size: 22px;
   }
+  .co_formulario {
+    padding: 30px 30px;
 }
 
 
