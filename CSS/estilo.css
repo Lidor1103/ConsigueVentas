@@ -342,7 +342,7 @@ nav li a:hover::after {
 @media only screen and (max-width: 1080px){
   .contenedor_1 {
     grid-template-columns: 100%;
-    padding: 60px 5% 60px 5%;
+    padding: 40px 5% 40px 5%;
     grid-column-gap: 0px;
     grid-row-gap: 40px;
     height: auto;
