@@ -87,7 +87,6 @@ button:active:before {
 /*BARRA DE NAVEGACION----------------------------------------------------------------------------*/
 nav {
   position: fixed;
-  background-color: #029cfc;
   height: 85px;
   width: 100%;
   top: 0;
@@ -99,7 +98,6 @@ nav {
   position: absolute;
   margin-left: 40px;
   height: 85px;
-  background-color: red;
 }
 
 .logo {
@@ -112,12 +110,10 @@ nav {
 nav ul {
   float: right;
   margin-right: 40px;
-  background-color: pink;
 }
 
 nav ul li {
   display: inline-block;
-  background-color: green;
   line-height: 85px;
   margin: 0 5px;
 }
@@ -226,15 +222,12 @@ nav li a:hover::after {
   .checkbtn {
     display: block;
   }
-  nav{
-    height: 10px;
-  }
   nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    top: 200px;
+    top: 140px;
     left: -100%;
     text-align: center;
     transition: all .5s;
@@ -262,25 +255,25 @@ nav li a:hover::after {
   }
 
   nav {
-    height: 200px;
+    height: 140px;
   }
 
   .enlace {
-    height: 200px;
+    height: 140px;
   }
 
   .logo {
-    height: 200px;
+    height: 140px;
     padding: 30px 20px;
   }
 
   body {
-    margin-top: 200px;
+    margin-top: 140px;
   }
 
   .checkbtn {
     font-size: 50px;
-    line-height: 200px;
+    line-height: 140px;
     margin-right: 60px;
     font-size: 70px;
   }
@@ -297,7 +290,7 @@ nav li a:hover::after {
     padding-top: 20px;
   }
   nav img{
-    width: 200px;
+    width: auto;
     height: auto;
   }
 }
