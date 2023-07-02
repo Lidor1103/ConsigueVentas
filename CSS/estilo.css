@@ -507,7 +507,7 @@ nav li a:hover::after {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "servicio_presentacion"
     "servicio_1"" servicio_2" "servicio_3";
-    padding: 70px 15% 70px 15%;
+    padding: 50px 15% 50px 15%;
     grid-row-gap: 80px;
   }
   .servicio_presentacion{
@@ -563,6 +563,10 @@ nav li a:hover::after {
     background: #16232B;
     transition: background 0s;
   }
+  .contenedor_servicio h2{
+    font-size: 22px;
+  }
+  
 }
 
 
