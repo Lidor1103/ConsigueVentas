@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto|Poppins:300,400,500,600,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -43,7 +43,7 @@
         <div class="contenedor_1">
 
 
-            <div class="so_texto">
+            <div class="so_texto" >
                 <h2><span class="p_celeste">SERVICIO PÁGINA WEB Y </span> <br>COMUNITY MANAGER <span
                         class="p_celeste">EN PERÚ<br></span></h2>
                 <p>Somos Consigue Ventas, un equipo altamente capacitado en community manager y servicios de página web.
@@ -60,7 +60,8 @@
                     </button>
                 </div>
             </div>
-            <div class="so_video">
+            <div class="so_video" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
                 <iframe class="video_frame"
                     src="https://www.youtube-nocookie.com/embed/HKp05QW6OAY?vq=hd1080&loop=1&modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&fs=0&color=white&controls=0&disablekb=1&playlist=HKp05QW6OAY"
                     width="560" height="315"
@@ -74,7 +75,7 @@
             <div class="servicio_presentacion">
                 <h2>NUESTROS SERVICIOS:</h2>
             </div>
-            <div class="servicio_1  animate__animated animate__bounce">
+            <div class="servicio_1" data-aos="fade-up">
                 <img src="img/servicio_1.webp" alt="Descripción de la imagen">
                 <div class="servicio_definicion">
                     <span class="tag">SERVICIO</span>
@@ -91,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="servicio_2  animate__animated animate__bounce">
+            <div class="servicio_2" data-aos="fade-up">
                 <img src="img/servicio_2.webp" alt="Descripción de la imagen">
                 <div class="servicio_definicion">
                     <span class="tag">SERVICIO</span>
@@ -108,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="servicio_3  animate__animated animate__bounce">
+            <div class="servicio_3" data-aos="fade-up">
                 <img src="img/servicio_3.webp" alt="Descripción de la imagen">
                 <div class="servicio_definicion">
                     <span class="tag">SERVICIO</span>
@@ -347,6 +348,12 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+      </script>
 </body>
 
 </html>
