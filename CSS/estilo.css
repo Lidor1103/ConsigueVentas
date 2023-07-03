@@ -2,6 +2,7 @@
   --primero: #16232b;
   --segundo: #283c4c;
   --tercero: #57f3ff;
+  --cuarto:#ecf0f1;
 }
 
 html {
@@ -403,7 +404,7 @@ nav li a:hover::after {
 
 /*SERVICIOS------------------------------------*/
 .contenedor_servicio {
-  background-color: #ecf0f1;
+  background-color: var(--cuarto);
   height: auto;
   display: grid;
   padding: 70px 8% 70px 8%;
@@ -1308,10 +1309,10 @@ nav li a:hover::after {
 /*! =================================================*/
 .preguntas{
   padding: 70px 5%;
-  background-color: white;
+  background-color: var(--cuarto);
 }
 .pre_titulo{
-  padding-bottom: 20px;
+  padding-bottom: 35px;
   text-align: center;
   color: var(--primero);
 }
@@ -1354,7 +1355,11 @@ nav li a:hover::after {
 }
 .respuesta {
 	color: #000000;
-	line-height: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0 4%;
 	max-height: 0;
 	opacity: 0;
 	transition: .3s ease all;
@@ -1372,3 +1377,18 @@ nav li a:hover::after {
 /*! =================================================*/
 /*! ============= Responsive Design ============= */
 /*! =================================================*/
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
+.pre_titulo h2{
+  font-size: 22px
+}
+.contenedor-pregunta {
+	background: white;
+	padding: 30px 5%;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .3s ease all;
+	cursor: pointer;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.11);
+}
+}
