@@ -1,3 +1,7 @@
+AOS.init({
+	duration: 1000,
+});
+
 const preguntas = document.querySelectorAll('.preguntas .contenedor-pregunta');
 preguntas.forEach((pregunta) => {
 	pregunta.addEventListener('click', (e) => {

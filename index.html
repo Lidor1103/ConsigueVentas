@@ -42,7 +42,7 @@
         <!-- SOMOS -->
         <!-- SOMOS -->
         <!-- SOMOS -->
-        <div class="contenedor_1">
+        <div class="contenedor_somos">
             <div class="so_texto">
                 <h2><span class="p_celeste">SERVICIO PÁGINA WEB Y </span> <br>COMUNITY MANAGER <span
                         class="p_celeste">EN PERÚ<br></span></h2>
@@ -135,7 +135,7 @@
         <!-- PORTAFOLIO -->
         <!-- PORTAFOLIO -->
         <!-- PORTAFOLIO -->
-        <div class="contenedor_2">
+        <div class="contenedor_portafolio">
             <div class="c2_titulo">
                 <h2>ELLOS TRABAJAN CON<span class="p_celeste"> NOSOTROS</span></h2>
             </div>
@@ -192,7 +192,7 @@
         <!-- TESTIMONIOS -->
         <!-- TESTIMONIOS -->
         <!-- TESTIMONIOS -->
-        <div class="contenedor_5">
+        <div class="contenedor_testimonios">
             <div class="te_titulo">
                 <h2>¿QUÉ DICEN NUESTROS<span class="p_celeste"> CLIENTES?</span></h2>
             </div>
@@ -317,21 +317,20 @@
         <!-- Contáctanos -->
         <!-- Contáctanos -->
         <!-- Contáctanos -->
-        <div class="contenedor_6">
+        <div class="contenedor_contactanos">
             <div class="co_titulo">
                 <h2>CONTÁCTANOS</h2>
             </div>
             <div class="co_texto">
                 <p><span class="co_celeste">ConsigueVentas </span>está dispuesto a responder todas sus consultas y
-                    comentarios. También puede escribirnos al <span class="co_celeste">+51 987 545 ###</span>. </P>
-                <P>Le contestaremos en un plazo máximo de 48 horas.</p>
+                    comentarios. También puede escribirnos al <span class="co_celeste">+51 987 545 ###</span>. Le responderemos en un plazo máximo de 48 horas.</p>
             </div>
 
             <div class="co_formulario" data-aos="zoom-in">
                 <div class="f_titulo">
                     <h4>HAZ CRECER TU MARCA</h4>
                 </div>
-                <form action="https://formspree.io/f/mknlweaw" method="post">
+                <form action="https://formspree.io/f/mknlweaw" method="post" >
                     <div class="f_nombres">
                         <label for="Nombres">Nombres:</label>
                         <input class="cuadro" type="text" name="Nombres" id="Nombres" placeholder="Nombres">
@@ -363,6 +362,15 @@
                         <input class="button" type="submit" value="Obtener asesoría gratuita">
                     </div>
                 </form>
+                <script>
+                    window.addEventListener("pageshow", function(event) {
+                        var form = document.getElementsByTagName("form")[0];
+                        if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+                            // Limpia los campos del formulario al regresar a la página
+                            form.reset();
+                        }
+                    });
+                </script>
             </div>
             <div class="co_mapa" data-aos="zoom-in">
                 <div class="mapa-contenedor">
@@ -442,11 +450,6 @@
     <!-- Script -->
     <!-- Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-        });
-    </script>
     <script src="js/preguntasFrecuentes.js"></script>
 </body>
 </html>
