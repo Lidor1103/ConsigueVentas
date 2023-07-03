@@ -387,7 +387,7 @@ nav li a:hover::after {
 
 /*SERVICIOS------------------------------------*/
 .contenedor_servicio {
-  background-color: #14f827;
+  background-color: #ecf0f1;
   height: auto;
   display: grid;
   padding: 70px 8% 70px 8%;
@@ -428,7 +428,6 @@ nav li a:hover::after {
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  
   background-color: white;
 }
 
