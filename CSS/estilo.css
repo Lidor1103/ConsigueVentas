@@ -1120,7 +1120,7 @@ nav li a:hover::after {
   font-family: 'Roboto';
   font-size: 15px;
   display: block;
-  width: 50%;
+  width: 200px;
   height: auto;
   padding: 10px;
   background-color: var(--tercero);
