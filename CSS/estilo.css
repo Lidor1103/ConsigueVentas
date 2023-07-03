@@ -163,7 +163,7 @@ nav li .active::after,
 }
 
 nav li .active::after {
-  background-color: #00f3ff;
+  background-color: var(--tercero)
 }
 
 nav li .active_jf::after {
@@ -429,7 +429,7 @@ nav li a:hover::after {
 }
 
 .servicio_presentacion h2 {
-  color: #16232B;
+  color: var(--primero)
 }
 
 .servicio_1 {
@@ -452,6 +452,7 @@ nav li a:hover::after {
   border-radius: 15px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   background-color: white;
+  color: var(--primero);
 }
 
 .contenedor_servicio img {
@@ -466,7 +467,7 @@ nav li a:hover::after {
 .tag {
   font-size: 12px;
   font-family: 'Poppins', sans-serif;
-  background-color: #283c4c;
+  background-color: var(--segundo);
   border-radius: 50px;
   padding: 2px 10px;
   color: white;
@@ -474,7 +475,6 @@ nav li a:hover::after {
 
 .servicio_definicion h3 {
   margin: 10px 0px;
-  color: #10182F;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
 }
@@ -483,7 +483,6 @@ nav li a:hover::after {
   font-size: 14px;
   list-style: none;
   font-family: 'Poppins', sans-serif;
-  color: #10182F;
   margin-bottom: 15px;
 }
 
@@ -493,7 +492,7 @@ nav li a:hover::after {
 }
 
 .contenedor_servicio button {
-  color: #16232B;
+  color: var(--primero);
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
   display: inline-block;
@@ -503,8 +502,8 @@ nav li a:hover::after {
   margin: 0px;
   position: relative;
   overflow: hidden;
-  border: 2px solid #57f3ff;
-  background-color: #57f3ff;
+  border: 2px solid var(--tercero);
+  background-color: var(--tercero);
   transition: color .5s;
   z-index: 1;
   font-size: 17px;
@@ -516,14 +515,14 @@ nav li a:hover::after {
   content: "";
   position: absolute;
   z-index: -1;
-  background: #16232B;
+  background: var(--primero);
   height: 200px;
   width: 350px;
   border-radius: 50%;
 }
 
 .contenedor_servicio button:hover {
-  color: #ffffff;
+  color: white;
 }
 
 .contenedor_servicio button:before {
@@ -538,7 +537,7 @@ nav li a:hover::after {
 }
 
 .contenedor_servicio button:active:before {
-  background: #16232B;
+  background: var(--primero);
   transition: background 0s;
 }
 
@@ -556,7 +555,7 @@ nav li a:hover::after {
   }
 
   .contenedor_servicio button {
-    color: #16232B;
+    color: var(--primero);
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
     display: inline-block;
@@ -566,8 +565,8 @@ nav li a:hover::after {
     margin: 0px;
     position: relative;
     overflow: hidden;
-    border: 2px solid #57f3ff;
-    background-color: #57f3ff;
+    border: 2px solid var(--tercero);
+    background-color: var(--tercero);
     transition: color .5s;
     z-index: 1;
     font-size: 17px;
@@ -579,7 +578,7 @@ nav li a:hover::after {
     content: "";
     position: absolute;
     z-index: -1;
-    background: #16232B;
+    background: var(--primero);
     height: 200px;
     width: 350px;
     border-radius: 50%;
@@ -601,7 +600,7 @@ nav li a:hover::after {
   }
 
   .contenedor_servicio button:active:before {
-    background: #16232B;
+    background: var(--primero);
     transition: background 0s;
   }
 
@@ -622,7 +621,7 @@ nav li a:hover::after {
   padding: 70px 8% 70px 8%;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
-  background-color: #1C2A33;
+  background-color: var(--primero);
   grid-template-areas: "c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo"
     "po_1 po_1 po_2 po_2 po_3 po_3"
     "po_4 po_4 po_5 po_5 po_6 po_6";
@@ -672,7 +671,7 @@ nav li a:hover::after {
 
 .po_nombres {
   font-size: 28px;
-  color: #3bc9db;
+  color: var(--tercero);
 }
 
 .po_1,
@@ -781,6 +780,7 @@ nav li a:hover::after {
 
 .te_titulo {
   grid-area: te_titulo;
+  padding-bottom: 20px;
 }
 
 .te_cliente_1 {
@@ -863,7 +863,7 @@ nav li a:hover::after {
 
 
 /*! =================================================*/
-/*! ============= Contenedor Preguntas ============= */
+/*! ============= Preguntas Frecuentes ============= */
 /*! =================================================*/
 .preguntas {
   padding: 70px 5%;
@@ -999,11 +999,11 @@ nav li a:hover::after {
 }
 
 .co_celeste {
-  color: #3BC9DB;
+  color: var(--tercero);
 }
 
 .co_formulario {
-  background-color: #18242c;
+  background-color: var(--primero);
   border-radius: 40px;
   padding: 30px 50px;
   grid-area: co_formulario;
@@ -1117,19 +1117,23 @@ nav li a:hover::after {
 }
 
 .co_formulario .button {
+  font-family: 'Roboto';
+  font-size: 15px;
   display: block;
   width: 50%;
   height: auto;
   padding: 10px;
-  background-color: #3BC9DB;
+  background-color: var(--tercero);
   color: black;
   border: none;
-  border-radius: 3px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 .co_formulario .button:hover {
-  background-color: #3bc8dbc2;
+  background-color: var(--segundo);
+  color: white;
+  transition: all .7s;
 }
 
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
@@ -1269,18 +1273,18 @@ nav li a:hover::after {
   display: inline-block;
   /* Añade esta línea */
   width: 40px;
-  background-color: #1c2a33;
+  background-color: var(--primero);
   margin: 0 10px 10px 0;
   line-height: 40px;
   border-radius: 50%;
-  color: #00f3ff;
+  color: var(--tercero);
   font-size: 20px;
   transition: all 0.5s ease;
 }
 
 .fo_7 a:hover {
-  background-color: #00f3ff;
-  color: #1c2a33;
+  background-color: var(--tercero);
+  color: var(--primero);
   transition: all 0.5s ease;
 }
 
@@ -1292,7 +1296,7 @@ nav li a:hover::after {
 .contenedor_footer h3 {
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
-  border-bottom: 2px solid #00f3ff;
+  border-bottom: 2px solid var(--tercero);
   display: inline-block;
 }
 
