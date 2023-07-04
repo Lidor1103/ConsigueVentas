@@ -24,3 +24,10 @@ preguntas.forEach((pregunta) => {
 		});
 	});
 });
+window.addEventListener("pageshow", function (event) {
+	var form = document.getElementsByTagName("form")[0];
+	if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+		// Limpia los campos del formulario al regresar a la página
+		form.reset();
+	}
+});
