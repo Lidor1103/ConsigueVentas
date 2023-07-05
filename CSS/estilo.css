@@ -881,7 +881,6 @@ nav li a:hover::after {
   border: 2px solid transparent;
   border-radius: 10px;
   overflow: hidden;
-  transition: .3s ease all;
   cursor: pointer;
   box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.11);
 }
@@ -928,7 +927,6 @@ nav li a:hover::after {
 }
 
 .contenedor-pregunta.activa i {
-  transition: .3s ease all;
   transform: rotate(90deg);
 }
 
@@ -1127,7 +1125,6 @@ nav li a:hover::after {
 .co_formulario .button:hover {
   background-color: var(--segundo);
   color: white;
-  transition: all .7s;
 }
 
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
@@ -1279,7 +1276,6 @@ nav li a:hover::after {
 .fo_7 a:hover {
   background-color: var(--tercero);
   color: var(--primero);
-  transition: all 0.5s ease;
 }
 
 

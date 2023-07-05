@@ -595,7 +595,6 @@ embed {
 .fo_7 a:hover {
   background-color: var(--tercero);
   color: var(--primero);
-  transition: all 0.5s ease;
 }
 
 
