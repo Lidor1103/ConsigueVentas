@@ -726,7 +726,9 @@ nav li a:hover::after {
       "po_6 po_6 po_6 po_6 po_6 po_6";
     padding: 50px 10%;
   }
-
+  .definicion{
+    display: none;
+  }
   .contenedor_portafolio {
     grid-gap: 0px;
   }
