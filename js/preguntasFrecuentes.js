@@ -36,34 +36,17 @@ window.addEventListener("pageshow", function (event) {
 
 // Obtenemos todos los elementos con la clase "proyecto"
 const proyectos = document.getElementsByClassName("po_hover");
+const pdfEmbed = document.getElementById("pdfEmbed");
 
 
 // Agregamos un evento de clic a cada elemento
 for (let i = 0; i < proyectos.length; i++) {
   proyectos[i].addEventListener("click", function() {
-    // Redirigir a la página nueva con el PDF correspondiente
-    switch (this.id) {
-      case "proyecto1":
-        window.location.href = "portafolio/mahal.pdf";
-        break;
-      case "proyecto2":
-        window.location.href = "portafolio/jf.pdf";
-        break;
-      case "proyecto3":
-        window.location.href = "portafolio/Psicocenter.pdf";
-        break;
-		case "proyecto4":
-        window.location.href = "portafolio/sergenind.pdf";
-        break;
-		case "proyecto5":
-        window.location.href = "portafolio/ImpactoVerde.pdf";
-        break;
-		case "proyecto6":
-        window.location.href = "portafolio/Allan_E.pdf";
-        break;
-      default:
-        // Redirigir a una página de error o hacer algo más si es necesario
-        break;
-    }
+    // Obtener el nombre del proyecto
+    const proyecto = this.id;
+
+    // Redirigir a la página "OhMeVengo.html" pasando el nombre del proyecto como parámetro
+    window.location.href = `verproyecto.html?project=${proyecto}`;
   });
 }
+
