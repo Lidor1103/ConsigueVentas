@@ -31,3 +31,8 @@ window.addEventListener("pageshow", function (event) {
 		form.reset();
 	}
 });
+
+
+function abrirVentana() {
+	window.open("https://www.youtube.com/watch?v=tM6xIFFmi7A", "_blank");
+  }
