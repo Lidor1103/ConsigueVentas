@@ -258,7 +258,7 @@ nav li a:hover::after {
 .contenedor_pro{
   width: 100%;
   height: auto;
-  padding: 50px 10%;
+  padding: 40px 10%;
   background-color: var(--cuarto);
 }
 .contenedor_pro img{
