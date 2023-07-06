@@ -52,6 +52,7 @@ p {
 
 button {
   color: #17232b;
+  background-color: var(--tercero);
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
   display: inline-block;
@@ -61,7 +62,7 @@ button {
   margin: 0px;
   position: relative;
   overflow: hidden;
-  border: 2px solid #fdfdfd;
+  border: 2px solid var(--tercero);
   transition: color .5s;
   z-index: 1;
   font-size: 17px;
@@ -258,7 +259,7 @@ nav li a:hover::after {
 .contenedor_pro{
   width: 100%;
   height: auto;
-  padding: 40px 10%;
+  padding: 40px 10% 0 10%;
   background-color: var(--cuarto);
 }
 .contenedor_pro img{
@@ -268,7 +269,29 @@ nav li a:hover::after {
 
 
 
+/*! =================================================*/
+/*! ============= Descargar ============= */
+/*! =================================================*/
+.contenedor_descarga {
+  background-color: var(--cuarto);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
 
+.descarga_texto, .descarga_boton {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .descarga_texto, .descarga_boton {
+      flex: 0 0 100%;
+      margin: 10px 0;
+  }
+}
 
 /*! =================================================*/
 /*! ============= Contáctanos ============= */
