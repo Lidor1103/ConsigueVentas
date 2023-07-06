@@ -950,15 +950,9 @@ nav li a:hover::after {
   }
 
   .contenedor-pregunta {
-    background: white;
-    padding: 30px 5%;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .3s ease all;
-    cursor: pointer;
-    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.11);
+    padding: 20px 5%;
   }
+  
 }
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .pregunta {
