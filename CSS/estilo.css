@@ -941,6 +941,10 @@ nav li a:hover::after {
 
 /*! ============= Responsive Design ============= */
 @media only screen and (max-width: 1080px) and (orientation: portrait) {
+  .preguntas {
+    padding: 50px 5%;
+    background-color: var(--cuarto);
+  }
   .pre_titulo h2 {
     font-size: 22px
   }
