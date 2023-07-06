@@ -394,6 +394,15 @@ nav li a:hover::after {
     margin-top: 15px;
   }
 }
+@media only screen and (max-width: 385px) and (orientation: portrait) {
+  .so_texto p {
+    font-size: 12px;
+  }
+
+  .so_texto h2 {
+    font-size: 20px;
+  }
+}
 
 
 
