@@ -20,7 +20,7 @@ switch (proyecto) {
 		imagencambiante.src = 'img/pro_jf.png';
 		break;
 	case 'proyecto3':
-		imagencambiante.src = 'portafolio/Psicocenter.pdf';
+		imagencambiante.src = 'img/pro_psicocenters.png';
 		break;
 	case 'proyecto4':
 		imagencambiante.src = 'portafolio/sergenind.pdf';
