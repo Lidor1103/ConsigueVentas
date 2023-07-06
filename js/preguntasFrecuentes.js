@@ -34,19 +34,19 @@ window.addEventListener("pageshow", function (event) {
 
 
 
-// Obtenemos todos los elementos con la clase "proyecto"
+
+
+
 const proyectos = document.getElementsByClassName("po_hover");
-const pdfEmbed = document.getElementById("pdfEmbed");
+const imagencambiante = document.getElementById("imagencambiante");
 
-
-// Agregamos un evento de clic a cada elemento
 for (let i = 0; i < proyectos.length; i++) {
-  proyectos[i].addEventListener("click", function() {
-    // Obtener el nombre del proyecto
-    const proyecto = this.id;
-
-    // Redirigir a la página "OhMeVengo.html" pasando el nombre del proyecto como parámetro
-    window.location.href = `verproyecto.html?project=${proyecto}`;
-  });
-}
+	proyectos[i].addEventListener("click", function() {
+	  // Obtener el nombre del proyecto
+	  const proyecto = this.id;
+  
+	  // Redirigir a la página "OhMeVengo.html" pasando el nombre del proyecto como parámetro
+	  window.location.href = `verproyecto.html?project=${proyecto}`;
+	});
+  }
 

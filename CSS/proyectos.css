@@ -250,21 +250,23 @@ nav li a:hover::after {
 }
 
 
+
+
 /*! =================================================*/
-/*! ============= PDF ============= */
+/*! ============= Imagen ============= */
 /*! =================================================*/
-.contenedor_pdf{
-  display: flex;
-  background-color: var(--segundo);
+.contenedor_pro{
   width: 100%;
-  padding: 20px 0;
-  height: 600px;
-  justify-content: center;
+  height: auto;
+  padding: 50px 10%;
+  background-color: var(--cuarto);
 }
-embed {
-  width: 80%;
-  height: 550px;
+.contenedor_pro img{
+  width: 100%;
+  box-shadow: 0 0 20px 0 rgb(28, 42, 51);
 }
+
+
 
 
 
