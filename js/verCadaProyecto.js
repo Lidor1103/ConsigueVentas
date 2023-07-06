@@ -14,7 +14,7 @@ const imagencambiante = document.getElementById("imagencambiante");
 // Cambia el src del elemento "embed" según el proyecto seleccionado
 switch (proyecto) {
 	case 'proyecto1':
-		imagencambiante.src = 'img/mahal.webp';
+		imagencambiante.src = 'img/pro_mahal.png';
 		break;
 	case 'proyecto2':
 		imagencambiante.src = 'img/pro_jf.png';
