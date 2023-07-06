@@ -281,17 +281,13 @@ nav li a:hover::after {
   padding: 40px 0;
 }
 
-.descarga_texto, .descarga_boton {
-  flex: 1;
-  text-align: center;
-}
-
-@media (max-width: 600px) {
-  .descarga_texto, .descarga_boton {
-      flex: 0 0 100%;
-      margin: 10px 0;
+@media only screen and (max-width: 1080px) and (orientation: portrait) {
+  .contenedor_descarga {
+    padding: 20px 0;
   }
 }
+
+
 
 /*! =================================================*/
 /*! ============= Contáctanos ============= */
