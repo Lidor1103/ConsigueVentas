@@ -23,7 +23,7 @@ switch (proyecto) {
 		imagencambiante.src = 'img/pro_psicocenters.webp';
 		break;
 	case 'proyecto4':
-		imagencambiante.src = 'portafolio/sergenind.webp';
+		imagencambiante.src = 'img/pro_sergenind.webp';
 		break;
 	case 'proyecto5':
 		imagencambiante.src = 'img/pro_impactoverde.webp';
