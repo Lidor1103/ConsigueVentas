@@ -956,7 +956,12 @@ nav li a:hover::after {
     box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.11);
   }
 }
-
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .pregunta {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
 
 
 /*! =================================================*/
