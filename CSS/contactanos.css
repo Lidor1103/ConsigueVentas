@@ -238,7 +238,7 @@ nav li a:hover::after {
   }
 }*/
 
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 414px) and (orientation: portrait) {
   .checkbtn {
     display: block;
     font-size: 30px;
@@ -477,7 +477,7 @@ nav li a:hover::after {
   transition: all .7s;
 }
 
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos{
     grid-template-areas: "co_titulo co_titulo"
       "co_texto co_texto"
@@ -650,7 +650,7 @@ nav li a:hover::after {
 }
 
 /*! =================== Responsive ================== */
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_footer {
     grid-template-areas: "fo_1 fo_1 fo_1 fo_1"
       "fo_1 fo_1 fo_1 fo_1"
