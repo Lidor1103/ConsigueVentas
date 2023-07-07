@@ -306,7 +306,7 @@ nav li a:hover::after {
   width: 100%;
   height: 580px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "so_texto so_video";
   gap: 3%;
   padding: 0 6%;
@@ -394,7 +394,8 @@ nav li a:hover::after {
     margin-top: 15px;
   }
 }
-@media only screen and (max-width: 385px){
+
+@media only screen and (max-width: 385px) {
   .so_texto p {
     font-size: 12px;
   }
@@ -413,6 +414,7 @@ nav li a:hover::after {
     font-size: 20px;
   }
 }
+
 @media only screen and (max-width: 360px) and (orientation: portrait) {
   .so_texto p {
     font-size: 14px;
@@ -423,6 +425,21 @@ nav li a:hover::after {
   }
 }
 
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_somos {
+    padding: 25px 5% 25px 5%;
+    grid-row-gap: 15px;
+    height: auto;
+  }
+
+  .so_texto p {
+    font-size: 14px;
+  }
+
+  .so_texto h2 {
+    font-size: 18px;
+  }
+}
 
 /*! =================================================*/
 /*! =================== Servicios ================== */
@@ -627,6 +644,17 @@ nav li a:hover::after {
 
 }
 
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_servicio {
+    padding: 30px 10% 30px 10%;
+    grid-row-gap: 20px;
+  }
+
+  .servicio_presentacion h2 {
+    font-size: 18px;
+  }
+
+}
 
 
 /*! =================================================*/
@@ -753,9 +781,11 @@ nav li a:hover::after {
       "po_6 po_6 po_6 po_6 po_6 po_6";
     padding: 50px 10%;
   }
-  .definicion{
+
+  .definicion {
     display: none;
   }
+
   .contenedor_portafolio {
     grid-gap: 0px;
   }
@@ -767,18 +797,20 @@ nav li a:hover::after {
   .po_hover h2 {
     font-size: 50px;
   }
-
-  .po_1,
-  .po_2,
-  .po_3,
-  .po_4,
-  .po_5,
-  .po_6 {
-    min-height: 200px;
-  }
 }
 
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_portafolio {
+    padding: 30px 10%;
+  }
 
+  .c2_titulo h2 {
+    font-size: 18px;
+  }
+  .c2_titulo{
+    padding-bottom: 20px;
+  }
+}
 
 /*! =================================================*/
 /*! ================= Testimonios ================== */
@@ -880,7 +912,22 @@ nav li a:hover::after {
   }
 }
 
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_testimonios {
+    padding: 30px 8% 30px 8%;
+  }
 
+  .te_titulo h2 {
+    font-size: 18px;
+  }
+  .te_titulo{
+    padding-bottom: 10px;
+  }
+  .contenedor_testimonios p{
+    font-size: 15px;
+  }
+  
+}
 
 /*! =================================================*/
 /*! ============= Preguntas Frecuentes ============= */
@@ -959,31 +1006,44 @@ nav li a:hover::after {
 
 /*! ============= Responsive Design ============= */
 @media only screen and (max-width: 414px) and (orientation: portrait) {
-  .pre_titulo{
+  .pre_titulo {
     padding-bottom: 35px;
   }
+
   .preguntas {
     padding: 50px 5%;
     background-color: var(--cuarto);
   }
+
   .pre_titulo h2 {
     font-size: 22px
   }
+
   .pregunta {
     font-size: 15px;
     line-height: 15px;
   }
-  .respuesta{
+
+  .respuesta {
     font-size: 15px;
   }
+
   .contenedor-pregunta {
     padding: 20px 5%;
   }
-  
 }
 
-
-
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .preguntas {
+    padding: 30px 8% 30px 8%;
+  }
+  .pre_titulo{
+    padding-bottom: 20px;
+  }
+  .pre_titulo h2{
+    font-size: 18px;
+  }
+}
 /*! =================================================*/
 /*! ============= Contáctanos ============= */
 /*! =================================================*/
@@ -1004,7 +1064,6 @@ nav li a:hover::after {
   background-attachment: fixed;
   background-color: #020b11d8;
   color: white;
-
 }
 
 .co_titulo {
@@ -1162,7 +1221,7 @@ nav li a:hover::after {
 }
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
-  .contenedor_contactanos{
+  .contenedor_contactanos {
     grid-template-areas: "co_titulo co_titulo"
       "co_texto co_texto"
       "co_formulario co_formulario"
@@ -1208,13 +1267,24 @@ nav li a:hover::after {
     padding: 30px 30px;
   }
 }
+
 @media only screen and (max-width: 393px) and (orientation: portrait) {
-  .co_texto p{
+  .co_texto p {
     font-size: 14px;
   }
 }
 
-
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_contactanos {
+    padding: 30px 4% 30px 4%;
+  }
+  .co_titulo{
+    padding-bottom: 0px;
+  }
+  .f_titulo h4{
+    font-size: 15px;
+  }
+}
 /*! =================================================*/
 /*! =================== Footer ===================== */
 /*! =================================================*/
@@ -1400,13 +1470,33 @@ nav li a:hover::after {
 
 
 @media only screen and (max-width: 393px) and (orientation: portrait) {
+
   .fo_1 p,
   .fo_5 p,
   .fo_6 a {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
   }
-  .fo_8 p{
+
+  .fo_8 p {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_contactanos {
+    padding: 30px 4% 30px 4%;
+  }
+  .co_titulo{
+    padding-bottom: 0px;
+  }
+  .f_titulo h4{
+    font-size: 15px;
+  }
+  .fo_7 a {
+    width: 40px;
+    margin: 0;
+    line-height: 40px;
+    font-size: 20px;
   }
 }
