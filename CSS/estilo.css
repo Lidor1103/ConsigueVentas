@@ -550,7 +550,7 @@ nav li a:hover::after {
   transition: background 0s;
 }
 
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 411px) and (orientation: portrait) {
   .contenedor_servicio {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "servicio_presentacion"
@@ -734,7 +734,7 @@ nav li a:hover::after {
 }
 
 /*PORTAFOLIO Responsive areas de grid----*/
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 411px) and (orientation: portrait) {
   .contenedor_portafolio {
     grid-template-areas: "c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo c2_titulo"
       "po_1 po_1 po_1 po_1 po_1 po_1"
@@ -855,7 +855,7 @@ nav li a:hover::after {
 }
 
 /*TESTIMONIOS responsive--------------*/
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 411px) and (orientation: portrait) {
   .contenedor_testimonios {
     grid-template-areas: "te_titulo te_titulo te_titulo te_titulo"
       "te_cliente_1 te_cliente_1 te_cliente_2 te_cliente_2"
@@ -950,7 +950,7 @@ nav li a:hover::after {
 }
 
 /*! ============= Responsive Design ============= */
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 411px) and (orientation: portrait) {
   .preguntas {
     padding: 50px 5%;
     background-color: var(--cuarto);
@@ -1149,7 +1149,7 @@ nav li a:hover::after {
   color: white;
 }
 
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 411px) and (orientation: portrait) {
   .contenedor_contactanos{
     grid-template-areas: "co_titulo co_titulo"
       "co_texto co_texto"
@@ -1322,7 +1322,7 @@ nav li a:hover::after {
 }
 
 /*! =================== Responsive ================== */
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 411px) and (orientation: portrait) {
   .contenedor_footer {
     grid-template-areas: "fo_1 fo_1 fo_1 fo_1"
       "fo_1 fo_1 fo_1 fo_1"
