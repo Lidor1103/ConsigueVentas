@@ -238,7 +238,7 @@ nav li a:hover::after {
   }
 }*/
 
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 411px) and (orientation: portrait) {
   .checkbtn {
     display: block;
     font-size: 30px;
@@ -357,7 +357,7 @@ nav li a:hover::after {
 }
 
 /*--------------- Responsive ---------------*/
-@media only screen and (max-width: 1080px) and (orientation: portrait) {
+@media only screen and (max-width: 411px) and (orientation: portrait) {
   .contenedor_somos {
     grid-template-columns: 100%;
     padding: 40px 5% 40px 5%;
