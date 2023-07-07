@@ -396,7 +396,7 @@ nav li a:hover::after {
 }
 @media screen and (max-width: 1024px) {
   .contenedor_somos {
-    height: 580px;
+    height: 600px;
   }
   .so_texto h2 {
     font-size: 28px;
