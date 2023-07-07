@@ -404,7 +404,7 @@ nav li a:hover::after {
   }
 }
 
-@media only screen and (max-width: 385px) and (orientation: portrait) {
+@media only screen and (max-width: 393px) and (orientation: portrait) {
   .so_texto p {
     font-size: 12px;
   }
@@ -1200,7 +1200,11 @@ nav li a:hover::after {
     padding: 30px 30px;
   }
 }
-
+@media only screen and (max-width: 393px) and (orientation: portrait) {
+  .co_texto p{
+    font-size: 14px;
+  }
+}
 
 
 /*! =================================================*/
