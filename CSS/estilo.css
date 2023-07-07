@@ -958,18 +958,19 @@ nav li a:hover::after {
   .pre_titulo h2 {
     font-size: 22px
   }
-
+  .pregunta {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .respuesta{
+    font-size: 15px;
+  }
   .contenedor-pregunta {
     padding: 20px 5%;
   }
   
 }
-@media only screen and (max-width: 414px) and (orientation: portrait) {
-  .pregunta {
-    font-size: 18px;
-    line-height: 18px;
-  }
-}
+
 
 
 /*! =================================================*/
