@@ -413,7 +413,15 @@ nav li a:hover::after {
     font-size: 20px;
   }
 }
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+  .so_texto p {
+    font-size: 14px;
+  }
 
+  .so_texto h2 {
+    font-size: 20px;
+  }
+}
 
 
 /*! =================================================*/
@@ -1391,3 +1399,14 @@ nav li a:hover::after {
 
 
 
+@media only screen and (max-width: 393px) and (orientation: portrait) {
+  .fo_1 p,
+  .fo_5 p,
+  .fo_6 a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+  }
+  .fo_8 p{
+    font-size: 14px;
+  }
+}
