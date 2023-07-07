@@ -394,18 +394,15 @@ nav li a:hover::after {
     margin-top: 15px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .contenedor_somos {
-    height: 600px;
-  }
-  .so_texto h2 {
-    font-size: 28px;
-  }
+@media only screen and (max-width: 385px){
   .so_texto p {
-    font-size: 15px;
+    font-size: 12px;
+  }
+
+  .so_texto h2 {
+    font-size: 20px;
   }
 }
-
 
 @media only screen and (max-width: 385px) and (orientation: portrait) {
   .so_texto p {
@@ -770,15 +767,6 @@ nav li a:hover::after {
   .po_5,
   .po_6 {
     min-height: 200px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .po_nombres{
-    font-size: 20px;
-  }
-  .definicion p{
-    font-size: 17px;
   }
 }
 
@@ -1393,9 +1381,5 @@ nav li a:hover::after {
 }
 
 
-@media screen and (max-width: 1024px) {
-  .contenedor_footer h3{
-    font-size: 18px
-  }
-}
+
 
