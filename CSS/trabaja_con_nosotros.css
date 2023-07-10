@@ -265,15 +265,18 @@ nav li a:hover::after {
   background: url(../img/img4.webp) no-repeat center/cover fixed;
   color: var(--primero);
   display:flex;
+  background-blend-mode: overlay;
+  background-color: #020b117c;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .inicio_texto{
   padding: 20px;
   border-radius: 30px;
   background-blend-mode: overlay;
-  background-color: #10c9d6d7;
+  background-color: #16232bc2;
   width: 600px;
 }
 
@@ -413,7 +416,7 @@ nav li a:hover::after {
 }
 
 .areas_nombre h3 {
-  margin: 10px 0px;
+  margin: 5px 0px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -445,8 +448,8 @@ nav li a:hover::after {
   grid-column-gap: 20px;
   grid-row-gap: 40px;
   grid-template-areas: "potencial_presentacion potencial_presentacion potencial_presentacion"
-      "areas_1 areas_2 areas_3"
-      "areas_4 areas_5 areas_6";
+      "potencial_1 potencial_2 potencial_3"
+      "potencial_4 potencial_5 potencial_6";
   box-shadow: 0 0 50px 0 rgb(28, 42, 51);
   color: white;
 }
@@ -463,32 +466,43 @@ nav li a:hover::after {
   color: var(--primero)
 }
 
-.areas_1 {
-  grid-area: areas_1;
+.potencial_1 {
+  grid-area: potencial_1;
 }
 
-.areas_2 {
-  grid-area: areas_2;
+.potencial_2 {
+  grid-area: potencial_2;
 }
 
-.areas_3 {
-  grid-area: areas_3;
+.potencial_3 {
+  grid-area: potencial_3;
 
 }
 
-.areas_4 {
-  grid-area: areas_4;
+.potencial_4 {
+  grid-area: potencial_4;
 
 }
-.areas{
+.potencial{
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  background-color: var(--primero);
+  background-color: var(--segundo);
   color: white;
   text-align: center;
+  height: 200px;
+  transition: .3s ease all;
 }
-
+.potencial:hover{
+  background-color: var(--tercero);
+  transition: .3s ease all;
+}
+.superior{
+  background-color: var(--primero);
+  width: 100%;
+  height: 92%;
+  border-radius: 15px;
+}
 .contenedor_potencial img {
   width: 100%;
   border-radius: 15px;
@@ -557,6 +571,121 @@ nav li a:hover::after {
 }
 
 
+/*! =================================================*/
+/*! ============= Preguntas Frecuentes ============= */
+/*! =================================================*/
+.preguntas {
+  padding: 70px 5%;
+  background-color: var(--cuarto);
+}
+
+.pre_titulo {
+  padding-bottom: 35px;
+  text-align: center;
+  color: var(--primero);
+}
+
+.contenedor-preguntas {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.contenedor-pregunta {
+  background: white;
+  padding: 30px 2%;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.11);
+}
+
+.contenedor-preguntas.activo {
+  display: grid;
+}
+
+.contenedor-pregunta:hover {
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.342);
+}
+
+/*! ============= Preguntas ============= */
+.pregunta {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.pregunta i {
+  width: 14px;
+  margin-right: 15px;
+  color: var(--tercero);
+  transition: .3s ease all;
+}
+
+.respuesta {
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0 4%;
+  max-height: 0;
+  opacity: 0;
+  transition: .3s ease all;
+}
+
+.contenedor-pregunta.activa .respuesta {
+  opacity: 1;
+  margin-top: 20px;
+}
+
+.contenedor-pregunta.activa i {
+  transform: rotate(90deg);
+}
+
+/*! ============= Responsive Design ============= */
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .pre_titulo {
+    padding-bottom: 35px;
+  }
+
+  .preguntas {
+    padding: 50px 5%;
+    background-color: var(--cuarto);
+  }
+
+  .pre_titulo h2 {
+    font-size: 22px
+  }
+
+  .pregunta {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .respuesta {
+    font-size: 15px;
+  }
+
+  .contenedor-pregunta {
+    padding: 20px 5%;
+  }
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .preguntas {
+    padding: 30px 8% 30px 8%;
+  }
+  .pre_titulo{
+    padding-bottom: 20px;
+  }
+  .pre_titulo h2{
+    font-size: 18px;
+  }
+}
 
 
 
