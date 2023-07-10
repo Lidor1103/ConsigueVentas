@@ -1,0 +1,559 @@
+:root {
+  --primero: #16232b;
+  --segundo: #283c4c;
+  --tercero: #57f3ff;
+  --cuarto: #ecf0f1;
+}
+
+
+
+/*! =================================================*/
+/*! =================== General ================== */
+/*! =================================================*/
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  background-color: var(--segundo);
+  margin-top: 85px;
+}
+
+
+
+/*! =================================================*/
+/*! =================== Recursos ================== */
+/*! =================================================*/
+h2 {
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1;
+  font-size: 37px;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.p_celeste {
+  color: var(--tercero);
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.5;
+}
+
+button {
+  color: #17232b;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  display: inline-block;
+  width: 10em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 0px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #fdfdfd;
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #17232b;
+  height: 200px;
+  width: 350px;
+  border-radius: 50%;
+}
+
+button:hover {
+  color: #ffffff;
+}
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s;
+}
+
+button:hover:before {
+  top: -50px;
+  left: -50px;
+}
+
+button:active:before {
+  background: var(--tercero);
+  transition: background 0s;
+}
+
+
+
+/*! =================================================*/
+/*! ============= Barra de navegación ============== */
+/*! =================================================*/
+nav {
+  background: var(--primero);
+  position: fixed;
+  height: 85px;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+}
+
+/*LOGO*/
+.enlace {
+  position: absolute;
+  margin-left: 40px;
+  height: 85px;
+}
+
+.logo {
+  height: 85px;
+  padding: 5px;
+}
+
+
+/*ENLACES*/
+nav ul {
+  float: right;
+  margin-right: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 85px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 7px 10px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+/*HOVER*/
+nav li .active::after,
+.active_jf::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  width: 0;
+  height: 3px;
+  transition: transform 0.3s ease, width 0.3s ease;
+}
+
+nav li .active::after {
+  background-color: var(--tercero)
+}
+
+nav li .active_jf::after {
+  background-color: #f3c331;
+}
+
+
+nav li a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+  width: 100%;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 85px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Desparecer el checkbox */
+#check {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+  .checkbtn {
+    display: block;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 25px;
+  }
+
+  nav {
+    height: 80px;
+  }
+
+  nav ul {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 22px;
+  }
+
+  nav li a:hover,
+  nav li a.active,
+  .active_jf {
+    color: #2b171b;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+
+  .enlace {
+    height: 100%;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+  }
+
+  .logo {
+    height: 65px;
+  }
+
+  body {
+    margin-top: 80px;
+  }
+}
+
+
+/*! =================================================*/
+/*! =================== Footer ===================== */
+/*! =================================================*/
+/*General--------------------------*/
+.contenedor_footer {
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: grid;
+  grid-template-rows: 60px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "fo_1 fo_2 fo_3 fo_4"
+    "fo_1 fo_5 fo_6 fo_7"
+    "fo_8 fo_8 fo_8 fo_8";
+  grid-column-gap: 10px;
+  color: #343434;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.fo_1 {
+  grid-area: fo_1;
+  padding: 5%;
+}
+
+.fo_2 {
+  grid-area: fo_2;
+  text-align: left;
+  padding: 19px;
+  min-height: 10px;
+}
+
+.fo_3 {
+  grid-area: fo_3;
+  text-align: left;
+  padding: 19px;
+  min-height: 10px;
+}
+
+.fo_4 {
+  grid-area: fo_4;
+  text-align: left;
+  padding: 19px;
+}
+
+.fo_5 {
+  grid-area: fo_5;
+  text-align: left;
+  padding: 12px 19px;
+}
+
+.fo_6 {
+  grid-area: fo_6;
+  text-align: left;
+  padding: 12px 19px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+}
+
+.fo_6 a {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #343434;
+}
+
+.fo_6 a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.fo_7 {
+  grid-area: fo_7;
+  padding: 12px 0px;
+}
+
+.fo_8 {
+  grid-area: fo_8;
+  padding: 10px;
+  border-top: 1px solid #1c2a33;
+}
+
+.fo_7 a {
+  display: inline-block;
+  /* Añade esta línea */
+  width: 40px;
+  background-color: var(--primero);
+  margin: 0 10px 10px 0;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--tercero);
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.fo_7 a:hover {
+  background-color: var(--tercero);
+  color: var(--primero);
+}
+
+
+.fo_1 img {
+  width: 200px;
+}
+
+.contenedor_footer h3 {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 2px solid var(--tercero);
+  display: inline-block;
+}
+
+.contenedor_footer p {
+  line-height: 1.2;
+  font-size: 18px;
+}
+
+.co_mapa .mapa-contenedor iframe {
+  border: none;
+}
+
+/*! =================== Responsive ================== */
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .contenedor_footer {
+    grid-template-areas: "fo_1 fo_1 fo_1 fo_1"
+      "fo_1 fo_1 fo_1 fo_1"
+      "fo_2 fo_2 fo_2 fo_2"
+      "fo_5 fo_5 fo_5 fo_5"
+      "fo_3 fo_3 fo_3 fo_3"
+      "fo_6 fo_6 fo_6 fo_6"
+      "fo_4 fo_4 fo_4 fo_4"
+      "fo_7 fo_7 fo_7 fo_7"
+      "fo_8 fo_8 fo_8 fo_8";
+    padding: 20px 8% 20px 8%;
+  }
+
+  .fo_1,
+  .fo_2,
+  .fo_3,
+  .fo_4,
+  .fo_5,
+  .fo_6,
+  .fo_7 {
+    text-align: center;
+  }
+
+  .fo_1,
+  .fo_2,
+  .fo_3,
+  .fo_4 {
+    padding: 5px 0px;
+  }
+
+  .contenedor_footer h3 {
+    font-size: 22px;
+  }
+
+  .fo_1 p,
+  .fo_5 p,
+  .fo_6 a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+  }
+
+  /*Logo de la empresa*/
+  .fo_1 img {
+    width: 70%;
+  }
+
+  /*Iconos de redes sociales*/
+  .fo_7 a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    float: none;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 393px) and (orientation: portrait) {
+
+  .fo_1 p,
+  .fo_5 p,
+  .fo_6 a {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+  }
+
+  .fo_8 p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_contactanos {
+    padding: 30px 4% 30px 4%;
+  }
+  .co_titulo{
+    padding-bottom: 0px;
+  }
+  .f_titulo h4{
+    font-size: 15px;
+  }
+  .fo_7 a {
+    width: 40px;
+    margin: 0;
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+/*PAQUETE----------------------------------------------------------------------------*/
+/*General--------------------------*/
+.contenedor_4 {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "pa_titulo pa_titulo pa_titulo"
+    "pa_1 pa_2 pa_3";
+  grid-row-gap: 4%;
+  grid-column-gap: 3%;
+  background-color: #1c2a33;
+  margin-bottom: 30px;
+}
+
+.pa_titulo {
+  grid-area: pa_titulo;
+  text-align: center;
+  color: white;
+}
+
+.pa_1 {
+  grid-area: pa_1;
+}
+
+.pa_2 {
+  grid-area: pa_2;
+}
+
+.pa_3 {
+  grid-area: pa_3;
+}
+
+.pa_1,
+.pa_2,
+.pa_3 {
+  padding: 3%;
+  color: #1c2a33;
+  border-radius: 35px;
+  background-color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+}
+
+.contenedor_4 h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 10px 0px 10px;
+  font-weight: 400;
+  font-size: 13px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #2AC8BE;
+  padding: 1% 2% 1% 2%;
+}
+
+.pa_nombre {
+  padding: 2% 0px 1% 0px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.pa_1 p,
+.pa_2 p,
+.pa_3 p {
+  text-align: center;
+}
+
+.contenedor_4 ul {
+  margin-top: 10px;
+  text-align: left;
+  padding: 0% 12% 5% 12%;
+}
+
+.boton_4 {
+  display: flex;
+  justify-content: center;
+}
+
+/*Responsive areas de grid----------*/
+@media (max-width:765px) {
+  .contenedor_4 {
+    grid-template-areas: "pa_titulo pa_titulo pa_titulo"
+      "pa_1 pa_1 pa_1"
+      "pa_2 pa_2 pa_2"
+      "pa_3 pa_3 pa_3";
+    grid-row-gap: 1%;
+  }
+}
