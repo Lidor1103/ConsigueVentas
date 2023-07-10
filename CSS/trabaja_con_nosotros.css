@@ -44,9 +44,11 @@ h3 {
 .p_celeste {
   color: var(--tercero);
 }
+
 .p_blanco {
   color: white;
 }
+
 p {
   font-family: 'Nunito', sans-serif;
   line-height: 1.5;
@@ -264,7 +266,7 @@ nav li a:hover::after {
   padding: 0 6%;
   background: url(../img/img4.webp) no-repeat center/cover fixed;
   color: var(--primero);
-  display:flex;
+  display: flex;
   background-blend-mode: overlay;
   background-color: #020b117c;
   justify-content: center;
@@ -272,7 +274,7 @@ nav li a:hover::after {
   color: white;
 }
 
-.inicio_texto{
+.inicio_texto {
   padding: 20px;
   border-radius: 30px;
   background-blend-mode: overlay;
@@ -280,7 +282,7 @@ nav li a:hover::after {
   width: 600px;
 }
 
-.so_boton a{
+.so_boton a {
   text-decoration: none;
 }
 
@@ -298,29 +300,26 @@ nav li a:hover::after {
 .inicio_texto p {
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 /*--------------- Responsive ---------------*/
-@media only screen and (max-width: 414px) and (orientation: portrait) {
-  
-}
+@media only screen and (max-width: 414px) and (orientation: portrait) {}
 
-@media only screen and (max-width: 385px) {
-  
-}
+@media only screen and (max-width: 385px) {}
 
-@media only screen and (max-width: 393px) and (orientation: portrait) {
-  
-}
+@media only screen and (max-width: 393px) and (orientation: portrait) {}
 
-@media only screen and (max-width: 360px) and (orientation: portrait) {
-  
-}
+@media only screen and (max-width: 360px) and (orientation: portrait) {}
 
-@media only screen and (max-width: 320px) and (orientation: portrait) {
-  
-}
+@media only screen and (max-width: 320px) and (orientation: portrait) {}
+
+
+
+
+/*! =================================================*/
+/*! =================== CARRUSEL ===================== */
+/*! =================================================*/
 
 
 
@@ -328,32 +327,38 @@ nav li a:hover::after {
 /*! =================================================*/
 /*! ============= POTENCIAL ============= */
 /*! =================================================*/
-.contenedor_habilidades{
+.contenedor_habilidades {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "equipo_1 equipo_3"
-  "equipo_2 equipo_3";
+    "equipo_2 equipo_3";
   background-color: white;
   padding: 70px 10%;
   gap: 10px;
 }
-.habilidad_texto_1{
+
+.habilidad_texto_1 {
   grid-area: equipo_1;
 }
-.habilidad_texto_1 p{
+
+.habilidad_texto_1 p {
   font-size: 18px;
 }
-.habilidad_texto_2{
+
+.habilidad_texto_2 {
   grid-area: equipo_2;
 }
-.habilidad_texto_2 h2{
+
+.habilidad_texto_2 h2 {
   font-size: 35px;
 }
-.habilidad_texto_3{
+
+.habilidad_texto_3 {
   grid-area: equipo_3;
 }
-.habilidad_texto_3 p{
+
+.habilidad_texto_3 p {
   font-size: 18px;
 }
 
@@ -372,9 +377,9 @@ nav li a:hover::after {
   grid-column-gap: 20px;
   grid-row-gap: 40px;
   grid-template-areas: "areas_título areas_título areas_título areas_título"
-      "areas_1 areas_2 areas_3 areas_4"
-      "areas_5 areas_6 areas_7 areas_8"
-      "areas_9 areas_10 areas_11 areas_12";
+    "areas_1 areas_2 areas_3 areas_4"
+    "areas_5 areas_6 areas_7 areas_8"
+    "areas_9 areas_10 areas_11 areas_12";
   box-shadow: 0 0 50px 0 rgb(28, 42, 51);
   color: var(--primero);
 }
@@ -401,7 +406,7 @@ nav li a:hover::after {
   grid-area: areas_4;
 }
 
-.areas{
+.areas {
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
@@ -421,11 +426,9 @@ nav li a:hover::after {
   font-weight: 500;
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
-}
+@media only screen and (max-width: 414px) and (orientation: portrait) {}
 
-@media only screen and (max-width: 320px) and (orientation: portrait) {
-}
+@media only screen and (max-width: 320px) and (orientation: portrait) {}
 
 
 
@@ -437,19 +440,20 @@ nav li a:hover::after {
 /*! =================== POTENCIAL ===================== */
 /*! =================================================*/
 .contenedor_potencial {
+  width: 100%;
+  height: auto;
+  padding: 70px 6% 70px 6%;
   background-image: url(../img/background-op.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: auto;
   display: grid;
-  padding: 70px 6% 70px 6%;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "potencial_presentacion potencial_presentacion potencial_presentacion"
+    "potencial_1 potencial_2 potencial_3"
+    "potencial_4 potencial_5 potencial_6";
   grid-column-gap: 20px;
   grid-row-gap: 40px;
-  grid-template-areas: "potencial_presentacion potencial_presentacion potencial_presentacion"
-      "potencial_1 potencial_2 potencial_3"
-      "potencial_4 potencial_5 potencial_6";
   box-shadow: 0 0 50px 0 rgb(28, 42, 51);
   color: white;
 }
@@ -457,13 +461,9 @@ nav li a:hover::after {
 .potencial_presentacion {
   grid-area: potencial_presentacion;
   text-align: center;
-}
-.potencial_presentacion h3 {
-  padding-bottom: 10px;
-}
-
-.servicio_presentacion h2 {
-  color: var(--primero)
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .potencial_1 {
@@ -476,99 +476,63 @@ nav li a:hover::after {
 
 .potencial_3 {
   grid-area: potencial_3;
-
 }
 
 .potencial_4 {
   grid-area: potencial_4;
-
 }
+
 .potencial{
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   background-color: var(--segundo);
-  color: white;
-  text-align: center;
-  height: 200px;
+  height: 180px;
   transition: .3s ease all;
 }
-.potencial:hover{
+
+.potencial:hover {
   background-color: var(--tercero);
   transition: .3s ease all;
 }
-.superior{
+.potencial:not(:hover) {
+  transition: ease;
+}
+
+.superior {
+  display: grid;
   background-color: var(--primero);
   width: 100%;
   height: 92%;
   border-radius: 15px;
-}
-.contenedor_potencial img {
-  width: 100%;
-  border-radius: 15px;
-}
-
-.servicio_definicion h3 {
-  margin: 10px 0px;
-  font-size: 20px;
-  font-weight: 500;
+  grid-template-columns: 30% 70%;
+  padding: 10px 20px;
+  grid-template-areas: "cierre content";
+  align-items: center;
 }
 
-
-.contenedor_boton {
+.cierre {
+  grid-area: cierre;
+  background-color: var(--segundo);
   display: flex;
+  border-radius: 50%; 
+  height: 90px;
+  width: 90px;
   justify-content: center;
+  align-items: center;
 }
 
-.contenedor_potencial button {
-  color: var(--primero);
-  font-family: 'Nunito', sans-serif;
-  font-weight: 800;
-  display: inline-block;
-  width: 10em;
-  height: 2.6em;
-  line-height: 2.5em;
-  margin: 0px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid var(--tercero);
-  background-color: var(--tercero);
-  transition: color .5s;
-  z-index: 1;
-  font-size: 17px;
-  border-radius: 40px;
-  cursor: pointer;
+.cierre i {
+  font-size: 35px;
 }
 
-.contenedor_potencial button:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: var(--primero);
-  height: 200px;
-  width: 350px;
-  border-radius: 50%;
+.content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.contenedor_potencial button:hover {
-  color: white;
-}
-
-.contenedor_potencial button:before {
-  top: 100%;
-  left: 100%;
-  transition: all .7s;
-}
-
-.contenedor_potencial button:hover:before {
-  top: -50px;
-  left: -50px;
-}
-
-.contenedor_potencial button:active:before {
-  background: var(--primero);
-  transition: background 0s;
-}
 
 
 /*! =================================================*/
@@ -679,10 +643,12 @@ nav li a:hover::after {
   .preguntas {
     padding: 30px 8% 30px 8%;
   }
-  .pre_titulo{
+
+  .pre_titulo {
     padding-bottom: 20px;
   }
-  .pre_titulo h2{
+
+  .pre_titulo h2 {
     font-size: 18px;
   }
 }
@@ -891,12 +857,15 @@ nav li a:hover::after {
   .contenedor_contactanos {
     padding: 30px 4% 30px 4%;
   }
-  .co_titulo{
+
+  .co_titulo {
     padding-bottom: 0px;
   }
-  .f_titulo h4{
+
+  .f_titulo h4 {
     font-size: 15px;
   }
+
   .fo_7 a {
     width: 40px;
     margin: 0;
