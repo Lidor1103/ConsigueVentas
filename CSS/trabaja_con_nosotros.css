@@ -1,7 +1,7 @@
 :root {
   --primero: #16232b;
   --segundo: #283c4c;
-  --tercero: #57f3ff;
+  --tercero: #00e3ee;
   --cuarto: #ecf0f1;
 }
 
@@ -372,7 +372,7 @@ nav li a:hover::after {
   background-color: var(--cuarto);
   height: auto;
   display: grid;
-  padding: 70px 6% 70px 6%;
+  padding: 70px 6% 40px 6%;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 40px;
@@ -426,6 +426,7 @@ nav li a:hover::after {
   font-weight: 500;
 }
 
+
 @media only screen and (max-width: 414px) and (orientation: portrait) {}
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {}
@@ -433,7 +434,12 @@ nav li a:hover::after {
 
 
 
-
+.boton_areas{
+  display: flex;
+  justify-content: center;
+  background-color: var(--cuarto);
+  padding-bottom: 60px;
+}
 
 
 /*! =================================================*/
