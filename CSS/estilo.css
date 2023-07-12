@@ -481,47 +481,16 @@ nav li a:hover::after {
 
 .contenedor_servicio button {
   color: var(--primero);
-  font-family: 'Nunito', sans-serif;
-  font-weight: 800;
-  display: inline-block;
-  width: 10em;
-  height: 2.6em;
-  line-height: 2.5em;
-  margin: 0px;
-  position: relative;
-  overflow: hidden;
   border: 2px solid var(--tercero);
   background-color: var(--tercero);
-  transition: color .5s;
-  z-index: 1;
-  font-size: 17px;
-  border-radius: 40px;
-  cursor: pointer;
 }
 
 .contenedor_servicio button:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
   background: var(--primero);
-  height: 200px;
-  width: 350px;
-  border-radius: 50%;
 }
 
 .contenedor_servicio button:hover {
   color: white;
-}
-
-.contenedor_servicio button:before {
-  top: 100%;
-  left: 100%;
-  transition: all .7s;
-}
-
-.contenedor_servicio button:hover:before {
-  top: -50px;
-  left: -50px;
 }
 
 .contenedor_servicio button:active:before {

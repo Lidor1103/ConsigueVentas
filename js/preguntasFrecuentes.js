@@ -50,3 +50,12 @@ for (let i = 0; i < proyectos.length; i++) {
 	});
   }
 
+
+
+  function redirigir() {
+	window.open('https://www.linkedin.com/jobs/search/?currentJobId=3658524454&f_C=68493411&geoId=92000000&originToLandingJobPostings=3658524454%2C3658609364%2C3658535145%2C3658630105%2C3658627115', '_blank');
+  }
+
+  function redirigir() {
+	window.open('https://www.linkedin.com/jobs/search/?currentJobId=3658524454&f_C=68493411&geoId=92000000&originToLandingJobPostings=3658524454%2C3658609364%2C3658535145%2C3658630105%2C3658627115', '_blank');
+  }

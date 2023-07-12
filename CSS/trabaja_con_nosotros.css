@@ -77,15 +77,15 @@ button:before {
   content: "";
   position: absolute;
   z-index: -1;
-  background: #17232b;
+  background: var(--primero);
   height: 200px;
   width: 350px;
   border-radius: 50%;
 }
 
+
 button:hover {
-  color: #ffffff;
-}
+  color: white;}
 
 button:before {
   top: 100%;
@@ -324,8 +324,9 @@ nav li a:hover::after {
 
 
 
+
 /*! =================================================*/
-/*! ============= POTENCIAL ============= */
+/*! ============= HABILIDADES ============= */
 /*! =================================================*/
 .contenedor_habilidades {
   display: grid;
@@ -334,7 +335,7 @@ nav li a:hover::after {
   grid-template-areas: "equipo_1 equipo_3"
     "equipo_2 equipo_3";
   background-color: white;
-  padding: 70px 10%;
+  padding: 70px 10% 50px 10%;
   gap: 10px;
 }
 
@@ -362,7 +363,137 @@ nav li a:hover::after {
   font-size: 18px;
 }
 
+/*! =================================================*/
+/*! =================== Servicios ================== */
+/*! =================================================*/
+.contenedor_servicio {
+  background-color: white;
+  height: auto;
+  display: grid;
+  padding: 0px 8% 70px 8%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 15px;
+  grid-template-areas: 
+    "servicio_1 servicio_2 servicio_3";
+}
 
+.servicio_1 {
+  grid-area: servicio_1;
+}
+
+.servicio_2 {
+  grid-area: servicio_2;
+}
+
+.servicio_3 {
+  grid-area: servicio_3;
+}
+
+.servicio_1,
+.servicio_2,
+.servicio_3 {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  color: var(--primero);
+  height: auto;
+}
+
+.contenedor_servicio img {
+  width: 100%;
+  height: auto;
+}
+
+.servicio_definicion {
+  padding: 20px 6%;
+}
+
+.servicio_definicion h3 {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .contenedor_servicio {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "servicio_presentacion"
+      "servicio_1" " servicio_2" "servicio_3";
+    padding: 50px 15% 50px 15%;
+    grid-row-gap: 30px;
+  }
+
+  .servicio_presentacion {
+    padding-bottom: 0px;
+  }
+
+  .contenedor_servicio button {
+    color: var(--primero);
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    width: 10em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--tercero);
+    background-color: var(--tercero);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 40px;
+    cursor: pointer;
+  }
+
+  .contenedor_servicio button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--primero);
+    height: 200px;
+    width: 350px;
+    border-radius: 50%;
+  }
+
+  .contenedor_servicio button:hover {
+    color: #ffffff;
+  }
+
+  .contenedor_servicio button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+  }
+
+  .contenedor_servicio button:hover:before {
+    top: -50px;
+    left: -50px;
+  }
+
+  .contenedor_servicio button:active:before {
+    background: var(--primero);
+    transition: background 0s;
+  }
+
+  .contenedor_servicio h2 {
+    font-size: 22px;
+  }
+
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_servicio {
+    padding: 30px 10% 30px 10%;
+    grid-row-gap: 20px;
+  }
+
+  .servicio_presentacion h2 {
+    font-size: 18px;
+  }
+
+}
 
 
 /*! =================================================*/
@@ -372,7 +503,7 @@ nav li a:hover::after {
   background-color: var(--cuarto);
   height: auto;
   display: grid;
-  padding: 70px 6% 40px 6%;
+  padding: 70px 6% 50px 6%;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 40px;
@@ -380,7 +511,7 @@ nav li a:hover::after {
     "areas_1 areas_2 areas_3 areas_4"
     "areas_5 areas_6 areas_7 areas_8"
     "areas_9 areas_10 areas_11 areas_12";
-  box-shadow: 0 0 50px 0 rgb(28, 42, 51);
+  box-shadow: 0 0 20px 0 rgb(28, 42, 51);
   color: var(--primero);
 }
 
@@ -425,7 +556,27 @@ nav li a:hover::after {
   font-size: 20px;
   font-weight: 500;
 }
+.boton_areas{
+  display: flex;
+  justify-content: center;
+  background-color: var(--cuarto);
+  padding-bottom: 60px;
+}
 
+
+.boton_areas button {
+  color: var(--primero);
+  border: 2px solid var(--tercero);
+  background-color: var(--tercero);
+}
+
+.boton_areas button:before {
+  background: var(--primero);
+}
+
+.boton_areas button:hover {
+  color: white;
+}
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {}
 
@@ -434,12 +585,7 @@ nav li a:hover::after {
 
 
 
-.boton_areas{
-  display: flex;
-  justify-content: center;
-  background-color: var(--cuarto);
-  padding-bottom: 60px;
-}
+
 
 
 /*! =================================================*/
