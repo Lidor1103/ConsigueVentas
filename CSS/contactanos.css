@@ -694,6 +694,15 @@ nav li a:hover::after {
 }
 
 /*! =================== Responsive ================== */
+@media only screen and (max-width: 1024px) {
+  .contenedor_footer {
+    padding: 20px 4% 20px 4%;
+  }
+  .contenedor_footer h3 {
+    font-size: 18px;
+  }
+
+}
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_footer {
     grid-template-areas: "fo_1 fo_1 fo_1 fo_1"
