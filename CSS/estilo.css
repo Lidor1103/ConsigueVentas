@@ -697,9 +697,9 @@ nav li a:hover::after {
   .contenedor_portafolio {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "c2_titulo c2_titulo"
-      "po_1 po_1 po_2 po_2 "
-      "po_3 po_3 po_4 po_4"
-      "po_5 po_5 po_6 po_6";
+      "po_1 po_2 "
+      "po_3 po_4"
+      "po_5 po_6";
   }
 }
 @media only screen and (max-width: 414px) and (orientation: portrait) {
