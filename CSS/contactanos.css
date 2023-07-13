@@ -320,14 +320,17 @@ nav li a:hover::after {
 }
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
-  .inicio_texto h2{
+  .inicio_texto h2 {
     font-size: 22px;
   }
+
   .titulo {
     height: 120px;
     background-attachment: scroll;
   }
 }
+
+
 /*! =================================================*/
 /*! ============= Contáctanos ============= */
 /*! =================================================*/
@@ -494,15 +497,29 @@ nav li a:hover::after {
   transition: all .7s;
 }
 
+@media only screen and (max-width: 1024px) {
+  .contenedor_contactanos {
+    padding: 50px 4%;
+  }
+
+  .co_texto {
+    padding: 1%;
+  }
+
+  .co_formulario {
+    padding: 30px 30px;
+  }
+}
+
+
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    grid-template-areas: 
+    grid-template-areas:
       "co_texto co_texto"
       "co_formulario co_formulario"
       "co_mapa co_mapa";
     padding: 50px 4%;
     grid-row-gap: 20px;
-    background-attachment: scroll;
   }
 
   .co_formulario form {
@@ -548,7 +565,8 @@ nav li a:hover::after {
   .contenedor_contactanos {
     padding: 30px 4% 30px 4%;
   }
-  .f_titulo h3{
+
+  .f_titulo h3 {
     font-size: 15px;
   }
 }
@@ -727,7 +745,7 @@ nav li a:hover::after {
   .fo_7 a {
     width: 40px;
     height: 40px;
-    line-height: 40px;  
+    line-height: 40px;
     font-size: 20px;
     border-radius: 50%;
     float: none;
