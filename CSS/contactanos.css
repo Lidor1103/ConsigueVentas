@@ -464,7 +464,7 @@ nav li a:hover::after {
 }
 
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 688px) and (orientation: portrait) {
   .contenedor_contactanos {
     grid-template-areas:
       "co_texto co_texto"
