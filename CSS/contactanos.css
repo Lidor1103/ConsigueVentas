@@ -232,7 +232,7 @@ nav li a:hover::after {
   }
 }*/
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 940px) {
   .checkbtn {
     display: block;
     font-size: 30px;
