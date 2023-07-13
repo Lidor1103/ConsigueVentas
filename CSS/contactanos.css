@@ -493,9 +493,10 @@ nav li a:hover::after {
   color: white;
   transition: all .7s;
 }
+
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    grid-template-areas:
+    grid-template-areas: 
       "co_texto co_texto"
       "co_formulario co_formulario"
       "co_mapa co_mapa";
