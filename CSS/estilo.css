@@ -311,18 +311,17 @@ nav li a:hover::after {
 }
 
 /*--------------- Responsive ---------------*/
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 834px) {
   .contenedor_somos {
     grid-template-columns: 100%;
     padding: 40px 5% 40px 5%;
-    grid-column-gap: 0px;
     grid-row-gap: 30px;
     height: auto;
-    grid-template-areas: "so_video so_video"
-      "so_texto so_texto";
+    grid-template-areas: "so_video "
+      "so_texto";
     background-attachment: scroll;
   }
-
+  
   .contenedor_somos .so_texto h2,
   .contenedor_somos .so_texto p {
     margin: 0% 0% 10px 0%;
@@ -333,15 +332,28 @@ nav li a:hover::after {
   }
 
   .so_texto p {
+    font-size: 17px;
+  }
+
+  .so_texto h2 {
+    font-size: 35px;
+  }
+
+  .so_boton {
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .contenedor_somos {
+    padding: 40px 5% 40px 5%;
+  }
+
+  .so_texto p {
     font-size: 13px;
   }
 
   .so_texto h2 {
     font-size: 22px;
-  }
-
-  .so_video iframe {
-    border-radius: 20px;
   }
 
   .so_boton {
@@ -496,6 +508,14 @@ nav li a:hover::after {
 .contenedor_servicio button:active:before {
   background: var(--primero);
   transition: background 0s;
+}
+
+@media only screen and (max-width: 834px) {
+  .contenedor_servicio {
+    padding: 50px 5% 50px 5%;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
@@ -702,6 +722,7 @@ nav li a:hover::after {
       "po_5 po_6";
   }
 }
+
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_portafolio {
     grid-template-columns: repeat(4, 1fr);
@@ -740,7 +761,8 @@ nav li a:hover::after {
   .c2_titulo h2 {
     font-size: 18px;
   }
-  .c2_titulo{
+
+  .c2_titulo {
     padding-bottom: 20px;
   }
 }
@@ -828,7 +850,7 @@ nav li a:hover::after {
 }
 
 /*TESTIMONIOS responsive--------------*/
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 834px) {
   .contenedor_testimonios {
     grid-template-areas: "te_titulo te_titulo te_titulo te_titulo"
       "te_cliente_1 te_cliente_1 te_cliente_2 te_cliente_2"
@@ -836,6 +858,13 @@ nav li a:hover::after {
       "te_cliente_3 te_cliente_3 te_cliente_4 te_cliente_4"
       "te_video_3 te_video_3 te_video_4 te_video_4"
     ;
+    background-attachment: scroll;
+    padding: 50px 18% 50px 18%;
+  }
+}
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .contenedor_testimonios {
     background-attachment: scroll;
     padding: 50px 8% 50px 8%;
   }
@@ -853,13 +882,15 @@ nav li a:hover::after {
   .te_titulo h2 {
     font-size: 18px;
   }
-  .te_titulo{
+
+  .te_titulo {
     padding-bottom: 10px;
   }
-  .contenedor_testimonios p{
+
+  .contenedor_testimonios p {
     font-size: 15px;
   }
-  
+
 }
 
 /*! =================================================*/
@@ -970,13 +1001,16 @@ nav li a:hover::after {
   .preguntas {
     padding: 30px 8% 30px 8%;
   }
-  .pre_titulo{
+
+  .pre_titulo {
     padding-bottom: 20px;
   }
-  .pre_titulo h2{
+
+  .pre_titulo h2 {
     font-size: 18px;
   }
 }
+
 /*! =================================================*/
 /*! ============= Contáctanos ============= */
 /*! =================================================*/
@@ -1153,6 +1187,33 @@ nav li a:hover::after {
   color: white;
 }
 
+@media only screen and (max-width: 834px) {
+  .contenedor_contactanos {
+    padding: 70px 4% 70px 4%;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+  }
+
+  .co_formulario form {
+    grid-template-areas: "f_titulo f_titulo"
+      "f_nombres f_nombres"
+      "f_celular f_celular"
+      "f_correo f_correo"
+      "f_ciudad f_ciudad"
+      "f_asunto f_asunto"
+      "f_consulta f_consulta"
+      "f_button f_button";
+  }
+
+  .co_formulario h4 {
+    font-size: 22px;
+  }
+
+  .co_formulario {
+    padding: 30px 30px;
+  }
+}
+
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
     grid-template-areas: "co_titulo co_titulo"
@@ -1196,9 +1257,6 @@ nav li a:hover::after {
     font-size: 22px;
   }
 
-  .co_formulario {
-    padding: 30px 30px;
-  }
 }
 
 @media only screen and (max-width: 393px) and (orientation: portrait) {
@@ -1211,13 +1269,16 @@ nav li a:hover::after {
   .contenedor_contactanos {
     padding: 30px 4% 30px 4%;
   }
-  .co_titulo{
+
+  .co_titulo {
     padding-bottom: 0px;
   }
-  .f_titulo h4{
+
+  .f_titulo h4 {
     font-size: 15px;
   }
 }
+
 /*! =================================================*/
 /*! =================== Footer ===================== */
 /*! =================================================*/
@@ -1306,11 +1367,15 @@ nav li a:hover::after {
   font-size: 20px;
   transition: all 0.5s ease;
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-right: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-bottom: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
 
 
@@ -1372,7 +1437,8 @@ nav li a:hover::after {
   .fo_2_descripcion {
     text-align: center;
   }
-  .fo_4_descripcion{
+
+  .fo_4_descripcion {
     text-align: center;
   }
 }
@@ -1385,7 +1451,7 @@ nav li a:hover::after {
       "fo_3 fo_3"
       "fo_4 fo_4"
       "fo_5 fo_5"
-      ;
+    ;
     padding: 20px 8% 20px 8%;
   }
 
