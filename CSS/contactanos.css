@@ -525,7 +525,7 @@ nav li a:hover::after {
     padding: 1%;
   }
 
-  .co_formulario h4 {
+  .co_formulario h3 {
     font-size: 22px;
   }
 
@@ -548,7 +548,7 @@ nav li a:hover::after {
   .contenedor_contactanos {
     padding: 30px 4% 30px 4%;
   }
-  .f_titulo h4{
+  .f_titulo h3{
     font-size: 15px;
   }
 }
