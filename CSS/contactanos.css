@@ -528,16 +528,11 @@ nav li a:hover::after {
 /*! =================================================*/
 /*General--------------------------*/
 .contenedor_footer {
-  padding-top: 20px;
-  padding-bottom: 25px;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 20px 5% 25px 5%;
   display: grid;
-  grid-template-rows: 60px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "fo_1 fo_2 fo_3 fo_4"
-    "fo_1 fo_5 fo_6 fo_7"
-    "fo_8 fo_8 fo_8 fo_8";
+    "fo_5 fo_5 fo_5 fo_5";
   grid-column-gap: 10px;
   color: #343434;
   text-align: center;
@@ -566,64 +561,68 @@ nav li a:hover::after {
 .fo_4 {
   grid-area: fo_4;
   text-align: left;
-  padding: 19px;
+  padding: 19px 10px;
 }
 
 .fo_5 {
   grid-area: fo_5;
-  text-align: left;
-  padding: 12px 19px;
+  padding: 10px;
+  border-top: 1px solid #1c2a33;
 }
 
-.fo_6 {
-  grid-area: fo_6;
+
+.fo_2_descripcion {
   text-align: left;
-  padding: 12px 19px;
+  padding: 12px 0px;
+}
+
+.fo_3_descripcion {
+  text-align: left;
+  padding: 12px 0px;
   display: flex;
   flex-direction: column;
   font-family: 'Nunito', sans-serif;
 }
 
-.fo_6 a {
+.fo_3_descripcion a {
   text-decoration: none;
   font-size: 18px;
   line-height: 1.2;
   color: #343434;
 }
 
-.fo_6 a:hover {
+.fo_3_descripcion a:hover {
   color: rgb(0, 0, 0);
 }
 
-.fo_7 {
-  grid-area: fo_7;
+.fo_4_descripcion {
   padding: 12px 0px;
 }
 
-.fo_8 {
-  grid-area: fo_8;
-  padding: 10px;
-  border-top: 1px solid #1c2a33;
-}
-
-.fo_7 a {
+.fo_4_descripcion a {
   display: inline-block;
   /* Añade esta línea */
   width: 40px;
+  text-align: center;
   background-color: var(--primero);
-  margin: 0 10px 10px 0;
   line-height: 40px;
   border-radius: 50%;
   color: var(--tercero);
   font-size: 20px;
   transition: all 0.5s ease;
 }
+.fo_4_descripcion a:not(:last-child) {
+  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
+}
+.fo_4_descripcion a:not(:last-child) {
+  margin-bottom: 10px; /* Ajusta el valor según el espacio deseado */
+}
 
-.fo_7 a:hover {
+
+.fo_4_descripcion a:hover {
   background-color: var(--tercero);
   color: var(--primero);
 }
-
 
 .fo_1 img {
   width: 200px;
@@ -641,52 +640,32 @@ nav li a:hover::after {
   font-size: 18px;
 }
 
-.co_mapa .mapa-contenedor iframe {
-  border: none;
-}
-
 /*! =================== Responsive ================== */
 @media only screen and (max-width: 1024px) {
   .contenedor_footer {
     padding: 20px 4% 20px 4%;
   }
+
   .contenedor_footer h3 {
     font-size: 18px;
   }
 }
 
 @media only screen and (max-width: 688px) {
-
   .contenedor_footer {
-    grid-template-columns: repeat(2, 1fr);  
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "fo_1 fo_2"
-      "fo_1 fo_5"
       "fo_3 fo_4"
-      "fo_6 fo_7"
-      "fo_8 fo_8";
+      "fo_5 fo_5";
     padding: 20px 8% 20px 8%;
   }
-.contenedor_footer {
+
+  .contenedor_footer {
     padding: 20px 4% 20px 4%;
   }
+
   .contenedor_footer h3 {
     font-size: 25px;
-  }
-
-}
-@media only screen and (max-width: 414px) {
-  .contenedor_footer {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: "fo_1 fo_1 fo_1 fo_1"
-      "fo_1 fo_1 fo_1 fo_1"
-      "fo_2 fo_2 fo_2 fo_2"
-      "fo_5 fo_5 fo_5 fo_5"
-      "fo_3 fo_3 fo_3 fo_3"
-      "fo_6 fo_6 fo_6 fo_6"
-      "fo_4 fo_4 fo_4 fo_4"
-      "fo_7 fo_7 fo_7 fo_7"
-      "fo_8 fo_8 fo_8 fo_8";
-    padding: 20px 8% 20px 8%;
   }
 
   .fo_1,
@@ -694,9 +673,25 @@ nav li a:hover::after {
   .fo_3,
   .fo_4,
   .fo_5,
-  .fo_6,
-  .fo_7 {
+  .fo_3_descripcion,
+  .fo_2_descripcion {
     text-align: center;
+  }
+  .fo_4_descripcion{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .contenedor_footer {
+    grid-template-areas: "fo_1 fo_1"
+      "fo_1 fo_1"
+      "fo_2 fo_2"
+      "fo_3 fo_3"
+      "fo_4 fo_4"
+      "fo_5 fo_5"
+      ;
+    padding: 20px 8% 20px 8%;
   }
 
   .fo_1,
@@ -708,27 +703,5 @@ nav li a:hover::after {
 
   .contenedor_footer h3 {
     font-size: 22px;
-  }
-
-  .fo_1 p,
-  .fo_5 p,
-  .fo_6 a {
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
-  }
-
-  /*Logo de la empresa*/
-  .fo_1 img {
-    width: 70%;
-  }
-
-  /*Iconos de redes sociales*/
-  .fo_7 a {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    border-radius: 50%;
-    float: none;
   }
 }

@@ -1,10 +1,9 @@
 :root {
   --primero: #16232b;
   --segundo: #283c4c;
-  --tercero: #57f3ff;
+  --tercero: #00e3ee;
   --cuarto: #ecf0f1;
 }
-
 
 
 /*! =================================================*/
@@ -18,7 +17,6 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 body {
@@ -35,10 +33,6 @@ h2 {
   font-family: 'DM Sans', sans-serif;
   line-height: 1;
   font-size: 37px;
-}
-
-h3 {
-  font-family: 'Poppins', sans-serif;
 }
 
 .p_celeste {
@@ -99,157 +93,6 @@ button:active:before {
   transition: background 0s;
 }
 
-
-
-/*! =================================================*/
-/*! ============= Barra de navegación ============== */
-/*! =================================================*/
-nav {
-  background: var(--primero);
-  position: fixed;
-  height: 85px;
-  width: 100%;
-  top: 0;
-  z-index: 9999;
-}
-
-/*LOGO*/
-.enlace {
-  position: absolute;
-  margin-left: 40px;
-  height: 85px;
-}
-
-.logo {
-  height: 85px;
-  padding: 5px;
-}
-
-
-/*ENLACES*/
-nav ul {
-  float: right;
-  margin-right: 40px;
-}
-
-nav ul li {
-  display: inline-block;
-  line-height: 85px;
-  margin: 0 5px;
-}
-
-nav ul li a {
-  color: rgb(255, 255, 255);
-  font-size: 18px;
-  padding: 7px 10px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  position: relative;
-}
-
-/*HOVER*/
-nav li .active::after,
-.active_jf::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) scaleX(0);
-  width: 0;
-  height: 3px;
-  transition: transform 0.3s ease, width 0.3s ease;
-}
-
-nav li .active::after {
-  background-color: var(--tercero)
-}
-
-nav li .active_jf::after {
-  background-color: #f3c331;
-}
-
-
-nav li a:hover::after {
-  transform: translateX(-50%) scaleX(1);
-  width: 100%;
-}
-
-.checkbtn {
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 85px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-/* Desparecer el checkbox */
-#check {
-  display: none;
-}
-
-
-
-@media only screen and (max-width: 950px) {
-  .checkbtn {
-    display: block;
-    font-size: 30px;
-    line-height: 80px;
-    margin-right: 25px;
-  }
-
-  nav {
-    height: 80px;
-  }
-
-  nav ul {
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 25px 0;
-    line-height: 30px;
-  }
-
-  nav ul li a {
-    font-size: 22px;
-  }
-
-  nav li a:hover,
-  nav li a.active,
-  .active_jf {
-    color: #2b171b;
-  }
-
-  #check:checked~ul {
-    left: 0;
-  }
-
-  .enlace {
-    height: 100%;
-    display: flex;
-    margin-left: 20px;
-    align-items: center;
-  }
-
-  .logo {
-    height: 65px;
-  }
-
-  body {
-    margin-top: 80px;
-  }
-}
 
 
 /*! =================================================*/
