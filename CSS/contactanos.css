@@ -495,7 +495,9 @@ nav li a:hover::after {
   .inicio_texto h2{
     font-size: 22px;
   }
-  
+  .titulo {
+    height: 120px;
+  }
   .contenedor_contactanos {
     grid-template-areas:
       "co_texto co_texto"
