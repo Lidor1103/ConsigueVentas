@@ -544,7 +544,9 @@ nav li a:hover::after {
   background-color: var(--cuarto);
   padding-bottom: 60px;
 }
-
+.boton_areas button {
+  width: 12em;
+}
 
 .boton_areas button {
   color: var(--primero);
