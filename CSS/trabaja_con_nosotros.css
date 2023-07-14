@@ -85,7 +85,8 @@ button:before {
 
 
 button:hover {
-  color: white;}
+  color: white;
+}
 
 button:before {
   top: 100%;
@@ -335,7 +336,7 @@ nav li a:hover::after {
   grid-template-areas: "equipo_1 equipo_3"
     "equipo_2 equipo_3";
   background-color: white;
-  padding: 70px 10% 50px 10%;
+  padding: 70px 10% 40px 10%;
   gap: 10px;
 }
 
@@ -374,8 +375,9 @@ nav li a:hover::after {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 50px;
   grid-row-gap: 15px;
-  grid-template-areas: 
+  grid-template-areas:
     "servicio_1 servicio_2 servicio_3";
+  font-size: 20px;
 }
 
 .servicio_1 {
@@ -403,7 +405,14 @@ nav li a:hover::after {
 
 .contenedor_servicio img {
   width: 100%;
+  border-radius: 0px 0px 30px 30px;
   height: auto;
+  border-bottom: 10px solid var(--segundo);
+  transition: .3s ease all;
+}
+
+.contenedor_servicio img:hover {
+  border-bottom: 10px solid var(--tercero);
 }
 
 .servicio_definicion {
@@ -556,7 +565,8 @@ nav li a:hover::after {
   font-size: 20px;
   font-weight: 500;
 }
-.boton_areas{
+
+.boton_areas {
   display: flex;
   justify-content: center;
   background-color: var(--cuarto);
@@ -634,7 +644,7 @@ nav li a:hover::after {
   grid-area: potencial_4;
 }
 
-.potencial{
+.potencial {
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
@@ -647,6 +657,7 @@ nav li a:hover::after {
   background-color: var(--tercero);
   transition: .3s ease all;
 }
+
 .potencial:not(:hover) {
   transition: ease;
 }
@@ -667,7 +678,7 @@ nav li a:hover::after {
   grid-area: cierre;
   background-color: var(--segundo);
   display: flex;
-  border-radius: 50%; 
+  border-radius: 50%;
   height: 90px;
   width: 90px;
   justify-content: center;
@@ -895,11 +906,15 @@ nav li a:hover::after {
   font-size: 20px;
   transition: all 0.5s ease;
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-right: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-bottom: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
 
 
@@ -961,7 +976,8 @@ nav li a:hover::after {
   .fo_2_descripcion {
     text-align: center;
   }
-  .fo_4_descripcion{
+
+  .fo_4_descripcion {
     text-align: center;
   }
 }
@@ -974,7 +990,7 @@ nav li a:hover::after {
       "fo_3 fo_3"
       "fo_4 fo_4"
       "fo_5 fo_5"
-      ;
+    ;
     padding: 20px 8% 20px 8%;
   }
 
