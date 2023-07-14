@@ -289,9 +289,14 @@ nav li a:hover::after {
 /*! ============= AREAS ============= */
 /*! =================================================*/
 .impar, .par{
-  padding: 50px 10% 50px 10%;
-  gap: 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: auto;
+  padding-right: auto;
+  gap: 4%;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .impar{
@@ -302,17 +307,14 @@ nav li a:hover::after {
 }
 
 .a_texto{
-  max-width: 50%;
+  max-width: 485px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   
 }
 .a_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 50%;
+  max-width: 539px;
   max-height: 100%;
 }
 
