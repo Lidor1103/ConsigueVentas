@@ -253,6 +253,142 @@ nav li a:hover::after {
 
 
 /*! =================================================*/
+/*! ============= Título ============= */
+/*! =================================================*/
+.titulo {
+  width: 100%;
+  height: 180px;
+  padding: 0 6%;
+  background: url(../img/img3.webp) no-repeat center/cover fixed;
+  display: flex;
+  background-blend-mode: overlay;
+  background-color: #020b117c;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.inicio_texto {
+  padding: 20px;
+  border-radius: 30px;
+  background-blend-mode: overlay;
+  background-color: #16232bc2;
+  width: auto;
+}
+
+.inicio_texto h2 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .inicio_texto h2 {
+    font-size: 22px;
+  }
+
+  .titulo {
+    height: 120px;
+    background-attachment: scroll;
+  }
+}
+
+
+
+
+
+/*PAQUETE----------------------------------------------------------------------------*/
+/*General--------------------------*/
+.contenedor_4 {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "pa_titulo pa_titulo pa_titulo"
+    "pa_1 pa_2 pa_3";
+  grid-row-gap: 4%;
+  grid-column-gap: 3%;
+  background-color: #1c2a33;
+  margin-bottom: 30px;
+}
+
+.pa_titulo {
+  grid-area: pa_titulo;
+  text-align: center;
+  color: white;
+}
+
+.pa_1 {
+  grid-area: pa_1;
+}
+
+.pa_2 {
+  grid-area: pa_2;
+}
+
+.pa_3 {
+  grid-area: pa_3;
+}
+
+.pa_1,
+.pa_2,
+.pa_3 {
+  padding: 3%;
+  color: #1c2a33;
+  border-radius: 35px;
+  background-color: #ffffff;
+  font-family: 'Nunito', sans-serif;
+}
+
+.contenedor_4 h4 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px 10px 0px 10px;
+  font-weight: 400;
+  font-size: 13px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #2AC8BE;
+  padding: 1% 2% 1% 2%;
+}
+
+.pa_nombre {
+  padding: 2% 0px 1% 0px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.pa_1 p,
+.pa_2 p,
+.pa_3 p {
+  text-align: center;
+}
+
+.contenedor_4 ul {
+  margin-top: 10px;
+  text-align: left;
+  padding: 0% 12% 5% 12%;
+}
+
+.boton_4 {
+  display: flex;
+  justify-content: center;
+}
+
+/*Responsive areas de grid----------*/
+@media (max-width:765px) {
+  .contenedor_4 {
+    grid-template-areas: "pa_titulo pa_titulo pa_titulo"
+      "pa_1 pa_1 pa_1"
+      "pa_2 pa_2 pa_2"
+      "pa_3 pa_3 pa_3";
+    grid-row-gap: 1%;
+  }
+}
+
+
+
+
+/*! =================================================*/
 /*! =================== Footer ===================== */
 /*! =================================================*/
 /*General--------------------------*/
