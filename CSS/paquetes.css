@@ -312,12 +312,6 @@ nav li a:hover::after {
   margin-bottom: 30px;
 }
 
-.pa_titulo {
-  grid-area: pa_titulo;
-  text-align: center;
-  color: white;
-}
-
 .pa_1 {
   grid-area: pa_1;
 }
