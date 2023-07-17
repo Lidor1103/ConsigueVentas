@@ -52,6 +52,7 @@ p {
 
 button {
   color: #17232b;
+  background-color: var(--tercero);
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
   display: inline-block;
@@ -61,7 +62,7 @@ button {
   margin: 0px;
   position: relative;
   overflow: hidden;
-  border: 2px solid #fdfdfd;
+  border: 2px solid var(--tercero);
   transition: color .5s;
   z-index: 1;
   font-size: 17px;
@@ -301,15 +302,14 @@ nav li a:hover::after {
   padding-left: 3%;
   padding-right: 3%;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "pa_titulo pa_titulo pa_titulo"
     "pa_1 pa_2 pa_3";
   grid-row-gap: 4%;
   grid-column-gap: 3%;
-  background-color: #1c2a33;
-  margin-bottom: 30px;
+  background-color: var(--segundo)
 }
 
 .pa_1 {
@@ -328,7 +328,7 @@ nav li a:hover::after {
 .pa_2,
 .pa_3 {
   padding: 3%;
-  color: #1c2a33;
+  color: var(--primero);
   border-radius: 35px;
   background-color: #ffffff;
   font-family: 'Nunito', sans-serif;
