@@ -465,7 +465,7 @@ nav li a:hover::after {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: 
       "servicio_1" " servicio_2" "servicio_3";
-    padding: 20px 15% 50px 15%;
+    padding: 20px 15% 70px 15%;
     grid-row-gap: 30px;
   }
 }
