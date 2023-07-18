@@ -374,7 +374,7 @@ nav li a:hover::after {
       "equipo_2" 
       "equipo_3";
       text-align: center;
-      padding: 70px 10% 0px 10%;
+      padding: 50px 10% 0px 10%;
   }
   .habilidad_texto_1 p {
     font-size: 15px;
@@ -465,7 +465,7 @@ nav li a:hover::after {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: 
       "servicio_1" " servicio_2" "servicio_3";
-    padding: 20px 15% 70px 15%;
+    padding: 30px 15% 50px 15%;
     grid-row-gap: 30px;
   }
 }
@@ -501,22 +501,6 @@ nav li a:hover::after {
   grid-area: areas_título;
   text-align: center;
   color: var(--primero)
-}
-
-.areas_1 {
-  grid-area: areas_1;
-}
-
-.areas_2 {
-  grid-area: areas_2;
-}
-
-.areas_3 {
-  grid-area: areas_3;
-}
-
-.areas_4 {
-  grid-area: areas_4;
 }
 
 .areas {
@@ -563,7 +547,26 @@ nav li a:hover::after {
   color: white;
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {}
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .areas_título h2{
+    font-size: 22px;
+  }
+  .contenedor_areas {
+    padding: 50px 6% 40px 6%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+    grid-template-areas: "areas_título areas_título"
+      "areas_1 areas_2" "areas_3 areas_4"
+      "areas_5 areas_6" "areas_7 areas_8"
+      "areas_9 areas_10" "areas_11 areas_12";
+  }
+  .areas_nombre h3{
+    font-size: 13px;
+  }
+  .boton_areas{
+    padding-bottom: 50px;
+  }
+}
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {}
 
@@ -670,6 +673,36 @@ nav li a:hover::after {
   flex-direction: column;
   gap: 10px;
 }
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .contenedor_potencial {
+    padding: 50px 6% 50px 6%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "potencial_presentacion"
+      "potencial_1" "potencial_2" "potencial_3"
+      "potencial_4" "potencial_5" "potencial_6";
+    grid-row-gap: 20px;
+    background-position: right;
+  }
+  .potencial_presentacion h2{
+    font-size: 22px;
+  }
+  .potencial_presentacion h3{
+    font-size: 13px;
+  }
+  .cierre {
+    grid-area: cierre;
+    background-color: var(--segundo);
+    display: flex;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {}
 
 
 
