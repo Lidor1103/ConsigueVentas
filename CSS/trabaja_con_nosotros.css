@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-color: var(--segundo);
+  background-color: var(--primero);
   margin-top: 85px;
 }
 
@@ -583,7 +583,7 @@ nav li a:hover::after {
   width: 100%;
   height: auto;
   padding: 70px 6% 70px 6%;
-  background-image: url(../img/background-op.png);
+  background-image: url(../img/wave3.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -710,7 +710,7 @@ nav li a:hover::after {
 /*! ============= Preguntas Frecuentes ============= */
 /*! =================================================*/
 .preguntas {
-  padding: 70px 5%;
+  padding: 5px 5% 70px 5%;
   background-color: var(--cuarto);
 }
 

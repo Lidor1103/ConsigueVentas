@@ -1,6 +1,6 @@
 :root {
   --primero: #16232b;
-  --segundo: #283c4c;
+  --segundo: #293c4b;
   --tercero: #00e3ee;
   --cuarto: #ecf0f1;
 }
@@ -23,7 +23,7 @@ html {
 
 body {
   background-color: var(--segundo);
-  margin-top: 80px;
+  margin-top: 85px;
 }
 
 
@@ -65,7 +65,7 @@ button {
   transition: color .5s;
   z-index: 1;
   font-size: 17px;
-  border-radius: 40px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ button:active:before {
 nav {
   background: var(--primero);
   position: fixed;
-  height: 80px;
+  height: 85px;
   width: 100%;
   top: 0;
   z-index: 9999;
@@ -117,12 +117,12 @@ nav {
 .enlace {
   position: absolute;
   margin-left: 40px;
-  height: 80px;
+  height: 85px;
 }
 
 .logo {
-  height: 80px;
-  padding: 5px;
+  height: 85px;
+  padding: 10px;
 }
 
 
@@ -134,7 +134,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  line-height: 80px;
+  line-height: 85px;
   margin: 0 5px;
 }
 
