@@ -338,7 +338,7 @@ nav li a:hover::after {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "equipo_1 equipo_3"
     "equipo_2 equipo_3";
-  background-color: var(--cuarto);
+  background-color: #ffffff;
   padding: 70px 10% 40px 10%;
   gap: 10px;
 }
@@ -405,7 +405,7 @@ nav li a:hover::after {
 /*! =================== Servicios ================== */
 /*! =================================================*/
 .contenedor_servicio {
-  background-color: var(--cuarto);
+  background-color: #ffffff;
   height: auto;
   display: grid;
   padding: 0px 8% 70px 8%;
@@ -482,7 +482,7 @@ nav li a:hover::after {
 /*! =================== AREAS ================== */
 /*! =================================================*/
 .contenedor_areas {
-  background-color: var(--cuarto);
+  background-color: #ffffff;
   height: auto;
   display: grid;
   padding: 20px 6% 50px 6%;
@@ -593,7 +593,6 @@ nav li a:hover::after {
     "potencial_4 potencial_5 potencial_6";
   grid-column-gap: 20px;
   grid-row-gap: 40px;
-  box-shadow: 0 0 50px 0 rgb(28, 42, 51);
   color: white;
 }
 
