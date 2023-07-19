@@ -196,6 +196,10 @@ nav li a:hover::after {
 }
 
 @media only screen and (max-width: 950px) {
+  .logo {
+    height: 85px;
+    padding: 5px;
+  }
   .checkbtn {
     display: block;
     font-size: 30px;
