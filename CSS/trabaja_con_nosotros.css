@@ -474,7 +474,7 @@ nav li a:hover::after {
   }
 
   .servicio_definicion {
-    padding: 0 6% 10px 6%;
+    padding: 8px 6% 10px 6%;
     font-size: 16px;
     line-height: 1.2;
   }
