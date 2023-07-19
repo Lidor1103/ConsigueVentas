@@ -69,7 +69,7 @@ button {
   transition: color .5s;
   z-index: 1;
   font-size: 17px;
-  border-radius: 40px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -194,8 +194,6 @@ nav li a:hover::after {
 #check {
   display: none;
 }
-
-
 
 @media only screen and (max-width: 950px) {
   .checkbtn {
@@ -402,7 +400,7 @@ nav li a:hover::after {
 
 
 /*! =================================================*/
-/*! =================== Servicios ================== */
+/*! =================== BENEFICIOS ================== */
 /*! =================================================*/
 .contenedor_servicio {
   background-color: #ffffff;
@@ -485,7 +483,7 @@ nav li a:hover::after {
   background-color: #ffffff;
   height: auto;
   display: grid;
-  padding: 20px 6% 50px 6%;
+  padding: 30px 6% 50px 6%;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 40px;
@@ -525,7 +523,7 @@ nav li a:hover::after {
 .boton_areas {
   display: flex;
   justify-content: center;
-  background-color: var(--cuarto);
+  background-color: #ffffff;
   padding-bottom: 60px;
 }
 .boton_areas button {
@@ -551,13 +549,17 @@ nav li a:hover::after {
     font-size: 22px;
   }
   .contenedor_areas {
-    padding: 50px 6% 40px 6%;
+    padding: 20px 6% 40px 6%;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 20px;
     grid-template-areas: "areas_título areas_título"
       "areas_1 areas_2" "areas_3 areas_4"
       "areas_5 areas_6" "areas_7 areas_8"
       "areas_9 areas_10" "areas_11 areas_12";
+  }
+  .contenedor_areas h2{
+
+    padding-bottom: 10px;
   }
   .areas_nombre h3{
     font-size: 13px;
