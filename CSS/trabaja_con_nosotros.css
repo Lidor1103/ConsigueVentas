@@ -482,10 +482,10 @@ nav li a:hover::after {
 /*! =================== AREAS ================== */
 /*! =================================================*/
 .contenedor_areas {
-  background-color: var(--cuarto);
+  background-color: white;
   height: auto;
   display: grid;
-  padding: 70px 6% 50px 6%;
+  padding: 20px 6% 50px 6%;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 40px;
@@ -493,7 +493,6 @@ nav li a:hover::after {
     "areas_1 areas_2 areas_3 areas_4"
     "areas_5 areas_6 areas_7 areas_8"
     "areas_9 areas_10 areas_11 areas_12";
-  box-shadow: 0 0 20px 0 rgb(28, 42, 51);
   color: var(--primero);
 }
 
