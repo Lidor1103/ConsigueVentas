@@ -482,7 +482,7 @@ nav li a:hover::after {
 /*! =================== AREAS ================== */
 /*! =================================================*/
 .contenedor_areas {
-  background-color: white;
+  background-color: var(--cuarto);
   height: auto;
   display: grid;
   padding: 20px 6% 50px 6%;
