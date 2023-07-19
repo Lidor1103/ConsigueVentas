@@ -676,13 +676,12 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_potencial {
-    padding: 50px 6% 50px 6%;
+    padding: 50px 6% 15px 6%;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "potencial_presentacion"
       "potencial_1" "potencial_2" "potencial_3"
       "potencial_4" "potencial_5" "potencial_6";
     grid-row-gap: 20px;
-    background-position: right;
   }
   .potencial_presentacion h2{
     font-size: 22px;
