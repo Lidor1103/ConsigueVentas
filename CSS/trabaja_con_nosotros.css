@@ -625,7 +625,6 @@ nav li a:hover::after {
 .potencial {
   overflow: hidden;
   border-radius: 15px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
   background-color: var(--segundo);
   height: 180px;
   transition: .3s ease all;
