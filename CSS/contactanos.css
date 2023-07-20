@@ -291,7 +291,7 @@ nav li a:hover::after {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "co_texto co_texto"
-    " co_mapa co_formulario";
+    " co_img co_formulario";
   grid-row-gap: 15px;
   grid-column-gap: 40px;
   padding: 50px 8% 70px 8%;
@@ -393,8 +393,8 @@ nav li a:hover::after {
   font-family: 'Roboto', sans-serif;
 }
 
-.co_mapa {
-  grid-area: co_mapa;
+.co_img {
+  grid-area: co_img;
   display: flex;
   padding: 10px;
   align-items: center;
@@ -403,15 +403,8 @@ nav li a:hover::after {
   height: auto;
 }
 
-.co_mapa img{
+.co_img img{
   width: 100%;
-}
-
-.co_mapa p {
-  font-family: 'Roboto';
-  font-size: 18px;
-  padding-top: 20px;
-  text-align: right;
 }
 
 .co_formulario .button {
@@ -453,7 +446,7 @@ nav li a:hover::after {
   .contenedor_contactanos {
     grid-template-areas:
       "co_texto co_texto"
-      "co_mapa co_mapa"
+      "co_img co_img"
       "co_formulario co_formulario"
       ;
     padding: 25px 4%;
@@ -471,7 +464,7 @@ nav li a:hover::after {
       "f_button f_button";
   }
 
-  .co_mapa p {
+  .co_img p {
     font-size: 13px;
     text-align: center;
   }
