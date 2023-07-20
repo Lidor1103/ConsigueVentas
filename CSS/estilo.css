@@ -1474,14 +1474,6 @@ nav li a:hover::after {
 
 
 
-
-
-
-
-
-
-
-
 @keyframes resaltarInput {
   0% { background-color: var(--tercero); }
   100% { background-color: white; }
