@@ -328,21 +328,42 @@ nav li a:hover::after {
   color: var(--primero);
 }
 @media only screen and (max-width: 1024px) {
-  
+  .impar, .par{
+    padding-left:5%;
+    padding-right: 5%;
+  }
+  .a_img {
+    max-width: 400px;
+  }
 }
 
-
-@media only screen and (max-width: 688px) and (orientation: portrait) {
-  
+@media only screen and (max-width: 688px) {
+  .impar, .par{
+    padding-left:3%;
+    padding-right: 3%;
+  }
+  .a_img {
+    max-width: 250px;
+  }
 }
 
-@media only screen and (max-width: 393px) and (orientation: portrait) {
-  
+@media only screen and (max-width: 590px){
+  .impar, .par{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .impar, .par{
+    padding-left:5%;
+    padding-right: 5%;
+  }
+  .a_texto h2{
+    text-align: center;
+  }
+  .a_img {
+   width: 80%;
+  }
 }
 
-@media only screen and (max-width: 320px) and (orientation: portrait) {
-  
-}
 
 /*! =================================================*/
 /*! =================== Footer ===================== */
