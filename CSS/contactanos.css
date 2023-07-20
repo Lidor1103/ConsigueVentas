@@ -456,7 +456,7 @@ nav li a:hover::after {
       "co_mapa co_mapa"
       "co_formulario co_formulario"
       ;
-    padding: 50px 4%;
+    padding: 25px 4%;
     grid-row-gap: 20px;
   }
 
