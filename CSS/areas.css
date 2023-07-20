@@ -362,7 +362,7 @@ nav li a:hover::after {
     text-align: center;
   }
   .a_img {
-   width: 80%;
+    max-width: 300px;
   }
 }
 
