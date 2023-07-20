@@ -62,3 +62,47 @@ for (let i = 0; i < proyectos.length; i++) {
   function areas() {
     window.location.href = 'areas.html';
 }
+
+
+
+ // LLenar el formulario según el botón del servicio
+ // Función para llenar los campos del formulario según el botón seleccionado
+ function llenarCamposFormulario(asunto, consulta) {
+	document.getElementById('Asunto').value = asunto;
+	document.getElementById('consulta').value = consulta;
+
+	const formularioOffsetTop = document.getElementById('contenedor_formulario').offsetTop;
+	window.scrollTo({
+		top: formularioOffsetTop,
+		behavior: 'smooth'
+	});
+
+	// Agregar clase "input-lleno" a los campos de input que se llenaron
+	document.getElementById('Asunto').classList.add('input-lleno');
+	document.getElementById('consulta').classList.add('input-lleno');
+
+	// Remover clase después de 3 segundos (ajustable según tu preferencia)
+	setTimeout(function() {
+		document.getElementById('Asunto').classList.remove('input-lleno');
+		document.getElementById('consulta').classList.remove('input-lleno');
+	}, 3000); // 3000 milisegundos = 3 segundos (ajustable según tu preferencia)
+}
+
+// Agregar los eventos de clic a los botones de servicios (botonembudo, botonpagina, botoncatalogo) ...
+document.getElementById("botonembudo").addEventListener('click', function() {
+	const asunto = "Deseo más información sobre el servicio - Embudo de Ventas";
+	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
+	llenarCamposFormulario(asunto, consulta);
+});
+
+document.getElementById("botonpagina").addEventListener('click', function() {
+	const asunto = "Deseo más información sobre el servicio - Páginas Web";
+	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
+	llenarCamposFormulario(asunto, consulta);
+});
+
+document.getElementById("botoncatalogo").addEventListener('click', function() {
+	const asunto = "Deseo más información sobre el servicio - Catálogo Virtual";
+	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
+	llenarCamposFormulario(asunto, consulta);
+});

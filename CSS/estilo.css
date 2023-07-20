@@ -1470,3 +1470,25 @@ nav li a:hover::after {
     font-size: 22px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes resaltarInput {
+  0% { background-color: var(--tercero); }
+  100% { background-color: white; }
+}
+
+/* Aplicar resaltado a los campos de input que se llenan automáticamente */
+.input-lleno {
+  background-color: white; /* Fondo blanco por defecto */
+  animation: resaltarInput 5s; /* Duración de la animación (ajustable según el tiempo que desees) */
+}
