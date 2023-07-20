@@ -351,8 +351,8 @@ nav li a:hover::after {
   .impar, .par{
     flex-direction: column;
     gap: 20px;
-    padding-top: 30px;
-  padding-bottom: 30px;
+    padding-top: 35px;
+  padding-bottom: 35px;
   }
   .impar, .par{
     padding-left:5%;
