@@ -291,7 +291,7 @@ nav li a:hover::after {
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "co_texto co_texto"
-    "co_formulario co_mapa";
+    " co_mapa co_formulario";
   grid-row-gap: 15px;
   grid-column-gap: 40px;
   padding: 50px 8% 70px 8%;
@@ -403,24 +403,9 @@ nav li a:hover::after {
   height: auto;
 }
 
-.co_mapa .mapa-contenedor {
-  position: relative;
+.co_mapa img{
   width: 100%;
-  padding-bottom: 75%;
 }
-
-.co_mapa iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.co_mapa p {
-  text-align: center;
-}
-
 
 .co_mapa p {
   font-family: 'Roboto';
@@ -468,8 +453,9 @@ nav li a:hover::after {
   .contenedor_contactanos {
     grid-template-areas:
       "co_texto co_texto"
+      "co_mapa co_mapa"
       "co_formulario co_formulario"
-      "co_mapa co_mapa";
+      ;
     padding: 50px 4%;
     grid-row-gap: 20px;
   }
