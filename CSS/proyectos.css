@@ -66,7 +66,7 @@ button {
   transition: color .5s;
   z-index: 1;
   font-size: 17px;
-  border-radius: 40px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -309,7 +309,6 @@ nav li a:hover::after {
   background-attachment: fixed;
   background-color: #020b11d8;
   color: white;
-
 }
 
 .co_titulo {
@@ -464,49 +463,16 @@ nav li a:hover::after {
 .co_formulario .button:hover {
   background-color: var(--segundo);
   color: white;
-  transition: all .7s;
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
-  .contenedor_contactanos{
-    grid-template-areas: "co_titulo co_titulo"
-      "co_texto co_texto"
-      "co_formulario co_formulario"
-      "co_mapa co_mapa";
-    padding: 50px 4%;
+@media only screen and (max-width: 834px) {
+  .contenedor_contactanos {
+    padding: 70px 4% 70px 4%;
     grid-row-gap: 20px;
-    background-attachment: scroll;
-  }
-
-  .co_formulario form {
-    grid-template-areas: "f_titulo f_titulo"
-      "f_nombres f_nombres"
-      "f_celular f_celular"
-      "f_correo f_correo"
-      "f_ciudad f_ciudad"
-      "f_asunto f_asunto"
-      "f_consulta f_consulta"
-      "f_button f_button";
-  }
-
-  .co_mapa p {
-    font-size: 13px;
-    text-align: center;
-  }
-
-  .co_texto {
-    padding: 1%;
+    grid-column-gap: 10px;
   }
 
   .co_formulario h4 {
-    font-size: 22px;
-  }
-
-  .co_texto p {
-    font-size: 15px;
-  }
-
-  .co_titulo h2 {
     font-size: 22px;
   }
 
@@ -514,6 +480,46 @@ nav li a:hover::after {
     padding: 30px 30px;
   }
 }
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .contenedor_contactanos {
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "co_titulo"
+      "co_texto"
+      "co_formulario"
+      "co_mapa";
+    padding: 50px 4%;
+    grid-row-gap: 20px;
+    background-attachment: scroll;
+  }
+
+  .co_mapa p {
+    font-size: 13px;
+    text-align: center;
+  }
+  .co_formulario {
+    padding: 30px 20px;
+  }
+  .co_texto p {
+    font-size: 15px;
+  }
+
+  .co_titulo h2 {
+    font-size: 22px;
+  }
+}
+
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_contactanos {
+    padding: 30px 4% 30px 4%;
+  }
+
+  .f_titulo h4 {
+    font-size: 15px;
+  }
+}
+
 
 
 
