@@ -18,7 +18,6 @@ html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
 }
 
 body {
@@ -190,8 +189,6 @@ nav li a:hover::after {
   display: none;
 }
 
-
-
 @media only screen and (max-width: 950px) {
   .logo {
     height: 80px;
@@ -322,8 +319,7 @@ nav li a:hover::after {
     padding: 40px 5% 40px 5%;
     grid-row-gap: 30px;
     height: auto;
-    grid-template-areas: "so_video "
-      "so_texto";
+    grid-template-areas: "so_video " "so_texto";
     background-attachment: scroll;
   }
 
@@ -377,17 +373,8 @@ nav li a:hover::after {
   }
 }
 
-@media only screen and (max-width: 393px) and (orientation: portrait) {
-  .so_texto p {
-    font-size: 12px;
-  }
-
-  .so_texto h2 {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 360px) and (orientation: portrait) {
+@media only screen and (max-width: 360px) and (orientation: portrait),
+       only screen and (max-width: 393px) and (orientation: portrait) {
   .so_texto p {
     font-size: 14px;
   }
@@ -412,6 +399,7 @@ nav li a:hover::after {
     font-size: 18px;
   }
 }
+
 
 /*! =================================================*/
 /*! =================== Servicios ================== */
