@@ -1156,7 +1156,9 @@ nav li a:hover::after {
     font-size: 13px;
     text-align: center;
   }
-
+  .co_formulario {
+    padding: 30px 20px;
+  }
   .co_texto p {
     font-size: 15px;
   }
