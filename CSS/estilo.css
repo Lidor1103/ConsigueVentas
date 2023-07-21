@@ -504,38 +504,39 @@ nav li a:hover::after {
   transition: background 0s;
 }
 
+/* Responsive */
 @media only screen and (max-width: 834px) {
   .contenedor_servicio {
     padding: 50px 5% 50px 5%;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
   }
+
+  @media only screen and (max-width: 414px) and (orientation: portrait) {
+    .contenedor_servicio {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas: "servicio_presentacion" "servicio_1" "servicio_2" "servicio_3";
+      padding: 50px 15% 50px 15%;
+      grid-row-gap: 30px;
+    }
+
+    .servicio_presentacion {
+      padding-bottom: 0px;
+    }
+
+    .contenedor_servicio h2 {
+      font-size: 22px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) and (orientation: portrait) {
+    .contenedor_servicio {
+      padding: 30px 10% 30px 10%;
+      grid-row-gap: 20px;
+    }
+  }
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
-  .contenedor_servicio {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "servicio_presentacion"
-      "servicio_1" " servicio_2" "servicio_3";
-    padding: 50px 15% 50px 15%;
-    grid-row-gap: 30px;
-  }
-
-  .servicio_presentacion {
-    padding-bottom: 0px;
-  }
-
-  .contenedor_servicio h2 {
-    font-size: 22px;
-  }
-}
-
-@media only screen and (max-width: 320px) and (orientation: portrait) {
-  .contenedor_servicio {
-    padding: 30px 10% 30px 10%;
-    grid-row-gap: 20px;
-  }
-}
 
 
 /*! =================================================*/
@@ -566,6 +567,20 @@ nav li a:hover::after {
 }
 
 /*PORTAFOLIO imagenes-------------*/
+.po_1,
+.po_2,
+.po_3,
+.po_4,
+.po_5,
+.po_6 {
+  height: 230px;
+  padding: 5% 8%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .po_1 {
   background-image: url(../img/mahal.webp);
   grid-area: po_1;
@@ -599,20 +614,6 @@ nav li a:hover::after {
 .po_nombres {
   font-size: 28px;
   color: var(--tercero);
-}
-
-.po_1,
-.po_2,
-.po_3,
-.po_4,
-.po_5,
-.po_6 {
-  height: 230px;
-  padding: 5% 8%;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 /*PORTAFOLIO Hover de cada imagen--------*/
@@ -649,6 +650,7 @@ nav li a:hover::after {
   margin-bottom: 15px;
   line-height: 1.2;
 }
+
 
 /*PORTAFOLIO Responsive areas de grid----*/
 @media only screen and (max-width: 834px) {
@@ -826,7 +828,6 @@ nav li a:hover::after {
   .contenedor_testimonios p {
     font-size: 15px;
   }
-
 }
 
 /*! =================================================*/
@@ -1130,17 +1131,6 @@ nav li a:hover::after {
     grid-column-gap: 10px;
   }
 
-  .co_formulario form {
-    grid-template-areas: "f_titulo f_titulo"
-      "f_nombres f_nombres"
-      "f_celular f_celular"
-      "f_correo f_correo"
-      "f_ciudad f_ciudad"
-      "f_asunto f_asunto"
-      "f_consulta f_consulta"
-      "f_button f_button";
-  }
-
   .co_formulario h4 {
     font-size: 22px;
   }
@@ -1152,37 +1142,19 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    grid-template-areas: "co_titulo co_titulo"
-      "co_texto co_texto"
-      "co_formulario co_formulario"
-      "co_mapa co_mapa";
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "co_titulo"
+      "co_texto"
+      "co_formulario"
+      "co_mapa";
     padding: 50px 4%;
     grid-row-gap: 20px;
     background-attachment: scroll;
   }
 
-  .co_formulario form {
-    grid-template-areas: "f_titulo f_titulo"
-      "f_nombres f_nombres"
-      "f_celular f_celular"
-      "f_correo f_correo"
-      "f_ciudad f_ciudad"
-      "f_asunto f_asunto"
-      "f_consulta f_consulta"
-      "f_button f_button";
-  }
-
   .co_mapa p {
     font-size: 13px;
     text-align: center;
-  }
-
-  .co_texto {
-    padding: 1%;
-  }
-
-  .co_formulario h4 {
-    font-size: 22px;
   }
 
   .co_texto p {
@@ -1192,22 +1164,12 @@ nav li a:hover::after {
   .co_titulo h2 {
     font-size: 22px;
   }
-
 }
 
-@media only screen and (max-width: 393px) and (orientation: portrait) {
-  .co_texto p {
-    font-size: 14px;
-  }
-}
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .contenedor_contactanos {
     padding: 30px 4% 30px 4%;
-  }
-
-  .co_titulo {
-    padding-bottom: 0px;
   }
 
   .f_titulo h4 {
@@ -1353,11 +1315,6 @@ nav li a:hover::after {
     grid-template-areas: "fo_1 fo_2"
       "fo_3 fo_4"
       "fo_5 fo_5";
-    padding: 20px 8% 20px 8%;
-  }
-
-  .contenedor_footer {
-    padding: 20px 4% 20px 4%;
   }
 
   .contenedor_footer h3 {
@@ -1373,20 +1330,16 @@ nav li a:hover::after {
   .fo_2_descripcion {
     text-align: center;
   }
-
-  .fo_4_descripcion {
-    text-align: center;
-  }
 }
 
 @media only screen and (max-width: 414px) {
   .contenedor_footer {
-    grid-template-areas: "fo_1 fo_1"
-      "fo_1 fo_1"
-      "fo_2 fo_2"
-      "fo_3 fo_3"
-      "fo_4 fo_4"
-      "fo_5 fo_5"
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: "fo_1"
+      "fo_2"
+      "fo_3"
+      "fo_4"
+      "fo_5"
     ;
     padding: 20px 8% 20px 8%;
   }
@@ -1405,7 +1358,7 @@ nav li a:hover::after {
 
 
 
-
+/*! =================== Llenado automático del formulario ================== */
 @keyframes resaltarInput {
   0% {
     background-color: var(--tercero);
@@ -1416,10 +1369,7 @@ nav li a:hover::after {
   }
 }
 
-/* Aplicar resaltado a los campos de input que se llenan automáticamente */
 .input-lleno {
   background-color: white;
-  /* Fondo blanco por defecto */
   animation: resaltarInput 5s;
-  /* Duración de la animación (ajustable según el tiempo que desees) */
 }
