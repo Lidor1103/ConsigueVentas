@@ -1161,6 +1161,9 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   .co_titulo h2 {
     font-size: 37px;
   }
+  .co_texto p {
+    font-size: 18px;
+  }
   .co_texto{
     padding: 0;
   }
