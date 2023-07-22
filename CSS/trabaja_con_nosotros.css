@@ -303,6 +303,13 @@ nav li a:hover::after {
   font-weight: bolder;
 }
 
+@media only screen and (max-width: 834px) {
+  .inicio_trabaja {
+    height: auto;
+    padding: 50px 6%;
+  }
+}
+
 /*--------------- Responsive ---------------*/
 @media only screen and (max-width: 414px) {
   .inicio_trabaja {
@@ -366,14 +373,9 @@ nav li a:hover::after {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 834px) {
   .contenedor_habilidades {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "equipo_1"
-      "equipo_2"
-      "equipo_3";
-    text-align: center;
-    padding: 50px 10% 0px 10%;
+    padding: 50px 10% 50px 10%;
   }
 
   .habilidad_texto_1 p {
@@ -386,6 +388,17 @@ nav li a:hover::after {
 
   .habilidad_texto_3 p {
     font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .contenedor_habilidades {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "equipo_1"
+      "equipo_2"
+      "equipo_3";
+    text-align: center;
+    padding: 50px 10% 0px 10%;
   }
 }
 
@@ -462,6 +475,24 @@ nav li a:hover::after {
 
 .servicio_definicion h3 {
   font-size: 20px;
+}
+
+@media only screen and (max-width: 834px) {
+  .contenedor_servicio {
+    padding: 0px 6% 30px 6%;
+    grid-column-gap: 30px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .servicio_definicion {
+    padding: 5px 5%;
+  }
+
+  .servicio_definicion h3 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
@@ -557,6 +588,25 @@ nav li a:hover::after {
   color: white;
 }
 
+@media only screen and (max-width: 834px) {
+  .contenedor_areas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-template-areas: "areas_título areas_título areas_título"
+      "areas_1 areas_2 areas_3" "areas_4 areas_5 areas_6"
+      "areas_7 areas_8 areas_9"
+      "areas_10 areas_11 areas_12";
+  }
+
+  .areas_nombre h3 {
+    font-size: 15px;
+  }
+
+  .boton_areas {
+    padding-bottom: 50px;
+  }
+}
+
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .areas_título h2 {
     font-size: 22px;
@@ -573,7 +623,6 @@ nav li a:hover::after {
   }
 
   .contenedor_areas h2 {
-
     padding-bottom: 10px;
   }
 
@@ -585,11 +634,6 @@ nav li a:hover::after {
     padding-bottom: 50px;
   }
 }
-
-@media only screen and (max-width: 320px) and (orientation: portrait) {}
-
-
-
 
 
 
@@ -691,14 +735,27 @@ nav li a:hover::after {
   gap: 10px;
 }
 
+@media only screen and (max-width: 834px) {
+  .contenedor_potencial {
+    padding: 50px 6% 20px 6%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "potencial_presentacion potencial_presentacion"
+      "potencial_1 potencial_2" "potencial_3 potencial_4" "potencial_5 potencial_6";
+    grid-row-gap: 20px;
+  }
+
+  .superior {
+    gap: 5%;
+    grid-template-columns: 30% 65%;
+  }
+}
+
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_potencial {
-    padding: 50px 6% 15px 6%;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "potencial_presentacion"
       "potencial_1" "potencial_2" "potencial_3"
       "potencial_4" "potencial_5" "potencial_6";
-    grid-row-gap: 20px;
   }
 
   .potencial_presentacion h2 {
@@ -801,6 +858,11 @@ nav li a:hover::after {
 }
 
 /*! ============= Responsive Design ============= */
+@media only screen and (max-width: 834px) {
+  .preguntas {
+    padding: 20px 5% 70px 5%;
+  }
+}
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .pre_titulo {
     padding-bottom: 35px;
