@@ -659,13 +659,27 @@ nav li a:hover::after {
   }
 
   .areas_nombre h3 {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .boton_areas {
     padding-bottom: 50px;
   }
 }
+
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+  .contenedor_areas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "areas_título"
+      "areas_1" "areas_2" "areas_3" "areas_4"
+      "areas_5" "areas_6" "areas_7" "areas_8"
+      "areas_9" "areas_10" "areas_11" "areas_12";
+  }
+  .areas_nombre h3 {
+    font-size: 13px;
+  }
+}
+
 
 
 
@@ -784,8 +798,6 @@ nav li a:hover::after {
     width: 70px;
   }
 }
-
-
 
 @media only screen and (max-width: 614px) and (orientation: portrait) {
   .contenedor_potencial {
