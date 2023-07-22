@@ -88,3 +88,29 @@ document.getElementById("botoncatalogo").addEventListener('click', function () {
 	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
 	llenarCamposFormulario(asunto, consulta);
 });
+
+//FORMULARIO solo cuando los campos estén llenos
+function validarFormulario() {
+	// Obtener los valores de los campos
+	var nombres = document.getElementById('Nombres').value;
+	var celular = document.getElementById('Celular').value;
+	var correo = document.getElementById('Correo electrónico').value;
+	var ciudad = document.getElementById('ciudad').value;
+	var asunto = document.getElementById('Asunto').value;
+
+	// Verificar si los campos están vacíos
+	if (nombres === '' || celular === '' || correo === '' || ciudad === '' || asunto === '') {
+		// Mostrar mensaje de "Faltan datos" en la parte superior de la página
+		var mensajeError = document.createElement('div');
+		mensajeError.innerText = 'Faltan datos';
+		mensajeError.style.color = 'red';
+		mensajeError.style.textAlign = 'center';
+		document.body.insertBefore(mensajeError, document.body.firstChild);
+
+		// Evitar que el formulario se envíe
+		return false;
+	}
+	
+	// Si todos los campos están llenos, el formulario se enviará normalmente
+	return true;
+}
