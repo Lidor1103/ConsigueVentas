@@ -600,7 +600,30 @@ nav li a:hover::after {
   color: white;
 }
 
-/*! =================================================*/
+@media only screen and (max-width: 834px) {
+  .areas_título h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .areas_título h2 {
+    font-size: 37px;
+  }
+}
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .areas_título h2 {
+    font-size: 22px;
+  }
+
+  .boton_areas {
+    padding-bottom: 50px;
+  }
+}
+
+
+/*! ===============================================*/
 /*! =================== POTENCIAL ===================== */
 /*! =================================================*/
 .contenedor_potencial {
