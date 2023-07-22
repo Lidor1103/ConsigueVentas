@@ -398,7 +398,6 @@ nav li a:hover::after {
   }
 }
 
-
 @media only screen and (max-width: 650px) {
   .contenedor_contactanos {
     grid-template-columns: repeat(1, 1fr);
@@ -422,11 +421,6 @@ nav li a:hover::after {
   grid-row-gap: 20px;
 }
 
-.co_mapa p {
-  font-size: 13px;
-  text-align: center;
-}
-
 .co_formulario {
   padding: 30px 20px;
 }
@@ -435,9 +429,6 @@ nav li a:hover::after {
   font-size: 15px;
 }
 
-.co_titulo h2 {
-  font-size: 22px;
-}
 }
 
 
@@ -623,4 +614,4 @@ nav li a:hover::after {
   .contenedor_footer h3 {
     font-size: 22px;
   }
-}
+} 
