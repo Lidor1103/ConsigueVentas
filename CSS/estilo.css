@@ -417,7 +417,6 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   grid-row-gap: 15px;
   grid-template-areas: "servicio_presentacion servicio_presentacion servicio_presentacion"
     "servicio_1 servicio_2 servicio_3";
-  box-shadow: 0 0 50px 0 rgb(28, 42, 51);
 }
 
 .servicio_presentacion {
