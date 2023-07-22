@@ -508,35 +508,41 @@ only screen and (max-width: 393px) and (orientation: portrait) {
 }
 
 /* Responsive */
+@media only screen and (max-width: 1115px) {
+  .contenedor_servicio {
+    grid-column-gap: 20px;
+  }
+}
+
 @media only screen and (max-width: 834px) {
   .contenedor_servicio {
     padding: 50px 5% 50px 5%;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
   }
+}
 
-  @media only screen and (max-width: 414px) and (orientation: portrait) {
-    .contenedor_servicio {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-areas: "servicio_presentacion" "servicio_1" "servicio_2" "servicio_3";
-      padding: 50px 15% 50px 15%;
-      grid-row-gap: 30px;
-    }
-
-    .servicio_presentacion {
-      padding-bottom: 0px;
-    }
-
-    .contenedor_servicio h2 {
-      font-size: 22px;
-    }
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  .contenedor_servicio {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "servicio_presentacion" "servicio_1" "servicio_2" "servicio_3";
+    padding: 50px 15% 50px 15%;
+    grid-row-gap: 30px;
   }
 
-  @media only screen and (max-width: 320px) and (orientation: portrait) {
-    .contenedor_servicio {
-      padding: 30px 10% 30px 10%;
-      grid-row-gap: 20px;
-    }
+  .servicio_presentacion {
+    padding-bottom: 0px;
+  }
+
+  .contenedor_servicio h2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .contenedor_servicio {
+    padding: 30px 10% 30px 10%;
+    grid-row-gap: 20px;
   }
 }
 
@@ -663,10 +669,11 @@ only screen and (max-width: 393px) and (orientation: portrait) {
       "po_1 po_2 "
       "po_3 po_4"
       "po_5 po_6";
+    padding: 50px 8% 50px 8%;
   }
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 550px) and (orientation: portrait) {
   .contenedor_portafolio {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "c2_titulo"
@@ -1143,34 +1150,45 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   }
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 650px) {
   .contenedor_contactanos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "co_titulo"
       "co_texto"
       "co_formulario"
       "co_mapa";
-    padding: 50px 4%;
-    grid-row-gap: 20px;
-    background-attachment: scroll;
   }
-
-  .co_mapa p {
-    font-size: 13px;
-    text-align: center;
-  }
-
-  .co_formulario {
-    padding: 30px 20px;
-  }
-
-  .co_texto p {
-    font-size: 15px;
-  }
-
   .co_titulo h2 {
-    font-size: 22px;
+    font-size: 37px;
   }
+  .co_texto{
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .contenedor_contactanos {
+    padding: 50px 4%;
+  grid-row-gap: 20px;
+  background-attachment: scroll;
+}
+
+.co_mapa p {
+  font-size: 13px;
+  text-align: center;
+}
+
+.co_formulario {
+  padding: 30px 20px;
+}
+
+.co_texto p {
+  font-size: 15px;
+}
+
+.co_titulo h2 {
+  font-size: 22px;
+}
 }
 
 
@@ -1272,11 +1290,15 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   font-size: 20px;
   transition: all 0.5s ease;
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-right: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-bottom: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
 
 
@@ -1330,7 +1352,8 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   .fo_4,
   .fo_5,
   .fo_3_descripcion,
-  .fo_2_descripcion,.fo_4_descripcion {
+  .fo_2_descripcion,
+  .fo_4_descripcion {
     text-align: center;
   }
 }
