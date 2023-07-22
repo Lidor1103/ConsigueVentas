@@ -311,7 +311,7 @@ nav li a:hover::after {
 }
 
 /*--------------- Responsive ---------------*/
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 590px) {
   .inicio_trabaja {
     height: 300px;
     background-attachment: scroll;
@@ -391,14 +391,14 @@ nav li a:hover::after {
   }
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 590px) and (orientation: portrait) {
   .contenedor_habilidades {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "equipo_1"
       "equipo_2"
       "equipo_3";
     text-align: center;
-    padding: 50px 10% 0px 10%;
+    padding: 50px 10% 30px 10%;
   }
 }
 
@@ -494,12 +494,29 @@ nav li a:hover::after {
   }
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 700px) {
+  .contenedor_servicio {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "servicio_1 servicio_2" "servicio_3 servicio_3";
+    padding: 0px 15% 40px 15%;
+    grid-row-gap: 30px;
+    text-align: center;
+  }
+
+  .servicio_definicion {
+    padding: 8px 6% 10px 6%;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 650px) and (orientation: portrait) {
   .contenedor_servicio {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
       "servicio_1" " servicio_2" "servicio_3";
-    padding: 30px 15% 50px 15%;
+    padding: 0px 15% 50px 15%;
     grid-row-gap: 30px;
     text-align: center;
   }
@@ -513,7 +530,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .contenedor_servicio {
-    padding: 30px 10% 30px 10%;
+    padding: 0px 10% 30px 10%;
     grid-row-gap: 20px;
   }
 }
@@ -604,16 +621,20 @@ nav li a:hover::after {
       "areas_1 areas_2 areas_3" "areas_4 areas_5 areas_6"
       "areas_7 areas_8 areas_9"
       "areas_10 areas_11 areas_12";
+      padding: 0px 6% 50px 6%;
   }
 
   .boton_areas {
     padding-bottom: 50px;
   }
+  .areas_título h2 {
+    font-size: 30px;
+  }
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 680px) {
   .areas_título h2 {
-    font-size: 22px;
+    font-size: 37px;
   }
 
   .contenedor_areas {
@@ -624,6 +645,13 @@ nav li a:hover::after {
       "areas_1 areas_2" "areas_3 areas_4"
       "areas_5 areas_6" "areas_7 areas_8"
       "areas_9 areas_10" "areas_11 areas_12";
+  }
+
+}
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .areas_título h2 {
+    font-size: 22px;
   }
 
   .contenedor_areas h2 {
@@ -638,7 +666,6 @@ nav li a:hover::after {
     padding-bottom: 50px;
   }
 }
-
 
 
 
@@ -751,14 +778,16 @@ nav li a:hover::after {
   }
 }
 
-@media only screen and (max-width: 834px) {
-  .superior {
-    gap: 5%;
-    grid-template-columns: 30% 65%;
+@media only screen and (max-width: 780px) {
+  .cierre {
+    height: 70px;
+    width: 70px;
   }
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+
+
+@media only screen and (max-width: 614px) and (orientation: portrait) {
   .contenedor_potencial {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "potencial_presentacion"
@@ -775,18 +804,10 @@ nav li a:hover::after {
   }
 
   .cierre {
-    grid-area: cierre;
-    background-color: var(--segundo);
-    display: flex;
-    border-radius: 50%;
     height: 70px;
     width: 70px;
-    justify-content: center;
-    align-items: center;
   }
 }
-
-@media only screen and (max-width: 320px) and (orientation: portrait) {}
 
 
 
