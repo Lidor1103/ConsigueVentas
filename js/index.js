@@ -52,6 +52,44 @@ for (let i = 0; i < proyectos.length; i++) {
 
 
 // LLenar el formulario según el botón del servicio
+function llenarCamposFormulario(asunto, consulta) {
+	document.getElementById('Asunto').value = asunto;
+	document.getElementById('consulta').value = consulta;
+
+	const formularioOffsetTop = document.getElementById('contenedor_formulario').offsetTop;
+	window.scrollTo({
+		top: formularioOffsetTop,
+		behavior: 'smooth'
+	});
+
+	document.getElementById('Asunto').classList.add('input-lleno');
+	document.getElementById('consulta').classList.add('input-lleno');
+
+	setTimeout(function () {
+		document.getElementById('Asunto').classList.remove('input-lleno');
+		document.getElementById('consulta').classList.remove('input-lleno');
+	}, 3000);
+}
+
+document.getElementById("botonembudo").addEventListener('click', function () {
+	const asunto = "Deseo más información - Embudo de Ventas";
+	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
+	llenarCamposFormulario(asunto, consulta);
+});
+
+document.getElementById("botonpagina").addEventListener('click', function () {
+	const asunto = "Deseo más información - Páginas Web";
+	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
+	llenarCamposFormulario(asunto, consulta);
+});
+
+document.getElementById("botoncatalogo").addEventListener('click', function () {
+	const asunto = "Deseo más información - Catálogo Virtual";
+	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
+	llenarCamposFormulario(asunto, consulta);
+});
+
+//FORMULARIO solo cuando los campos estén llenos
 function validarFormulario() {
 	// Obtener los valores de los campos
 	var nombres = document.getElementById('Nombres').value;
