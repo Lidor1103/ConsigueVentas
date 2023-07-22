@@ -1272,15 +1272,11 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   font-size: 20px;
   transition: all 0.5s ease;
 }
-
 .fo_4_descripcion a:not(:last-child) {
-  margin-right: 10px;
-  /* Ajusta el valor según el espacio deseado */
+  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
 }
-
 .fo_4_descripcion a:not(:last-child) {
-  margin-bottom: 10px;
-  /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 10px; /* Ajusta el valor según el espacio deseado */
 }
 
 
@@ -1334,20 +1330,19 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   .fo_4,
   .fo_5,
   .fo_3_descripcion,
-  .fo_2_descripcion {
+  .fo_2_descripcion,.fo_4_descripcion {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 414px) {
   .contenedor_footer {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 100%;
     grid-template-areas: "fo_1"
       "fo_2"
       "fo_3"
       "fo_4"
-      "fo_5"
-    ;
+      "fo_5";
     padding: 20px 8% 20px 8%;
   }
 
@@ -1362,7 +1357,6 @@ only screen and (max-width: 393px) and (orientation: portrait) {
     font-size: 22px;
   }
 }
-
 
 
 /*! =================== Llenado automático del formulario ================== */

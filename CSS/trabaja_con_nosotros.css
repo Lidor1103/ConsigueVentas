@@ -476,6 +476,7 @@ nav li a:hover::after {
 .servicio_definicion h3 {
   font-size: 20px;
 }
+
 @media only screen and (max-width: 1115px) {
   .contenedor_servicio {
     padding: 0px 6% 30px 6%;
@@ -608,6 +609,7 @@ nav li a:hover::after {
   .contenedor_areas {
     grid-row-gap: 20px;
   }
+
   .areas_nombre h3 {
     font-size: 15px;
   }
@@ -621,12 +623,13 @@ nav li a:hover::after {
       "areas_1 areas_2 areas_3" "areas_4 areas_5 areas_6"
       "areas_7 areas_8 areas_9"
       "areas_10 areas_11 areas_12";
-      padding: 0px 6% 50px 6%;
+    padding: 0px 6% 50px 6%;
   }
 
   .boton_areas {
     padding-bottom: 50px;
   }
+
   .areas_título h2 {
     font-size: 30px;
   }
@@ -675,11 +678,13 @@ nav li a:hover::after {
       "areas_1" "areas_2" "areas_3" "areas_4"
       "areas_5" "areas_6" "areas_7" "areas_8"
       "areas_9" "areas_10" "areas_11" "areas_12";
-place-items: center;
+    place-items: center;
   }
-  .areas{
+
+  .areas {
     max-width: 250px;
   }
+
   .areas_nombre h3 {
     font-size: 13px;
   }
@@ -791,6 +796,7 @@ place-items: center;
     padding: 60px 6% 30px 6%;
   }
 }
+
 @media only screen and (max-width: 944px) {
   .contenedor_potencial {
     padding: 50px 6% 20px 6%;
@@ -909,6 +915,7 @@ place-items: center;
     padding: 20px 5% 60px 5%;
   }
 }
+
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .pre_titulo {
     padding-bottom: 35px;
@@ -1041,15 +1048,11 @@ place-items: center;
   font-size: 20px;
   transition: all 0.5s ease;
 }
-
 .fo_4_descripcion a:not(:last-child) {
-  margin-right: 10px;
-  /* Ajusta el valor según el espacio deseado */
+  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
 }
-
 .fo_4_descripcion a:not(:last-child) {
-  margin-bottom: 10px;
-  /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 10px; /* Ajusta el valor según el espacio deseado */
 }
 
 
@@ -1075,7 +1078,7 @@ place-items: center;
 }
 
 /*! =================== Responsive ================== */
-@media only screen and (max-width: 1115px) {
+@media only screen and (max-width: 1024px) {
   .contenedor_footer {
     padding: 20px 4% 20px 4%;
   }
@@ -1091,11 +1094,6 @@ place-items: center;
     grid-template-areas: "fo_1 fo_2"
       "fo_3 fo_4"
       "fo_5 fo_5";
-    padding: 20px 8% 20px 8%;
-  }
-
-  .contenedor_footer {
-    padding: 20px 4% 20px 4%;
   }
 
   .contenedor_footer h3 {
@@ -1108,24 +1106,19 @@ place-items: center;
   .fo_4,
   .fo_5,
   .fo_3_descripcion,
-  .fo_2_descripcion {
-    text-align: center;
-  }
-
-  .fo_4_descripcion {
+  .fo_2_descripcion,.fo_4_descripcion {
     text-align: center;
   }
 }
 
 @media only screen and (max-width: 414px) {
   .contenedor_footer {
-    grid-template-areas: "fo_1 fo_1"
-      "fo_1 fo_1"
-      "fo_2 fo_2"
-      "fo_3 fo_3"
-      "fo_4 fo_4"
-      "fo_5 fo_5"
-    ;
+    grid-template-columns: 100%;
+    grid-template-areas: "fo_1"
+      "fo_2"
+      "fo_3"
+      "fo_4"
+      "fo_5";
     padding: 20px 8% 20px 8%;
   }
 
