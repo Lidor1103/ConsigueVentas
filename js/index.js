@@ -52,6 +52,19 @@ for (let i = 0; i < proyectos.length; i++) {
 
 
 // LLenar el formulario según el botón del servicio
+function mostrarMensajeError(mensaje) {
+	var mensajeError = document.createElement('div');
+	mensajeError.innerText = mensaje;
+	mensajeError.style.color = 'red';
+	mensajeError.style.textAlign = 'center';
+	mensajeError.style.padding = '10px';
+	mensajeError.style.backgroundColor = '#f2dede';
+	mensajeError.style.position = 'fixed';
+	mensajeError.style.top = '0';
+	mensajeError.style.width = '100%';
+	document.body.insertBefore(mensajeError, document.body.firstChild);
+}
+
 function validarFormulario() {
 	// Obtener los valores de los campos
 	var nombres = document.getElementById('Nombres').value;
@@ -62,18 +75,8 @@ function validarFormulario() {
 
 	// Verificar si los campos están vacíos
 	if (nombres === '' || celular === '' || correo === '' || ciudad === '' || asunto === '') {
-		// Mostrar mensaje de "Faltan datos" en la parte superior del formulario
-		var formulario = document.getElementById('miFormulario');
-		var mensajeError = document.createElement('div');
-		mensajeError.innerText = 'Faltan datos';
-		mensajeError.style.color = 'red';
-		mensajeError.style.textAlign = 'center';
-
-		// Verificar si ya existe un mensaje de error antes de insertar uno nuevo
-		if (!formulario.querySelector('.mensaje-error')) {
-			mensajeError.classList.add('mensaje-error'); // Añadir una clase para identificar el mensaje de error
-			formulario.insertBefore(mensajeError, formulario.firstChild);
-		}
+		// Mostrar mensaje de "Faltan datos" en la parte superior de la página
+		mostrarMensajeError('Faltan datos');
 
 		// Evitar que el formulario se envíe
 		return false;
