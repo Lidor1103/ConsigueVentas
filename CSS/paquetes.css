@@ -526,6 +526,7 @@ nav li a:hover::after {
   .contenedor_contactanos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
+    "co_titulo"
       "co_texto"
       "co_img"
       "co_formulario"
