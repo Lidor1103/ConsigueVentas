@@ -373,7 +373,7 @@ nav li a:hover::after {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 1024px) {
   .contenedor_habilidades {
     padding: 50px 10% 50px 10%;
   }
@@ -742,15 +742,12 @@ nav li a:hover::after {
     grid-template-areas: "potencial_presentacion potencial_presentacion"
       "potencial_1 potencial_2" "potencial_3 potencial_4" "potencial_5 potencial_6";
     grid-row-gap: 20px;
+    padding: 60px 6% 30px 6%;
   }
 }
 @media only screen and (max-width: 944px) {
   .contenedor_potencial {
     padding: 50px 6% 20px 6%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "potencial_presentacion potencial_presentacion"
-      "potencial_1 potencial_2" "potencial_3 potencial_4" "potencial_5 potencial_6";
-    grid-row-gap: 20px;
   }
 }
 
@@ -869,9 +866,9 @@ nav li a:hover::after {
 }
 
 /*! ============= Responsive Design ============= */
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 1024px) {
   .preguntas {
-    padding: 20px 5% 70px 5%;
+    padding: 20px 5% 60px 5%;
   }
 }
 @media only screen and (max-width: 414px) and (orientation: portrait) {
