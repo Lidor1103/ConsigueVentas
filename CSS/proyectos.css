@@ -488,34 +488,49 @@ nav li a:hover::after {
   }
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 650px) {
   .contenedor_contactanos {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "co_titulo"
       "co_texto"
       "co_formulario"
       "co_mapa";
-    padding: 50px 4%;
-    grid-row-gap: 20px;
-    background-attachment: scroll;
   }
-
-  .co_mapa p {
-    font-size: 13px;
-    text-align: center;
-  }
-  .co_formulario {
-    padding: 30px 20px;
+  .co_titulo h2 {
+    font-size: 37px;
   }
   .co_texto p {
-    font-size: 15px;
+    font-size: 18px;
   }
-
-  .co_titulo h2 {
-    font-size: 22px;
+  .co_texto{
+    padding: 0;
   }
 }
 
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .contenedor_contactanos {
+    padding: 50px 4%;
+  grid-row-gap: 20px;
+  background-attachment: scroll;
+}
+
+.co_mapa p {
+  font-size: 13px;
+  text-align: center;
+}
+
+.co_formulario {
+  padding: 30px 20px;
+}
+
+.co_texto p {
+  font-size: 15px;
+}
+
+.co_titulo h2 {
+  font-size: 22px;
+}
+}
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .contenedor_contactanos {
@@ -526,8 +541,6 @@ nav li a:hover::after {
     font-size: 15px;
   }
 }
-
-
 
 
 /*! =================================================*/
