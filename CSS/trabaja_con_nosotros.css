@@ -303,7 +303,7 @@ nav li a:hover::after {
   font-weight: bolder;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1115px) {
   .inicio_trabaja {
     height: auto;
     padding: 50px 6%;
@@ -373,7 +373,7 @@ nav li a:hover::after {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1115px) {
   .contenedor_habilidades {
     padding: 50px 10% 50px 10%;
   }
@@ -476,7 +476,7 @@ nav li a:hover::after {
 .servicio_definicion h3 {
   font-size: 20px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1115px) {
   .contenedor_servicio {
     padding: 0px 6% 30px 6%;
     grid-column-gap: 30px;
@@ -587,7 +587,7 @@ nav li a:hover::after {
   color: white;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1115px) {
   .contenedor_areas {
     grid-row-gap: 20px;
   }
@@ -866,7 +866,7 @@ nav li a:hover::after {
 }
 
 /*! ============= Responsive Design ============= */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1115px) {
   .preguntas {
     padding: 20px 5% 60px 5%;
   }
@@ -1037,7 +1037,7 @@ nav li a:hover::after {
 }
 
 /*! =================== Responsive ================== */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1115px) {
   .contenedor_footer {
     padding: 20px 4% 20px 4%;
   }
