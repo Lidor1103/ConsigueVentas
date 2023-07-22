@@ -669,11 +669,16 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 400px) and (orientation: portrait) {
   .contenedor_areas {
+    padding: 20px auto 40px auto;
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "areas_título"
       "areas_1" "areas_2" "areas_3" "areas_4"
       "areas_5" "areas_6" "areas_7" "areas_8"
       "areas_9" "areas_10" "areas_11" "areas_12";
+place-items: center;
+  }
+  .areas{
+    max-width: 250px;
   }
   .areas_nombre h3 {
     font-size: 13px;
