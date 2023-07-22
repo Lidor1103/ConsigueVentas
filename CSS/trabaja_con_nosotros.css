@@ -600,7 +600,21 @@ nav li a:hover::after {
   color: white;
 }
 
+@media only screen and (max-width: 1115px) {
+  .contenedor_areas {
+    grid-row-gap: 20px;
+  }
+
+  .areas_nombre h3 {
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 834px) {
+  .contenedor_areas {
+    padding: 0px 6% 50px 6%;
+  }
+
   .areas_título h2 {
     font-size: 30px;
   }
@@ -610,6 +624,10 @@ nav li a:hover::after {
   .areas_título h2 {
     font-size: 37px;
   }
+
+  .contenedor_areas {
+    padding: 20px 6% 40px 6%;
+  }
 }
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
@@ -617,13 +635,25 @@ nav li a:hover::after {
     font-size: 22px;
   }
 
+  .contenedor_areas h2 {
+    padding-bottom: 10px;
+  }
+
   .boton_areas {
     padding-bottom: 50px;
   }
 }
 
+@media only screen and (max-width: 400px) and (orientation: portrait) {
+  .contenedor_areas {
+    padding: 20px auto 40px auto;
+  }
+}
 
-/*! ===============================================*/
+
+
+
+/*! =================================================*/
 /*! =================== POTENCIAL ===================== */
 /*! =================================================*/
 .contenedor_potencial {
