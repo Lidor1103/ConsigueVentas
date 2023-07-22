@@ -52,44 +52,6 @@ for (let i = 0; i < proyectos.length; i++) {
 
 
 // LLenar el formulario según el botón del servicio
-function llenarCamposFormulario(asunto, consulta) {
-	document.getElementById('Asunto').value = asunto;
-	document.getElementById('consulta').value = consulta;
-
-	const formularioOffsetTop = document.getElementById('contenedor_formulario').offsetTop;
-	window.scrollTo({
-		top: formularioOffsetTop,
-		behavior: 'smooth'
-	});
-
-	document.getElementById('Asunto').classList.add('input-lleno');
-	document.getElementById('consulta').classList.add('input-lleno');
-
-	setTimeout(function () {
-		document.getElementById('Asunto').classList.remove('input-lleno');
-		document.getElementById('consulta').classList.remove('input-lleno');
-	}, 3000);
-}
-
-document.getElementById("botonembudo").addEventListener('click', function () {
-	const asunto = "Deseo más información - Embudo de Ventas";
-	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
-	llenarCamposFormulario(asunto, consulta);
-});
-
-document.getElementById("botonpagina").addEventListener('click', function () {
-	const asunto = "Deseo más información - Páginas Web";
-	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
-	llenarCamposFormulario(asunto, consulta);
-});
-
-document.getElementById("botoncatalogo").addEventListener('click', function () {
-	const asunto = "Deseo más información - Catálogo Virtual";
-	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
-	llenarCamposFormulario(asunto, consulta);
-});
-
-//FORMULARIO solo cuando los campos estén llenos
 function validarFormulario() {
 	// Obtener los valores de los campos
 	var nombres = document.getElementById('Nombres').value;
@@ -100,12 +62,18 @@ function validarFormulario() {
 
 	// Verificar si los campos están vacíos
 	if (nombres === '' || celular === '' || correo === '' || ciudad === '' || asunto === '') {
-		// Mostrar mensaje de "Faltan datos" en la parte superior de la página
+		// Mostrar mensaje de "Faltan datos" en la parte superior del formulario
+		var formulario = document.getElementById('miFormulario');
 		var mensajeError = document.createElement('div');
 		mensajeError.innerText = 'Faltan datos';
 		mensajeError.style.color = 'red';
 		mensajeError.style.textAlign = 'center';
-		document.body.insertBefore(mensajeError, document.body.firstChild);
+
+		// Verificar si ya existe un mensaje de error antes de insertar uno nuevo
+		if (!formulario.querySelector('.mensaje-error')) {
+			mensajeError.classList.add('mensaje-error'); // Añadir una clase para identificar el mensaje de error
+			formulario.insertBefore(mensajeError, formulario.firstChild);
+		}
 
 		// Evitar que el formulario se envíe
 		return false;
