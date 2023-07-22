@@ -303,7 +303,7 @@ nav li a:hover::after {
   font-weight: bolder;
 }
 
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 1024px) {
   .inicio_trabaja {
     height: auto;
     padding: 50px 6%;
@@ -476,8 +476,7 @@ nav li a:hover::after {
 .servicio_definicion h3 {
   font-size: 20px;
 }
-
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 1024px) {
   .contenedor_servicio {
     padding: 0px 6% 30px 6%;
     grid-column-gap: 30px;
@@ -588,6 +587,15 @@ nav li a:hover::after {
   color: white;
 }
 
+@media only screen and (max-width: 1024px) {
+  .contenedor_areas {
+    grid-row-gap: 20px;
+  }
+  .areas_nombre h3 {
+    font-size: 15px;
+  }
+}
+
 @media only screen and (max-width: 834px) {
   .contenedor_areas {
     grid-template-columns: repeat(3, 1fr);
@@ -596,10 +604,6 @@ nav li a:hover::after {
       "areas_1 areas_2 areas_3" "areas_4 areas_5 areas_6"
       "areas_7 areas_8 areas_9"
       "areas_10 areas_11 areas_12";
-  }
-
-  .areas_nombre h3 {
-    font-size: 15px;
   }
 
   .boton_areas {
@@ -697,17 +701,13 @@ nav li a:hover::after {
   transition: .3s ease all;
 }
 
-.potencial:not(:hover) {
-  transition: ease;
-}
-
 .superior {
   display: grid;
   background-color: var(--primero);
   width: 100%;
   height: 92%;
   border-radius: 15px;
-  grid-template-columns: 30% 65%;
+  grid-template-columns: 30% 68%;
   grid-column-gap: 2%;
   padding: 10px 20px;
   grid-template-areas: "cierre content";
@@ -736,6 +736,14 @@ nav li a:hover::after {
   gap: 10px;
 }
 
+@media only screen and (max-width: 1115px) {
+  .contenedor_potencial {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "potencial_presentacion potencial_presentacion"
+      "potencial_1 potencial_2" "potencial_3 potencial_4" "potencial_5 potencial_6";
+    grid-row-gap: 20px;
+  }
+}
 @media only screen and (max-width: 944px) {
   .contenedor_potencial {
     padding: 50px 6% 20px 6%;
