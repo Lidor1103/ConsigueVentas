@@ -540,28 +540,23 @@ nav li a:hover::after {
 /*! =================================================*/
 /*! =================== AREAS ================== */
 /*! =================================================*/
+.areas_título {
+  text-align: center;
+  color: var(--primero);
+  background-color: #ffffff;
+  padding: 30px 6% 20px 6%;
+}
+
 .contenedor_areas {
   background-color: #ffffff;
-  height: auto;
   display: grid;
   padding: 30px 6% 50px 6%;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 40px;
-  grid-template-areas: "areas_título areas_título areas_título areas_título"
-    "areas_1 areas_2 areas_3 areas_4"
-    "areas_5 areas_6 areas_7 areas_8"
-    "areas_9 areas_10 areas_11 areas_12";
-  color: var(--primero);
+  gap: 20px;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.areas_título {
-  grid-area: areas_título;
-  text-align: center;
-  color: var(--primero)
-}
-
-.areas {
+.areas{
   overflow: hidden;
   border-radius: 15px;
   background-color: var(--primero);
@@ -575,7 +570,7 @@ nav li a:hover::after {
 }
 
 .areas_nombre h3 {
-  margin: 5px 0px;
+  margin: 3px 0px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -604,94 +599,6 @@ nav li a:hover::after {
 .boton_areas button:hover {
   color: white;
 }
-
-@media only screen and (max-width: 1115px) {
-  .contenedor_areas {
-    grid-row-gap: 20px;
-  }
-
-  .areas_nombre h3 {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 834px) {
-  .contenedor_areas {
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 20px;
-    grid-template-areas: "areas_título areas_título areas_título"
-      "areas_1 areas_2 areas_3" "areas_4 areas_5 areas_6"
-      "areas_7 areas_8 areas_9"
-      "areas_10 areas_11 areas_12";
-    padding: 0px 6% 50px 6%;
-  }
-
-  .boton_areas {
-    padding-bottom: 50px;
-  }
-
-  .areas_título h2 {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  .areas_título h2 {
-    font-size: 37px;
-  }
-
-  .contenedor_areas {
-    padding: 20px 6% 40px 6%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 20px;
-    grid-template-areas: "areas_título areas_título"
-      "areas_1 areas_2" "areas_3 areas_4"
-      "areas_5 areas_6" "areas_7 areas_8"
-      "areas_9 areas_10" "areas_11 areas_12";
-  }
-
-}
-
-@media only screen and (max-width: 414px) and (orientation: portrait) {
-  .areas_título h2 {
-    font-size: 22px;
-  }
-
-  .contenedor_areas h2 {
-    padding-bottom: 10px;
-  }
-
-  .areas_nombre h3 {
-    font-size: 12px;
-  }
-
-  .boton_areas {
-    padding-bottom: 50px;
-  }
-}
-
-@media only screen and (max-width: 400px) and (orientation: portrait) {
-  .contenedor_areas {
-    padding: 20px auto 40px auto;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "areas_título"
-      "areas_1" "areas_2" "areas_3" "areas_4"
-      "areas_5" "areas_6" "areas_7" "areas_8"
-      "areas_9" "areas_10" "areas_11" "areas_12";
-    place-items: center;
-  }
-
-  .areas {
-    max-width: 250px;
-  }
-
-  .areas_nombre h3 {
-    font-size: 13px;
-  }
-}
-
-
-
 
 /*! =================================================*/
 /*! =================== POTENCIAL ===================== */
