@@ -120,7 +120,7 @@ nav {
 }
 
 .logo {
-  height: 85px;
+  height: 100%;
   padding: 10px;
 }
 
@@ -137,8 +137,12 @@ nav ul li {
   margin: 0 5px;
 }
 
+nav ul li:last-child {
+  margin-right: 0;
+}
+
 nav ul li a {
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 18px;
   padding: 7px 10px;
   font-family: 'Nunito', sans-serif;
@@ -167,7 +171,6 @@ nav li .active::after {
 nav li .active_jf::after {
   background-color: #f3c331;
 }
-
 
 nav li a:hover::after {
   transform: translateX(-50%) scaleX(1);
@@ -207,7 +210,7 @@ nav li a:hover::after {
   }
 
   nav ul {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -230,7 +233,7 @@ nav li a:hover::after {
   nav li a:hover,
   nav li a.active,
   .active_jf {
-    color: #2b171b;
+    color: var(--primero);
   }
 
   #check:checked~ul {
@@ -374,7 +377,7 @@ nav li a:hover::after {
 }
 
 @media only screen and (max-width: 360px) and (orientation: portrait),
-       only screen and (max-width: 393px) and (orientation: portrait) {
+only screen and (max-width: 393px) and (orientation: portrait) {
   .so_texto p {
     font-size: 14px;
   }
@@ -1142,7 +1145,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "co_titulo"
       "co_texto"
       "co_formulario"
@@ -1156,9 +1159,11 @@ nav li a:hover::after {
     font-size: 13px;
     text-align: center;
   }
+
   .co_formulario {
     padding: 30px 20px;
   }
+
   .co_texto p {
     font-size: 15px;
   }
@@ -1336,7 +1341,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) {
   .contenedor_footer {
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "fo_1"
       "fo_2"
       "fo_3"
