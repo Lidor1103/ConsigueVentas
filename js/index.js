@@ -110,23 +110,3 @@ function validarFormulario() {
 	// Si todos los campos están llenos, el formulario se enviará normalmente
 	return true;
 }
-
-
- // Función para quitar el atributo data-aos en pantallas con ancho menor a 550px
- function removeAOSOnSmallScreens() {
-	const screenWidth = window.innerWidth;
-	const elements = document.querySelectorAll('[data-aos]');
-	const breakpoint = 550;
-
-	if (screenWidth < breakpoint) {
-		elements.forEach(element => {
-			element.removeAttribute('data-aos');
-		});
-	}
-}
-
-// Ejecutar la función al cargar la página
-removeAOSOnSmallScreens();
-
-// Volver a ejecutar la función cuando cambie el tamaño de la ventana
-window.addEventListener('resize', removeAOSOnSmallScreens);
