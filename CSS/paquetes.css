@@ -359,6 +359,7 @@ nav li a:hover::after {
 @media only screen and (max-width: 414px) {
   .contenedor_4 {
     padding-top: 30px;
+    padding-bottom: 40px;
   }
   
 }
@@ -548,7 +549,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    padding: 50px 4%;
+    padding: 0px 4%;
     grid-row-gap: 20px;
   }
 
@@ -563,10 +564,6 @@ nav li a:hover::after {
 
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
-  .contenedor_contactanos {
-    padding: 30px 4% 30px 4%;
-  }
-
   .f_titulo h4 {
     font-size: 15px;
   }
