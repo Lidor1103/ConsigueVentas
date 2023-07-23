@@ -480,19 +480,21 @@ nav li a:hover::after {
 }
 
 .co_img {
+  width: 100%;
   grid-area: co_img;
   display: flex;
-  padding: 10px;
+  padding: 0 10px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: auto;
 }
 
-.co_img img {
-  width: 100%;
+.co_img p, a {
+  font-size: 12px;
+  color: #888;
+  text-decoration: none;
 }
-
 .co_formulario .button {
   font-family: 'Roboto';
   font-size: 15px;

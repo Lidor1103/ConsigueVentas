@@ -351,6 +351,7 @@ nav li a:hover::after {
 }
 
 .co_img {
+  width: 100%;
   grid-area: co_img;
   display: flex;
   padding: 0 10px;
@@ -360,8 +361,10 @@ nav li a:hover::after {
   height: auto;
 }
 
-.co_img img {
-  width: 100%;
+.co_img p, a {
+  font-size: 12px;
+  color: #888;
+  text-decoration: none;
 }
 
 .co_formulario .button {
@@ -448,11 +451,7 @@ nav li a:hover::after {
     font-size: 15px;
   }
 }
-.co_img p, a {
-  font-size: 12px;
-  color: #888;
-  text-decoration: none;
-}
+
 
 
 /*! =================================================*/
