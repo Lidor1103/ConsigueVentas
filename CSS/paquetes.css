@@ -358,7 +358,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) {
   .contenedor_4 {
-    padding: 20px 5% 0px 5%;
+    padding-top: 30px;
   }
   
 }
