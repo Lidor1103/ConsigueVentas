@@ -529,11 +529,22 @@ nav li a:hover::after {
   }
 }
 
+@media only screen and (max-width: 834px) {
+  .contenedor_contactanos {
+    padding: 70px 4% 70px 4%;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+  }
+
+  .co_formulario h4 {
+    font-size: 22px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .contenedor_contactanos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
-    "co_titulo"
       "co_texto"
       "co_img"
       "co_formulario";
@@ -550,7 +561,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    padding: 0px 4%;
+    padding: 30px 4% 30px 4%;
     grid-row-gap: 20px;
   }
 
@@ -563,12 +574,12 @@ nav li a:hover::after {
   }
 }
 
-
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .f_titulo h4 {
     font-size: 15px;
   }
 }
+
 
 
 
