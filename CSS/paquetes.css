@@ -512,7 +512,11 @@ nav li a:hover::after {
   color: white;
   transition: all .7s;
 }
-
+.co_img p, a {
+  font-size: 12px;
+  color: #888;
+  text-decoration: none;
+}
 @media only screen and (max-width: 1024px) {
   .contenedor_contactanos {
     padding: 50px 4%;
