@@ -1133,6 +1133,20 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   color: white;
 }
 
+@media only screen and (max-width: 1024px) {
+  .contenedor_contactanos {
+    padding: 50px 4%;
+  }
+
+  .co_texto {
+    padding: 1%;
+  }
+
+  .co_formulario {
+    padding: 30px 30px;
+  }
+}
+
 @media only screen and (max-width: 834px) {
   .contenedor_contactanos {
     padding: 70px 4% 70px 4%;
