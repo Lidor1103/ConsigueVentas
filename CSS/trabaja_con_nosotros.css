@@ -635,7 +635,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_areas{
-    padding: 0 10% 20px 10%;
+    padding: 0 10% 40px 10%;
   }
   .areas_título h2 {
     font-size: 22px;
