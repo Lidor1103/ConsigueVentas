@@ -305,7 +305,8 @@ nav li a:hover::after {
 .contenedor_4 {
   padding: 50px 5%;
   display: grid;
-  gap: 20px;
+  grid-row-gap: 30px;
+  grid-column-gap: 20px;
   height: auto;
   grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
 }
