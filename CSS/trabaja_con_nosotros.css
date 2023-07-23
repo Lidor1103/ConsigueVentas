@@ -626,7 +626,7 @@ nav li a:hover::after {
   }
 
   .contenedor_areas {
-    padding: 20px 6% 40px 6%;
+    padding: 10px 6% 40px 6%;
   }
 }
 
@@ -643,14 +643,6 @@ nav li a:hover::after {
     padding-bottom: 50px;
   }
 }
-
-@media only screen and (max-width: 400px) and (orientation: portrait) {
-  .contenedor_areas {
-    padding: 20px auto 40px auto;
-  }
-}
-
-
 
 
 /*! =================================================*/
