@@ -700,15 +700,6 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   .po_hover h2 {
     font-size: 50px;
   }
-  .po_1[data-aos],
-  .po_2[data-aos],
-  .po_3[data-aos],
-  .po_4[data-aos],
-  .po_5[data-aos],
-  .po_6[data-aos] {
-    /* Eliminar el efecto data-aos en pantallas más pequeñas */
-    animation: none !important;
-  }
 }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
