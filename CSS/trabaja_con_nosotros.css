@@ -628,6 +628,9 @@ nav li a:hover::after {
   .contenedor_areas {
     padding: 10px 6% 40px 6%;
   }
+  .contenedor_areas h3{
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
