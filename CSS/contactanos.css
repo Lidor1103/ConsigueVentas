@@ -360,7 +360,7 @@ nav li a:hover::after {
   height: auto;
 }
 
-.co_img img{
+.co_img img {
   width: 100%;
 }
 
@@ -413,42 +413,39 @@ nav li a:hover::after {
 @media only screen and (max-width: 650px) {
   .contenedor_contactanos {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
       "co_texto"
       "co_img"
       "co_formulario"
-      ;
+    ;
   }
+
   .co_texto p {
     font-size: 18px;
   }
-  .co_texto{
+
+  .co_texto {
     padding: 0;
   }
 }
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    padding: 50px 4%;
-  grid-row-gap: 20px;
-}
+    padding: 30px 4% 30px 4%;
+    grid-row-gap: 20px;
+  }
 
-.co_formulario {
-  padding: 30px 20px;
-}
+  .co_formulario {
+    padding: 30px 20px;
+  }
 
-.co_texto p {
-  font-size: 15px;
-}
-
+  .co_texto p {
+    font-size: 15px;
+  }
 }
 
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
-  .contenedor_contactanos {
-    padding: 30px 4% 30px 4%;
-  }
-
   .f_titulo h4 {
     font-size: 15px;
   }
@@ -542,11 +539,15 @@ nav li a:hover::after {
   font-size: 20px;
   transition: all 0.5s ease;
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-right: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-bottom: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
 
 
@@ -600,7 +601,8 @@ nav li a:hover::after {
   .fo_4,
   .fo_5,
   .fo_3_descripcion,
-  .fo_2_descripcion,.fo_4_descripcion {
+  .fo_2_descripcion,
+  .fo_4_descripcion {
     text-align: center;
   }
 }
@@ -626,4 +628,4 @@ nav li a:hover::after {
   .contenedor_footer h3 {
     font-size: 22px;
   }
-} 
+}
