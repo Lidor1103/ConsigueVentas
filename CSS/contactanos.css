@@ -353,7 +353,7 @@ nav li a:hover::after {
 .co_img {
   grid-area: co_img;
   display: flex;
-  padding: 10px;
+  padding: 0 10px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -416,8 +416,7 @@ nav li a:hover::after {
     grid-template-areas:
       "co_texto"
       "co_img"
-      "co_formulario"
-    ;
+      "co_formulario";
   }
 
   .co_texto p {
@@ -444,7 +443,6 @@ nav li a:hover::after {
   }
 }
 
-
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .f_titulo h4 {
     font-size: 15px;
@@ -455,6 +453,8 @@ nav li a:hover::after {
   color: #888;
   text-decoration: none;
 }
+
+
 /*! =================================================*/
 /*! =================== Footer ===================== */
 /*! =================================================*/

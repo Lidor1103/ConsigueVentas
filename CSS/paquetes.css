@@ -512,11 +512,7 @@ nav li a:hover::after {
   color: white;
   transition: all .7s;
 }
-.co_img p, a {
-  font-size: 12px;
-  color: #888;
-  text-decoration: none;
-}
+
 @media only screen and (max-width: 1024px) {
   .contenedor_contactanos {
     padding: 50px 4%;
@@ -538,8 +534,7 @@ nav li a:hover::after {
     "co_titulo"
       "co_texto"
       "co_img"
-      "co_formulario"
-    ;
+      "co_formulario";
   }
 
   .co_texto p {
