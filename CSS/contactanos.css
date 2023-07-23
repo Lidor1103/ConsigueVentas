@@ -433,7 +433,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    padding: 30px 4% 30px 4%;
+    padding: 30px 4%;
     grid-row-gap: 20px;
   }
 

@@ -376,7 +376,7 @@ nav li a:hover::after {
     " co_img co_formulario";
   grid-row-gap: 15px;
   grid-column-gap: 40px;
-  padding: 20px 8% 70px 8%;
+  padding: 10px 8% 70px 8%;
   background-color: var(--cuarto);
   color: var(--primero);
 }
@@ -425,7 +425,7 @@ nav li a:hover::after {
   padding: 0;
 }
 
-.f_titulo h3 {
+.f_titulo h4 {
   font-family: 'Nunito';
   font-weight: bold;
   font-size: 30px;
@@ -517,7 +517,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 1024px) {
   .contenedor_contactanos {
-    padding: 50px 4%;
+    padding: 0 4% 50px 4%;
   }
 
   .co_texto {
@@ -528,23 +528,16 @@ nav li a:hover::after {
     padding: 30px 30px;
   }
 }
-
 @media only screen and (max-width: 834px) {
-  .contenedor_contactanos {
-    padding: 70px 4% 70px 4%;
-    grid-row-gap: 20px;
-    grid-column-gap: 10px;
-  }
-
   .co_formulario h4 {
     font-size: 22px;
   }
 }
-
 @media only screen and (max-width: 650px) {
   .contenedor_contactanos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
+    "co_titulo"
       "co_texto"
       "co_img"
       "co_formulario";
@@ -561,7 +554,7 @@ nav li a:hover::after {
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    padding: 30px 4% 30px 4%;
+    padding: 0px 4%;
     grid-row-gap: 20px;
   }
 
@@ -574,12 +567,12 @@ nav li a:hover::after {
   }
 }
 
+
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .f_titulo h4 {
     font-size: 15px;
   }
 }
-
 
 
 
