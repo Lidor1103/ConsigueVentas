@@ -296,7 +296,7 @@ nav li a:hover::after {
   padding: 0;
 }
 
-.f_titulo h3 {
+.f_titulo h4 {
   font-family: 'Nunito';
   font-weight: bold;
   font-size: 30px;
