@@ -31,11 +31,22 @@ function llenarCamposFormulario(asunto, consulta) {
 	document.getElementById('Asunto').value = asunto;
 	document.getElementById('consulta').value = consulta;
 
-	const formularioOffsetTop = document.getElementById('formulario').offsetTop;
-	window.scrollTo({
-		top: formularioOffsetTop,
-		behavior: 'smooth'
-	});
+	const anchoPantalla = window.innerWidth;
+	let elementoScroll;
+
+	if (anchoPantalla >= 650) {
+	  elementoScroll = document.getElementById('co_texto');
+	} else {
+	  elementoScroll = document.getElementById('formulario');
+	}
+
+	if (elementoScroll) {
+	  const formularioOffsetTop = elementoScroll.offsetTop - 85; // Restar la altura del menú fijo
+	  window.scrollTo({
+	    top: formularioOffsetTop,
+	    behavior: 'smooth'
+	  });
+	}
 
 	document.getElementById('Asunto').classList.add('input-lleno');
 	document.getElementById('consulta').classList.add('input-lleno');
@@ -45,6 +56,8 @@ function llenarCamposFormulario(asunto, consulta) {
 		document.getElementById('consulta').classList.remove('input-lleno');
 	}, 3000);
 }
+
+
 
 document.getElementById("paquete1").addEventListener('click', function () {
 	const asunto = "Paquete WEB EFICAZ";
