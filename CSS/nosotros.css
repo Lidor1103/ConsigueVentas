@@ -292,11 +292,16 @@ nav li a:hover::after {
     padding: 50px 1%;
     width: 100%;
   }
+
+.inicio_texto *:not(:last-child) {
+  margin-bottom: 5px; 
+}
+
   .inicio_texto h2 {
     font-size: 35px;
   }
   .inicio_texto h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .inicio_texto p{
     font-size: 15px;
