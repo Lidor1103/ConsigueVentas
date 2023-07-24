@@ -70,13 +70,13 @@ document.getElementById("botonembudo").addEventListener('click', function () {
 });
 
 document.getElementById("botonpagina").addEventListener('click', function () {
-	const asunto = "Páginas Web";
+	const asunto = "Creación de Páginas Web";
 	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
 	llenarCamposFormulario(asunto, consulta);
 });
 
 document.getElementById("botoncatalogo").addEventListener('click', function () {
-	const asunto = "Catálogo Virtual";
+	const asunto = "Propuesta de contenido para Páginas Web";
 	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
 	llenarCamposFormulario(asunto, consulta);
 });
