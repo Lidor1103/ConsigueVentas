@@ -305,7 +305,7 @@ nav li a:hover::after {
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .inicio_texto {
     padding: 50px 1%;
-    width: 60%;
+    width: 55%;
   }
 
 .inicio_texto *:not(:last-child) {
