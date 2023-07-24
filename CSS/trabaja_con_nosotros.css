@@ -665,7 +665,7 @@ nav li a:hover::after {
   width: 100%;
   height: auto;
   padding: 70px 6% 70px 6%;
-  background-image: url(../img/wave3.svg);
+  background-image: url(../img/svg_wave.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -590,32 +590,32 @@ only screen and (max-width: 393px) and (orientation: portrait) {
 }
 
 .po_1 {
-  background-image: url(../img/mahal.webp);
+  background-image: url(../img/por_mahal.webp);
   grid-area: po_1;
 }
 
 .po_2 {
-  background-image: url(../img/jf.webp);
+  background-image: url(../img/por_jf.webp);
   grid-area: po_2;
 }
 
 .po_3 {
-  background-image: url(../img/psicocenters.webp);
+  background-image: url(../img/por_psicocenters.webp);
   grid-area: po_3;
 }
 
 .po_4 {
-  background-image: url(../img/sergenind.webp);
+  background-image: url(../img/por_sergenind.webp);
   grid-area: po_4;
 }
 
 .po_5 {
-  background-image: url(../img/impactoverde.webp);
+  background-image: url(../img/por_impactoverde.webp);
   grid-area: po_5;
 }
 
 .po_6 {
-  background-image: url(../img/allanemmanuel.webp);
+  background-image: url(../img/por_allanemmanuel.webp);
   grid-area: po_6;
 }
 
