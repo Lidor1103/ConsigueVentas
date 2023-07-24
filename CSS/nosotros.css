@@ -282,6 +282,7 @@ nav li a:hover::after {
   font-size: 25px;
 }
 .inicio_texto p{
+  font-family: 'Quicksand', sans-serif;
   font-size: 20px;
 }
 
@@ -289,12 +290,19 @@ nav li a:hover::after {
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .inicio_texto {
     padding: 50px 1%;
-    border-radius: 30px;
     width: 100%;
   }
   .inicio_texto h2 {
-    font-size: 22px;
+    font-size: 35px;
   }
+  .inicio_texto h3 {
+    font-size: 15px;
+  }
+  .inicio_texto p{
+    font-size: 15px;
+    line-height: 1.1;
+  }
+  
   
   .titulo {
     height: auto;
