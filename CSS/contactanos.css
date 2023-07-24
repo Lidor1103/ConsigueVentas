@@ -264,7 +264,7 @@ nav li a:hover::after {
 
 .co_texto p {
   font-family: 'Quicksand', sans-serif;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .co_celeste {
@@ -422,7 +422,9 @@ textarea {
       "co_img"
       "co_formulario";
   }
-
+  .co_texto p {
+    font-size: 18px;
+  }
   .co_texto {
     padding: 0;
   }

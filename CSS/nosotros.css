@@ -3,6 +3,7 @@
   --segundo: #283c4c;
   --tercero: #00e3ee;
   --cuarto: #ecf0f1;
+  --quinto: #79F4F6;
 }
 
 
@@ -33,7 +34,9 @@ h2 {
   line-height: 1;
   font-size: 37px;
 }
-
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
 .p_celeste {
   color: var(--tercero);
 }
@@ -260,17 +263,36 @@ nav li a:hover::after {
   justify-content: left;
   align-items: center;
   color: white;
+  position: relative; /* Agregamos posición relativa al contenedor */
 }
 
 .inicio_texto {
   padding: 20px;
   border-radius: 30px;
-  width: auto;
+  width: 50%;
 }
 
 .inicio_texto h2 {
   text-align: left;
+  font-size: 50px;
+  color: var(--quinto);
 }
+.inicio_texto h3{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 25px;
+}
+.inicio_texto p{
+  font-size: 20px;
+}
+
+/* Estilos para la imagen contenedor */
+.imagen-contenedor {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  perspective: 500px; /* Ajusta el valor de perspectiva según tus necesidades */
+}
+
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .inicio_texto h2 {
@@ -282,6 +304,7 @@ nav li a:hover::after {
     background-attachment: scroll;
   }
 }
+
 
 
 

@@ -475,9 +475,8 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   font-size: 20px;
 }
 
-.servicio_definicion ul {
+.servicio_definicion p {
   font-size: 14px;
-  list-style: none;
   font-family: 'Poppins', sans-serif;
   margin-bottom: 15px;
 }
