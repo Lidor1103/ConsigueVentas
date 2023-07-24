@@ -24,3 +24,42 @@ function validarFormulario() {
 	// Si todos los campos están llenos, el formulario se enviará normalmente
 	return true;
 }
+
+
+// LLenar el formulario según el botón del servicio
+function llenarCamposFormulario(asunto, consulta) {
+	document.getElementById('Asunto').value = asunto;
+	document.getElementById('consulta').value = consulta;
+
+	const formularioOffsetTop = document.getElementById('contenedor_formulario').offsetTop;
+	window.scrollTo({
+		top: formularioOffsetTop,
+		behavior: 'smooth'
+	});
+
+	document.getElementById('Asunto').classList.add('input-lleno');
+	document.getElementById('consulta').classList.add('input-lleno');
+
+	setTimeout(function () {
+		document.getElementById('Asunto').classList.remove('input-lleno');
+		document.getElementById('consulta').classList.remove('input-lleno');
+	}, 3000);
+}
+
+document.getElementById("paquete1").addEventListener('click', function () {
+	const asunto = "Paquete WEB EFICAZ";
+	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
+	llenarCamposFormulario(asunto, consulta);
+});
+
+document.getElementById("paquete2").addEventListener('click', function () {
+	const asunto = "Paquete WEB ELITE EMPRESARIAL";
+	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
+	llenarCamposFormulario(asunto, consulta);
+});
+
+document.getElementById("paquete3").addEventListener('click', function () {
+	const asunto = "Paquete WEB ÉXITO ECOMMERCE";
+	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
+	llenarCamposFormulario(asunto, consulta);
+});

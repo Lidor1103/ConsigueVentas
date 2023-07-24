@@ -72,19 +72,19 @@ function llenarCamposFormulario(asunto, consulta) {
 }
 
 document.getElementById("botonembudo").addEventListener('click', function () {
-	const asunto = "Deseo más información - Embudo de Ventas";
+	const asunto = "Embudo de Ventas";
 	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
 	llenarCamposFormulario(asunto, consulta);
 });
 
 document.getElementById("botonpagina").addEventListener('click', function () {
-	const asunto = "Deseo más información - Páginas Web";
+	const asunto = "Páginas Web";
 	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
 	llenarCamposFormulario(asunto, consulta);
 });
 
 document.getElementById("botoncatalogo").addEventListener('click', function () {
-	const asunto = "Deseo más información - Catálogo Virtual";
+	const asunto = "Catálogo Virtual";
 	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
 	llenarCamposFormulario(asunto, consulta);
 });

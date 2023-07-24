@@ -767,3 +767,20 @@ textarea {
     font-size: 22px;
   }
 }
+
+
+/*! =================== Llenado automático del formulario ================== */
+@keyframes resaltarInput {
+  0% {
+    background-color: var(--tercero);
+  }
+
+  100% {
+    background-color: white;
+  }
+}
+
+.input-lleno {
+  background-color: white;
+  animation: resaltarInput 5s;
+}
