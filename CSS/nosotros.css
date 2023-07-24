@@ -260,6 +260,8 @@ nav li a:hover::after {
   padding: 0 6%;
   background: url(../img/img8.jpg) no-repeat center/cover;
   display: flex;
+  background-blend-mode: overlay;
+  background-color: #020b11d8;
   justify-content: left;
   align-items: center;
   color: white;
