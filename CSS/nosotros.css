@@ -284,21 +284,21 @@ nav li a:hover::after {
 .inicio_texto {
   padding: 20px;
   border-radius: 30px;
-  width: 50%;
+  width: 58%;
 }
 
 .inicio_texto h2 {
   text-align: left;
-  font-size: 50px;
+  font-size: 65px;
   color: var(--tercero);
 }
 .inicio_texto h3{
   font-family: 'DM Sans', sans-serif;
-  font-size: 25px;
+  font-size: 30px;
 }
 .inicio_texto p{
   font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 
