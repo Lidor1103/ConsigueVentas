@@ -554,7 +554,7 @@ textarea {
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
-    padding: 0px 4%;
+    padding-bottom: 30px;
     grid-row-gap: 20px;
   }
 
