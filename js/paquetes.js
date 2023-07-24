@@ -31,7 +31,7 @@ function llenarCamposFormulario(asunto, consulta) {
 	document.getElementById('Asunto').value = asunto;
 	document.getElementById('consulta').value = consulta;
 
-	const formularioOffsetTop = document.getElementById('contenedor_formulario').offsetTop;
+	const formularioOffsetTop = document.getElementById('formulario').offsetTop;
 	window.scrollTo({
 		top: formularioOffsetTop,
 		behavior: 'smooth'
