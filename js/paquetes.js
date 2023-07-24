@@ -76,3 +76,13 @@ document.getElementById("paquete3").addEventListener('click', function () {
 	const consulta = "Hola Consigue Ventas, deseo trabajar con ustedes! ¿Me pueden enviar más información sobre este servicio?";
 	llenarCamposFormulario(asunto, consulta);
 });
+
+
+
+//Limpiar formulario
+window.addEventListener("pageshow", function (event) {
+	var form = document.getElementsByTagName("form")[0];
+	if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+		form.reset();
+	}
+});

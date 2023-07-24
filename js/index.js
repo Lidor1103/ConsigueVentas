@@ -30,7 +30,6 @@ preguntas.forEach((pregunta) => {
 
 
 
-
 //Portafolio seleccionado
 const proyectos = document.getElementsByClassName("po_hover");
 const imagencambiante = document.getElementById("imagencambiante");
@@ -83,6 +82,7 @@ document.getElementById("botoncatalogo").addEventListener('click', function () {
 });
 
 
+
 //FORMULARIO solo cuando los campos estén llenos
 function validarFormulario() {
 	// Obtener los valores de los campos
@@ -104,3 +104,13 @@ function validarFormulario() {
 	// Si todos los campos están llenos, el formulario se enviará normalmente
 	return true;
 }
+
+
+
+//Limpiar formulario
+window.addEventListener("pageshow", function (event) {
+	var form = document.getElementsByTagName("form")[0];
+	if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+		form.reset();
+	}
+});

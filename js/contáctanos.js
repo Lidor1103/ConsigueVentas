@@ -24,3 +24,12 @@ function validarFormulario() {
 	// Si todos los campos están llenos, el formulario se enviará normalmente
 	return true;
 }
+
+
+//Limpiar formulario
+window.addEventListener("pageshow", function (event) {
+	var form = document.getElementsByTagName("form")[0];
+	if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+		form.reset();
+	}
+});

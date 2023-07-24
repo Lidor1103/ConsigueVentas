@@ -32,7 +32,6 @@ switch (proyecto) {
 		imagencambiante.src = 'img/pro_allan.webp';
 		break;
 	default:
-		// Acciones por defecto si el proyecto no coincide con ninguno de los casos anteriores
 		break;
 }
 
@@ -52,9 +51,10 @@ botonDescarga.addEventListener('click', function () {
 		const urlPDF = urlPDFs[proyecto];
 		botonDescarga.href = urlPDF;
 	} else {
-		// Acciones por defecto si el proyecto no coincide con ninguno de los casos anteriores
 	}
 });
+
+
 
 //FORMULARIO solo cuando los campos estén llenos
 function validarFormulario() {
@@ -77,3 +77,12 @@ function validarFormulario() {
 	// Si todos los campos están llenos, el formulario se enviará normalmente
 	return true;
 }
+
+
+//Limpiar formulario
+window.addEventListener("pageshow", function (event) {
+	var form = document.getElementsByTagName("form")[0];
+	if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+		form.reset();
+	}
+});
