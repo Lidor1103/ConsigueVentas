@@ -20,7 +20,6 @@ html {
 }
 
 body {
-  background-color: var(--segundo);
   margin-top: 85px;
 }
 
@@ -248,6 +247,187 @@ nav li a:hover::after {
     margin-top: 80px;
   }
 }
+
+/*! =================================================*/
+/*! ============= Título ============= */
+/*! =================================================*/
+.titulo {
+  width: 100%;
+  height: 600px;
+  padding: 0 6%;
+  background: url(../img/img8.jpg) no-repeat center/cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+}
+
+.inicio_texto {
+  padding: 20px;
+  border-radius: 30px;
+  width: auto;
+}
+
+.inicio_texto h2 {
+  text-align: left;
+}
+
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+  .inicio_texto h2 {
+    font-size: 22px;
+  }
+
+  .titulo {
+    height: 120px;
+    background-attachment: scroll;
+  }
+}
+
+
+
+
+/*! =================================================*/
+/*! =================== POTENCIAL ===================== */
+/*! =================================================*/
+.contenedor_potencial {
+  width: 100%;
+  height: auto;
+  padding: 70px 6% 70px 6%;
+  background-image: url(../img/svg_wave.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "potencial_presentacion potencial_presentacion potencial_presentacion"
+    "potencial_1 potencial_2 potencial_3"
+    "potencial_4 potencial_5 potencial_6";
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  color: white;
+}
+
+.potencial_presentacion {
+  grid-area: potencial_presentacion;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.potencial_presentacion h2, .potencial_presentacion h3{
+  color: black;
+}
+.potencial_1 {
+  grid-area: potencial_1;
+}
+
+.potencial_2 {
+  grid-area: potencial_2;
+}
+
+.potencial_3 {
+  grid-area: potencial_3;
+}
+
+.potencial_4 {
+  grid-area: potencial_4;
+}
+
+.potencial {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  background-color: var(--segundo);
+  height: 180px;
+  transition: .3s ease all;
+}
+
+.potencial:hover {
+  background-color: var(--tercero);
+  transition: .3s ease all;
+}
+
+.superior {
+  display: grid;
+  background-color: var(--primero);
+  width: 100%;
+  height: 92%;
+  border-radius: 15px;
+  grid-template-columns: 30% 68%;
+  grid-column-gap: 2%;
+  padding: 10px 20px;
+  grid-template-areas: "cierre content";
+  align-items: center;
+}
+
+.cierre {
+  grid-area: cierre;
+  background-color: var(--segundo);
+  display: flex;
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cierre i {
+  font-size: 35px;
+}
+
+.content {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 1115px) {
+  .contenedor_potencial {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "potencial_presentacion potencial_presentacion"
+      "potencial_1 potencial_2" "potencial_3 potencial_4" "potencial_5 potencial_6";
+    grid-row-gap: 20px;
+    padding: 60px 6% 30px 6%;
+  }
+}
+
+@media only screen and (max-width: 944px) {
+  .contenedor_potencial {
+    padding: 50px 6% 20px 6%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .cierre {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 614px) and (orientation: portrait) {
+  .contenedor_potencial {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "potencial_presentacion"
+      "potencial_1" "potencial_2" "potencial_3"
+      "potencial_4" "potencial_5" "potencial_6";
+  }
+
+  .potencial_presentacion h2 {
+    font-size: 22px;
+  }
+
+  .potencial_presentacion h3 {
+    font-size: 13px;
+  }
+
+  .cierre {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+
 
 
 /*! =================================================*/
