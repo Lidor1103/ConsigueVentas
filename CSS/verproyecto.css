@@ -261,13 +261,14 @@ nav li a:hover::after {
 /*! =================================================*/
 /*! ============= Imagen ============= */
 /*! =================================================*/
-.contenedor_pro{
+.contenedor_pro {
   width: 100%;
   height: auto;
   padding: 40px 10% 0 10%;
   background-color: var(--cuarto);
 }
-.contenedor_pro img{
+
+.contenedor_pro img {
   width: 100%;
   box-shadow: 0 0 20px 0 rgb(28, 42, 51);
 }
@@ -339,7 +340,7 @@ nav li a:hover::after {
 .co_formulario {
   background-color: var(--primero);
   border-radius: 40px;
-  padding: 30px 50px;
+  padding: 30px 7%;
   grid-area: co_formulario;
 }
 
@@ -470,19 +471,25 @@ nav li a:hover::after {
   color: white;
 }
 
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 1024px) {
   .contenedor_contactanos {
-    padding: 70px 4% 70px 4%;
-    grid-row-gap: 20px;
-    grid-column-gap: 10px;
+    padding: 50px 4%;
   }
 
   .co_formulario h4 {
     font-size: 22px;
   }
 
-  .co_formulario {
-    padding: 30px 30px;
+  .co_texto {
+    padding: 1%;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .contenedor_contactanos {
+    padding: 70px 4% 70px 4%;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
   }
 }
 
@@ -494,13 +501,16 @@ nav li a:hover::after {
       "co_formulario"
       "co_mapa";
   }
+
   .co_titulo h2 {
     font-size: 37px;
   }
+
   .co_texto p {
     font-size: 18px;
   }
-  .co_texto{
+
+  .co_texto {
     padding: 0;
   }
 }
@@ -508,26 +518,22 @@ nav li a:hover::after {
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
     padding: 50px 4%;
-  grid-row-gap: 20px;
-  background-attachment: scroll;
-}
+    grid-row-gap: 20px;
+    background-attachment: scroll;
+  }
 
-.co_mapa p {
-  font-size: 13px;
-  text-align: center;
-}
+  .co_mapa p {
+    font-size: 13px;
+    text-align: center;
+  }
 
-.co_formulario {
-  padding: 30px 20px;
-}
+  .co_texto p {
+    font-size: 15px;
+  }
 
-.co_texto p {
-  font-size: 15px;
-}
-
-.co_titulo h2 {
-  font-size: 22px;
-}
+  .co_titulo h2 {
+    font-size: 22px;
+  }
 }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
@@ -629,11 +635,15 @@ nav li a:hover::after {
   font-size: 20px;
   transition: all 0.5s ease;
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-right: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-bottom: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
 
 
@@ -687,7 +697,8 @@ nav li a:hover::after {
   .fo_4,
   .fo_5,
   .fo_3_descripcion,
-  .fo_2_descripcion,.fo_4_descripcion {
+  .fo_2_descripcion,
+  .fo_4_descripcion {
     text-align: center;
   }
 }

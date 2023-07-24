@@ -274,7 +274,7 @@ nav li a:hover::after {
 .co_formulario {
   background-color: var(--primero);
   border-radius: 40px;
-  padding: 30px 50px;
+  padding: 30px 7%;
   grid-area: co_formulario;
   color: white;
 }
@@ -401,8 +401,8 @@ textarea {
     padding: 1%;
   }
 
-  .co_formulario {
-    padding: 30px 30px;
+  .co_formulario h4 {
+    font-size: 22px;
   }
 }
 
@@ -411,10 +411,6 @@ textarea {
     padding: 70px 4% 70px 4%;
     grid-row-gap: 20px;
     grid-column-gap: 10px;
-  }
-
-  .co_formulario h4 {
-    font-size: 22px;
   }
 }
 
@@ -440,10 +436,6 @@ textarea {
   .contenedor_contactanos {
     padding: 30px 4%;
     grid-row-gap: 20px;
-  }
-
-  .co_formulario {
-    padding: 30px 20px;
   }
 
   .co_texto p {

@@ -362,7 +362,7 @@ nav li a:hover::after {
     padding-top: 30px;
     padding-bottom: 40px;
   }
-  
+
 }
 
 /*! =================================================*/
@@ -372,7 +372,7 @@ nav li a:hover::after {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
-  "co_titulo co_titulo"
+    "co_titulo co_titulo"
     "co_texto co_texto"
     " co_img co_formulario";
   grid-row-gap: 15px;
@@ -386,6 +386,7 @@ nav li a:hover::after {
   grid-area: co_titulo;
   text-align: center;
 }
+
 .co_texto {
   grid-area: co_texto;
   text-align: center;
@@ -404,7 +405,7 @@ nav li a:hover::after {
 .co_formulario {
   background-color: var(--primero);
   border-radius: 40px;
-  padding: 30px 50px;
+  padding: 30px 7%;
   grid-area: co_formulario;
   color: white;
 }
@@ -491,11 +492,13 @@ nav li a:hover::after {
   height: auto;
 }
 
-.co_img p, a {
+.co_img p,
+a {
   font-size: 12px;
   color: #888;
   text-decoration: none;
 }
+
 .co_formulario .button {
   font-family: 'Roboto';
   font-size: 15px;
@@ -519,6 +522,7 @@ nav li a:hover::after {
 textarea {
   resize: vertical;
 }
+
 @media only screen and (max-width: 1024px) {
   .contenedor_contactanos {
     padding: 0 4% 50px 4%;
@@ -528,20 +532,16 @@ textarea {
     padding: 1%;
   }
 
-  .co_formulario {
-    padding: 30px 30px;
-  }
-}
-@media only screen and (max-width: 834px) {
   .co_formulario h4 {
     font-size: 22px;
   }
 }
+
 @media only screen and (max-width: 650px) {
   .contenedor_contactanos {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
-    "co_titulo"
+      "co_titulo"
       "co_texto"
       "co_img"
       "co_formulario";
@@ -562,15 +562,10 @@ textarea {
     grid-row-gap: 20px;
   }
 
-  .co_formulario {
-    padding: 30px 20px;
-  }
-
   .co_texto p {
     font-size: 15px;
   }
 }
-
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .f_titulo h4 {

@@ -1003,7 +1003,7 @@ only screen and (max-width: 393px) and (orientation: portrait) {
 .co_formulario {
   background-color: var(--primero);
   border-radius: 40px;
-  padding: 30px 50px;
+  padding: 30px 7%;
   grid-area: co_formulario;
 }
 
@@ -1143,12 +1143,12 @@ textarea {
     padding: 50px 4%;
   }
 
-  .co_texto {
-    padding: 1%;
+  .co_formulario h4 {
+    font-size: 22px;
   }
 
-  .co_formulario {
-    padding: 30px 30px;
+  .co_texto {
+    padding: 1%;
   }
 }
 
@@ -1157,14 +1157,6 @@ textarea {
     padding: 70px 4% 70px 4%;
     grid-row-gap: 20px;
     grid-column-gap: 10px;
-  }
-
-  .co_formulario h4 {
-    font-size: 22px;
-  }
-
-  .co_formulario {
-    padding: 30px 30px;
   }
 }
 
@@ -1176,13 +1168,16 @@ textarea {
       "co_formulario"
       "co_mapa";
   }
+
   .co_titulo h2 {
     font-size: 37px;
   }
+
   .co_texto p {
     font-size: 18px;
   }
-  .co_texto{
+
+  .co_texto {
     padding: 0;
   }
 }
@@ -1190,28 +1185,23 @@ textarea {
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .contenedor_contactanos {
     padding: 50px 4%;
-  grid-row-gap: 20px;
-  background-attachment: scroll;
-}
+    grid-row-gap: 20px;
+    background-attachment: scroll;
+  }
 
-.co_mapa p {
-  font-size: 13px;
-  text-align: center;
-}
+  .co_mapa p {
+    font-size: 13px;
+    text-align: center;
+  }
 
-.co_formulario {
-  padding: 30px 20px;
-}
+  .co_texto p {
+    font-size: 15px;
+  }
 
-.co_texto p {
-  font-size: 15px;
+  .co_titulo h2 {
+    font-size: 22px;
+  }
 }
-
-.co_titulo h2 {
-  font-size: 22px;
-}
-}
-
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
   .contenedor_contactanos {
