@@ -305,7 +305,18 @@ nav li a:hover::after {
   font-size: 30px;
 }
 
+@media only screen and (max-width: 780px) {
+  .inicio_texto h2 {
+    font-size: 60px;
+  }
 
+  .inicio_texto h3 {
+    font-size: 20px;
+  }
+  .inicio_texto p {
+    font-size: 20px;
+  } 
+}
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .inicio_texto {
     padding: 50px 1%;
@@ -532,7 +543,7 @@ nav li a:hover::after {
     "herramienta_1" "herramienta_2"
     "herramienta_3" "herramienta_4"
     "herramienta_5" "herramienta_6";
-    padding: 0px 6% 50px 6%;
+    padding: 0px 6% 30px 6%;
   }
 }
 
