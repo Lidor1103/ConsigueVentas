@@ -285,27 +285,25 @@ nav li a:hover::after {
   font-size: 20px;
 }
 
-/* Estilos para la imagen contenedor */
-.imagen-contenedor {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  perspective: 500px; /* Ajusta el valor de perspectiva según tus necesidades */
-}
-
 
 @media only screen and (max-width: 414px) and (orientation: portrait) {
+  .inicio_texto {
+    padding: 50px 1%;
+    border-radius: 30px;
+    width: 100%;
+  }
   .inicio_texto h2 {
     font-size: 22px;
   }
-
+  
   .titulo {
-    height: 120px;
+    height: auto;
     background-attachment: scroll;
   }
+  .imagen-contenedor{
+    opacity: 0;
+  }
 }
-
-
 
 
 
@@ -316,15 +314,10 @@ nav li a:hover::after {
   width: 100%;
   height: auto;
   padding: 70px 6% 70px 6%;
-  background-image: url(../img/svg_wave.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "potencial_presentacion potencial_presentacion potencial_presentacion"
-    "potencial_1 potencial_2 potencial_3"
-    "potencial_4 potencial_5 potencial_6";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "potencial_presentacion potencial_presentacion potencial_presentacion potencial_presentacion"
+    "potencial_1 potencial_2 potencial_3 potencial_4";
   grid-column-gap: 20px;
   grid-row-gap: 40px;
   color: white;
@@ -336,10 +329,9 @@ nav li a:hover::after {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.potencial_presentacion h2, .potencial_presentacion h3{
   color: black;
 }
+
 .potencial_1 {
   grid-area: potencial_1;
 }
@@ -356,97 +348,61 @@ nav li a:hover::after {
   grid-area: potencial_4;
 }
 
-.potencial {
-  overflow: hidden;
-  border-radius: 15px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  background-color: var(--segundo);
-  height: 180px;
-  transition: .3s ease all;
-}
-
-.potencial:hover {
-  background-color: var(--tercero);
-  transition: .3s ease all;
-}
-
-.superior {
-  display: grid;
-  background-color: var(--primero);
-  width: 100%;
-  height: 92%;
-  border-radius: 15px;
-  grid-template-columns: 30% 68%;
-  grid-column-gap: 2%;
-  padding: 10px 20px;
-  grid-template-areas: "cierre content";
-  align-items: center;
-}
-
-.cierre {
-  grid-area: cierre;
-  background-color: var(--segundo);
-  display: flex;
-  border-radius: 50%;
-  height: 90px;
-  width: 90px;
-  justify-content: center;
-  align-items: center;
-}
-
-.cierre i {
-  font-size: 35px;
-}
-
-.content {
-  text-align: left;
+.potencial{
+  color: black;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 0px 20px;
+  align-items: center;
+  gap: 20px;
+}
+.cierre i {
+  font-size: 100px;
+  color: var(--tercero);
+}
+.cierre img{
+  width: 100%;
 }
 
 @media only screen and (max-width: 1115px) {
   .contenedor_potencial {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "potencial_presentacion potencial_presentacion"
-      "potencial_1 potencial_2" "potencial_3 potencial_4" "potencial_5 potencial_6";
-    grid-row-gap: 20px;
-    padding: 60px 6% 30px 6%;
+      "potencial_1 potencial_2" "potencial_3 potencial_4";
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    color: white;
   }
 }
 
 @media only screen and (max-width: 944px) {
-  .contenedor_potencial {
-    padding: 50px 6% 20px 6%;
-  }
+  
 }
 
 @media only screen and (max-width: 780px) {
-  .cierre {
-    height: 70px;
-    width: 70px;
-  }
+
 }
 
 @media only screen and (max-width: 614px) and (orientation: portrait) {
   .contenedor_potencial {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "potencial_presentacion"
-      "potencial_1" "potencial_2" "potencial_3"
-      "potencial_4" "potencial_5" "potencial_6";
+      "potencial_1" "potencial_2" "potencial_3" "potencial_4";
+      padding: 50px 6% 50px 6%;
   }
-
-  .potencial_presentacion h2 {
+}
+@media only screen and (max-width: 430px) and (orientation: portrait) {
+  .contenedor_potencial {
+    grid-row-gap: 20px;
+  }
+  .potencial_presentacion h2{
     font-size: 22px;
   }
-
-  .potencial_presentacion h3 {
-    font-size: 13px;
-  }
-
-  .cierre {
-    height: 70px;
-    width: 70px;
+  .potencial_presentacion h3{
+    font-size: 15px;
   }
 }
 
