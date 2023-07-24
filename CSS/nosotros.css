@@ -265,8 +265,21 @@ nav li a:hover::after {
   justify-content: left;
   align-items: center;
   color: white;
-  position: relative; /* Agregamos posición relativa al contenedor */
+  position: relative; 
 }
+
+.titulo::before {
+  content: "";
+  background-image: url(../img/img9.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 
 .inicio_texto {
   padding: 20px;
