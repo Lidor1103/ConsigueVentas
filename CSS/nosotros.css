@@ -34,9 +34,11 @@ h2 {
   line-height: 1;
   font-size: 37px;
 }
+
 h3 {
   font-family: 'Poppins', sans-serif;
 }
+
 .p_celeste {
   color: var(--tercero);
 }
@@ -265,7 +267,7 @@ nav li a:hover::after {
   justify-content: left;
   align-items: center;
   color: white;
-  position: relative; 
+  position: relative;
 }
 
 .titulo::before {
@@ -292,11 +294,13 @@ nav li a:hover::after {
   font-size: 65px;
   color: var(--tercero);
 }
-.inicio_texto h3{
+
+.inicio_texto h3 {
   font-family: 'DM Sans', sans-serif;
   font-size: 30px;
 }
-.inicio_texto p{
+
+.inicio_texto p {
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
 }
@@ -305,30 +309,32 @@ nav li a:hover::after {
 @media only screen and (max-width: 414px) and (orientation: portrait) {
   .inicio_texto {
     padding: 50px 1%;
-    width: 58%;
   }
 
-.inicio_texto *:not(:last-child) {
-  margin-bottom: 5px; 
-}
+  .inicio_texto *:not(:last-child) {
+    margin-bottom: 5px;
+  }
 
   .inicio_texto h2 {
     font-size: 35px;
   }
+
   .inicio_texto h3 {
     font-size: 16px;
   }
-  .inicio_texto p{
+
+  .inicio_texto p {
     font-size: 17px;
     line-height: 1.1;
   }
-  
-  
+
+
   .titulo {
     height: auto;
     background-attachment: scroll;
   }
-  .imagen-contenedor{
+
+  .imagen-contenedor {
     opacity: 0;
   }
 }
@@ -336,7 +342,7 @@ nav li a:hover::after {
 
 
 /*! =================================================*/
-/*! =================== POTENCIAL ===================== */
+/*! =================== COMO LO HACEMOS ===================== */
 /*! =================================================*/
 .contenedor_potencial {
   width: 100%;
@@ -376,7 +382,7 @@ nav li a:hover::after {
   grid-area: potencial_4;
 }
 
-.potencial{
+.potencial {
   color: black;
   display: flex;
   flex-direction: column;
@@ -387,11 +393,13 @@ nav li a:hover::after {
   align-items: center;
   gap: 20px;
 }
+
 .cierre i {
   font-size: 100px;
   color: var(--tercero);
 }
-.cierre img{
+
+.cierre img {
   width: 100%;
 }
 
@@ -406,34 +414,137 @@ nav li a:hover::after {
   }
 }
 
-@media only screen and (max-width: 944px) {
-  
-}
+@media only screen and (max-width: 944px) {}
 
-@media only screen and (max-width: 780px) {
-
-}
+@media only screen and (max-width: 780px) {}
 
 @media only screen and (max-width: 614px) and (orientation: portrait) {
   .contenedor_potencial {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "potencial_presentacion"
       "potencial_1" "potencial_2" "potencial_3" "potencial_4";
-      padding: 50px 6% 50px 6%;
+    padding: 50px 6% 50px 6%;
   }
 }
+
 @media only screen and (max-width: 430px) and (orientation: portrait) {
   .contenedor_potencial {
     grid-row-gap: 20px;
   }
-  .potencial_presentacion h2{
+
+  .potencial_presentacion h2 {
     font-size: 22px;
   }
-  .potencial_presentacion h3{
+
+  .potencial_presentacion h3 {
     font-size: 15px;
   }
 }
 
+
+/*! =================================================*/
+/*! =================== HERRAMIENTAS ===================== */
+/*! =================================================*/
+.contenedor_herramientas {
+  width: 100%;
+  height: auto;
+  padding: 10px 6% 70px 6%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "herramientas_presentacion herramientas_presentacion herramientas_presentacion"
+    "herramienta_1 herramienta_2 herramienta_3"
+    "herramienta_4 herramienta_5 herramienta_6";
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  color: white;
+}
+
+.herramientas_presentacion {
+  grid-area: herramientas_presentacion;
+  display: flex;
+  justify-content: center;
+  color: black;
+  text-align: center;
+}
+
+.herramienta_1 {
+  grid-area: herramienta_1;
+}
+
+.herramienta_2 {
+  grid-area: herramienta_2;
+}
+
+.herramienta_3 {
+  grid-area: herramienta_3;
+}
+
+.herramienta_4 {
+  grid-area: herramienta_4;
+}
+
+.herramienta_5 {
+  grid-area: herramienta_5;
+}
+
+.herramienta_6 {
+  grid-area: herramienta_6;
+}
+
+.herramienta {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  height: auto;
+  padding: 0px 20px;
+  align-items: center;
+  gap: 20px;
+}
+
+.herramienta i {
+  font-size: 25px;
+  color: var(--tercero);
+}
+
+@media only screen and (max-width: 1115px) {
+  .contenedor_herramientas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "herramientas_presentacion herramientas_presentacion"
+      "herramienta_1 herramienta_2"
+      "herramienta_3 herramienta_4"
+      "herramienta_5 herramienta_6";
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 944px) {}
+
+@media only screen and (max-width: 780px) {}
+
+@media only screen and (max-width: 614px) and (orientation: portrait) {
+  .contenedor_herramientas {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "herramientas_presentacion"
+    "herramienta_1" "herramienta_2"
+    "herramienta_3" "herramienta_4"
+    "herramienta_5" "herramienta_6";
+    padding: 0px 6% 50px 6%;
+  }
+}
+
+@media only screen and (max-width: 430px) and (orientation: portrait) {
+  .contenedor_herramientas {
+    grid-row-gap: 20px;
+  }
+
+  .herramientas_presentacion h2 {
+    font-size: 22px;
+  }
+}
 
 
 
@@ -525,11 +636,15 @@ nav li a:hover::after {
   font-size: 20px;
   transition: all 0.5s ease;
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-right: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-right: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
+
 .fo_4_descripcion a:not(:last-child) {
-  margin-bottom: 10px; /* Ajusta el valor según el espacio deseado */
+  margin-bottom: 10px;
+  /* Ajusta el valor según el espacio deseado */
 }
 
 
@@ -591,7 +706,8 @@ nav li a:hover::after {
   .fo_2_descripcion {
     text-align: center;
   }
-  .fo_4_descripcion{
+
+  .fo_4_descripcion {
     text-align: center;
   }
 }
@@ -604,7 +720,7 @@ nav li a:hover::after {
       "fo_3 fo_3"
       "fo_4 fo_4"
       "fo_5 fo_5"
-      ;
+    ;
     padding: 20px 8% 20px 8%;
   }
 
