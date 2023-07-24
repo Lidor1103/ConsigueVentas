@@ -565,6 +565,9 @@ textarea {
   .co_texto p {
     font-size: 15px;
   }
+  .co_titulo h2 {
+    font-size: 22px;
+  }
 }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {
