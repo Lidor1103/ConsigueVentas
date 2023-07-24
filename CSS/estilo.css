@@ -811,7 +811,7 @@ only screen and (max-width: 393px) and (orientation: portrait) {
   }
 }
 
-@media only screen and (max-width: 414px) and (orientation: portrait) {
+@media only screen and (max-width: 550px) and (orientation: portrait) {
   .contenedor_testimonios {
     background-attachment: scroll;
     padding: 50px 8% 50px 8%;
