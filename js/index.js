@@ -30,8 +30,8 @@ preguntas.forEach((pregunta) => {
 
 
 //Funcionalidad de los botones
-function bo_nosotros(){
-	window.localtion.href = 'nosotros.html'
+function nosotros(){
+	window.location.href = 'nosotros.html'
 }
 
 //Portafolio seleccionado
